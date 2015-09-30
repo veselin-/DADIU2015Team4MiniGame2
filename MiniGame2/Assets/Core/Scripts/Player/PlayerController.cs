@@ -38,6 +38,12 @@ public class PlayerController : MonoBehaviour {
 
 		}
 
+		if (Input.GetKeyDown (KeyCode.Escape))
+		{
+			Application.LoadLevel(Application.loadedLevel);
+		}
+
+
 	}
 
 	void MoveFromTo(Transform from, Transform to, float speed)
