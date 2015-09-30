@@ -5,7 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - WayPoint
+<<<<<<< HEAD
   - ScoreController
+=======
+  - UI
+>>>>>>> 843f6992ac434fd383b9fc537f22e709fadb1bec
   layers:
   - Default
   - TransparentFX
