@@ -18,19 +18,21 @@ public class PlayerController : MonoBehaviour {
 	
 		if(!RotateLeft && !RotateRight)
 		{
-			MoveFromTo(transform, Middle, MoveSpeed);
+			//MoveFromTo(transform, Middle, MoveSpeed);
 			RotateAnim.SetBool("TurnRight", false);
 			RotateAnim.SetBool("TurnLeft", false);
 		}
 		else if(RotateLeft)
 		{
-			MoveFromTo(transform, LeftPos, MoveSpeed);
+			//MoveFromTo(transform, LeftPos, MoveSpeed);
+			transform.Translate(Vector3.left * Time.deltaTime * MoveSpeed);
 			RotateAnim.SetBool("TurnRight", false);
 			RotateAnim.SetBool("TurnLeft", true);
 		}
 		else if(RotateRight)
 		{
-			MoveFromTo(transform, RightPos, MoveSpeed);
+			//MoveFromTo(transform, RightPos, MoveSpeed);
+			transform.Translate(Vector3.right * Time.deltaTime * MoveSpeed);
 			RotateAnim.SetBool("TurnLeft", false);
 			RotateAnim.SetBool("TurnRight", true);
 

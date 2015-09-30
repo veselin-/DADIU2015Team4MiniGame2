@@ -22,7 +22,7 @@
 		void Start() { }
 
 		// Update is called once per frame
-		void FixedUpdate()
+		void LateUpdate()
 		{
 			// Early out if we don't have a target
 			//if (!target)
