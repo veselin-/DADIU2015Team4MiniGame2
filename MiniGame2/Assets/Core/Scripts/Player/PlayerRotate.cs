@@ -30,5 +30,6 @@ public class PlayerRotate : MonoBehaviour , IPointerDownHandler, IPointerUpHandl
 	{
 		PC.RotateLeft = false;
 		PC.RotateRight = false;
+		PC.MoveSpeed = PC.StartSpeed;
 	}
 }
