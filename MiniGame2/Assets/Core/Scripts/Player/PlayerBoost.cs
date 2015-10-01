@@ -34,7 +34,6 @@ public class PlayerBoost : MonoBehaviour
 
     public void MoveTowardsObstacle(Vector3 position, Vector3 mousePosClicked)
     {
-
         //We use the y coordinate of the mouse vs the player because the obstacle always is in front of the player.
         float disPlayerAndMouseClick = Mathf.Abs(mousePosClicked.y - Camera.main.WorldToScreenPoint(transform.position).y);
 
