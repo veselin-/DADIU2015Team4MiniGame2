@@ -8,6 +8,7 @@ TagManager:
   - WayPoint
   - UI
   - PickUp
+  - Obstacle
   layers:
   - Default
   - TransparentFX
