@@ -6,12 +6,10 @@ public class AdrenalineController : MonoBehaviour {
 
     public Slider AdrenalineBar;
 
-
 	// Use this for initialization
 	void Start () {
 
-        AdrenalineBar.value = 10;
-
+        AdrenalineBar.value = 100;
 	}
 	
     public void DecreaseAdrenaline(float amount)
@@ -19,12 +17,8 @@ public class AdrenalineController : MonoBehaviour {
         AdrenalineBar.value -= amount;
     }
 
-
     public void IncreaseAdrenaline(float amount)
     {
         AdrenalineBar.value += amount;
     }
-
-
-
 }
