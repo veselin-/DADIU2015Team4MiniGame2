@@ -3,9 +3,8 @@ using System.Collections;
 
 public class NearMissDetection : MonoBehaviour {
 
-
     private AdrenalineController adrenalineController;
-    public int AdrenalineAwarded = 3;
+    public int AdrenalineAwarded = 10;
 
     // Use this for initialization
     void Start () {
@@ -13,16 +12,12 @@ public class NearMissDetection : MonoBehaviour {
         adrenalineController = GameObject.FindGameObjectWithTag("UI").GetComponent<AdrenalineController>();
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-
-    void OnTriggerStay(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        adrenalineController.IncreaseAdrenaline(AdrenalineAwarded);
+        if (other.tag == "Player")
+        {
+            adrenalineController.IncreaseAdrenaline(AdrenalineAwarded);
+        }
     }
-
 }

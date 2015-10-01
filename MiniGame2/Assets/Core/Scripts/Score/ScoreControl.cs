@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ScoreControl : MonoBehaviour
 {
@@ -7,11 +8,12 @@ public class ScoreControl : MonoBehaviour
 
     public int CurrentScore;
 
+    public Text scoreField;
 
 	// Use this for initialization
 	void Start () {
 	
-
+        
 
 	}
 	
@@ -24,6 +26,16 @@ public class ScoreControl : MonoBehaviour
     {
 
         CurrentScore += points;
+
+        scoreField.text = "Score: " + CurrentScore;
+
+        if (CurrentScore > PlayerPrefs.GetInt("Highscore"))
+        {
+
+            PlayerPrefs.SetInt("Highscore", CurrentScore);
+
+        }
+      
 
     }
 

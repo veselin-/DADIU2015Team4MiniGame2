@@ -18,20 +18,29 @@ public class PickUp : MonoBehaviour {
 
     public float RotationSpeed = 1f;
 
+    private Renderer[] renderers;
+
     // Use this for initialization
     void Start()
     {
 
-        scoreControl = GameObject.FindGameObjectWithTag("ScoreController").GetComponent<ScoreControl>();
+        renderers = GetComponentsInChildren<Renderer>();
+
+
+        scoreControl = GameObject.FindGameObjectWithTag("UI").GetComponent<ScoreControl>();
 
         if (type == Type.Coin)
         {
-            GetComponent<Renderer>().material.SetColor("_Color", Color.yellow);
 
+                renderers[1].material.SetColor("_Color", Color.yellow);
+     
+    
         }
         else if (type == Type.PickUp)
         {
-            GetComponent<Renderer>().material.SetColor("_Color", Color.blue);
+
+                renderers[1].material.SetColor("_Color", Color.blue);
+  
         }
 
     }
@@ -42,22 +51,27 @@ public class PickUp : MonoBehaviour {
 
         if (EnableRoatation)
         {
-            transform.Rotate(new Vector3(0, 1, 0), RotationSpeed * Time.deltaTime);
+            GetComponentInChildren<Transform>().Rotate(new Vector3(0, 1, 0), RotationSpeed * Time.deltaTime);
         }
 
     }
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider col)
     {
 
         Debug.Log("Hit it!!");
-
-        if (type == Type.Coin)
+        if (col.tag == "Player")
         {
-            GetComponent<ParticleSystem>().Play();
-            
-           scoreControl.AddPoints(PointsWorth);
+            if (type == Type.Coin)
+            {
+                GetComponent<ParticleSystem>().Play();
 
+                scoreControl.AddPoints(PointsWorth);
+
+            }
+
+
+            renderers[1].enabled = false;
         }
 
     }
