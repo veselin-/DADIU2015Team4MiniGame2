@@ -8,24 +8,26 @@ namespace Assets
 {
     public class MapGenerator : MonoBehaviour
     {
-
         public int Width;
         public int Height;
 
-        public string seed;
-        public bool useRandomSeed;
+        public string Seed;
+        public bool UseRandomSeed;
 
         [Range(0, 100)]
-        public int randomFillPercent;
+        public int RandomFillPercent;
 
         [Range(0,100)]
-        public int HeightLimit ;
+        public int HeightUpperLimit ;
+
+        [Range(0, 100)]
+        public int HeightLowerLimit;
         
         private List<List<Vector3>> _pointsInPlane;
-
         private float _largestY;
         private float _smallestY;
-        private float _boundaryY;
+        private float _lowerBoundaryY;
+        private float _upperBoundaryY;
 
         public GameObject[] Trees;
         
@@ -36,11 +38,12 @@ namespace Assets
             var vertices = GetComponent<MeshFilter>().mesh.vertices;
             vertices = vertices.OrderBy(s => s.x).ThenBy(s => s.z).ToArray();
             var v1 = vertices.OrderBy(s => s.y);
+
             _largestY = v1.LastOrDefault().y;
             _smallestY = v1.FirstOrDefault().y;
-            _boundaryY = _smallestY + (_largestY - _smallestY)*(0.01f*HeightLimit);
+            _lowerBoundaryY = _smallestY + (_largestY - _smallestY) * (0.01f*HeightLowerLimit);
+            _upperBoundaryY = _smallestY + (_largestY - _smallestY) * (0.01f*HeightUpperLimit);
 
-            Debug.Log("Largest: " + _largestY + " smallest: " + _smallestY); 
             _pointsInPlane = new List<List<Vector3>>();
             for (int i = 0; i < Width; i++)
             {
@@ -48,7 +51,6 @@ namespace Assets
                 
                 for (int j = 0; j < Height; j++)
                 {
-                    Debug.Log(i * Height + j);
                     t.Add(vertices[i* Height + j]);
                 }
                 _pointsInPlane.Add(t);
@@ -60,10 +62,6 @@ namespace Assets
 
         void Update()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                GenerateMap();
-            }
         }
 
         void GenerateMap()
@@ -80,18 +78,18 @@ namespace Assets
 
         void RandomFillMap()
         {
-            if (useRandomSeed)
+            if (UseRandomSeed)
             {
-                seed = Random.value.ToString(CultureInfo.InvariantCulture);
+                Seed = Random.value.ToString(CultureInfo.InvariantCulture);
             }
 
-            var pseudoRandom = new System.Random(seed.GetHashCode());
+            var pseudoRandom = new System.Random(Seed.GetHashCode());
 
             for (int x = 0; x < Width; x++)
             {
                 for (int y = 0; y < Height; y++)
                 {
-                    map[x, y] = (pseudoRandom.Next(0, 100) < randomFillPercent) ? 1 : 0;
+                    map[x, y] = (pseudoRandom.Next(0, 100) < RandomFillPercent) ? 1 : 0;
                 }
             }
         }
@@ -136,45 +134,37 @@ namespace Assets
 
         void OnDrawGizmos()
         {
-            if (map != null)
-            {
-                for (int x = 0; x < Width; x++)
+            if (map == null) return;
+
+            for (var x = 0; x < Width; x++)
+                for (var y = 0; y < Height; y++)
                 {
-                    for (int y = 0; y < Height; y++)
-                    {
-                        Gizmos.color = (map[x, y] == 1) ? Color.black : Color.white;
-                        Vector3 pos = new Vector3(-Width / 2 + x + .5f, 0, -Height / 2 + y + .5f);
-                        Gizmos.DrawCube(pos, Vector3.one);
-                    }
+                    Gizmos.color = (map[x, y] == 1) ? Color.black : Color.white;
+                    var pos = new Vector3(-Width / 2 + x + .5f, 0, -Height / 2 + y + .5f);
+                    Gizmos.DrawCube(pos, Vector3.one);
                 }
-            }
         }
 
         private void Draw()
         {
-
-
             var thisMatrix = transform.localToWorldMatrix;
-            if (map != null)
-            {
-                for (int x = 0; x < Width; x++)
+            if (map == null) return;
+
+            for (int x = 0; x < Width; x++)
+                for (int y = 0; y < Height; y++)
                 {
-                    for (int y = 0; y < Height; y++)
-                    {
-                        if(map[x,y] == 0)
-                            continue;
-                        Debug.Log("y: " + y);
-                        //Debug.Log("x: " + x + "y: " + y);
+                    // There should not be a tree here
+                    if (map[x,y] == 0)
+                        continue;
 
+                    // Are we outsite the boundary?
+                    var pointInPlain = _pointsInPlane[x][y];
+                    if (pointInPlain.y < _lowerBoundaryY || pointInPlain.y > _upperBoundaryY)
+                        continue;
 
-                        var pointInPlain = _pointsInPlane[x][y];
-                        if(pointInPlain.y < _boundaryY)
-                            continue;
-
-                        var tempTree = (GameObject)Instantiate(Trees[new System.Random().Next(0, Trees.Length)], thisMatrix.MultiplyPoint3x4(pointInPlain), Quaternion.identity);
-                    }
+                    // Spawn the tree at that position
+                    Instantiate(Trees[new System.Random().Next(0, Trees.Length)], thisMatrix.MultiplyPoint3x4(pointInPlain), Quaternion.identity);
                 }
-            }
         }
 
     }
