@@ -14,13 +14,16 @@ public class NearMissDetectionCont : MonoBehaviour {
         adrenalineController = GameObject.FindGameObjectWithTag("UI").GetComponent<AdrenalineController>();
     }
 
-    void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        lastDamage += Time.deltaTime;
-        if (lastDamage >= UpdateFrequency)
+        if (other.tag == "Player")
         {
-            lastDamage = 0;
-            adrenalineController.IncreaseAdrenaline(AdrenalineAwarded);
+            lastDamage += Time.deltaTime;
+            if (lastDamage >= UpdateFrequency)
+            {
+                lastDamage = 0;
+                adrenalineController.IncreaseAdrenaline(AdrenalineAwarded);
+            }
         }
     }
 }

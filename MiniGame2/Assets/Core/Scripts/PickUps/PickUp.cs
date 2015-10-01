@@ -56,22 +56,23 @@ public class PickUp : MonoBehaviour {
 
     }
 
-    private void OnTriggerEnter()
+    private void OnTriggerEnter(Collider col)
     {
 
         Debug.Log("Hit it!!");
-
-        if (type == Type.Coin)
+        if (col.tag == "Player")
         {
-            GetComponent<ParticleSystem>().Play();
-            
-            scoreControl.AddPoints(PointsWorth);
+            if (type == Type.Coin)
+            {
+                GetComponent<ParticleSystem>().Play();
 
-        }
+                scoreControl.AddPoints(PointsWorth);
+
+            }
 
 
             renderers[1].enabled = false;
-
+        }
 
     }
 

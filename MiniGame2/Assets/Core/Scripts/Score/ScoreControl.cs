@@ -25,6 +25,13 @@ public class ScoreControl : MonoBehaviour
 
         CurrentScore += points;
 
+        if (CurrentScore > PlayerPrefs.GetInt("Highscore"))
+        {
+
+            PlayerPrefs.SetInt("Highscore", CurrentScore);
+        }
+      
+
     }
 
 }
