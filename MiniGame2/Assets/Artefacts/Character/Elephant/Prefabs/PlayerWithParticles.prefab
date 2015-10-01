@@ -913,7 +913,8 @@ GameObject:
   - 95: {fileID: 9506122}
   - 65: {fileID: 6520830}
   - 114: {fileID: 11424970}
-  - 54: {fileID: 5483252}
+  - 54: {fileID: 5405220}
+  - 114: {fileID: 11456620}
   m_Layer: 0
   m_Name: ElephantModel
   m_TagString: Player
@@ -3594,7 +3595,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122084}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5483252
+--- !u!54 &5405220
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -3754,11 +3755,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RotateLeft: 0
   RotateRight: 0
+  MovementRange: 5
   RotateAnim: {fileID: 9525752}
   Middle: {fileID: 419616}
   LeftPos: {fileID: 410498}
   RightPos: {fileID: 407092}
-  MoveSpeed: 5
+  MoveSpeed: .5
   StartSpeed: 0
   additionSpeed: .100000001
 --- !u!114 &11424970
@@ -3772,6 +3774,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b8f2c93df541d04695997fa49a4448f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11456620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297e6f9f7f3237e42a7d797a013cdb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  MaxDistanceToObstacle: 100
 --- !u!114 &11479378
 MonoBehaviour:
   m_ObjectHideFlags: 1

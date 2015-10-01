@@ -10,15 +10,19 @@ public class ScoreControl : MonoBehaviour
 
     public Text scoreField;
 
-	// Use this for initialization
-	void Start () {
+    private GameObject pointTextREF;
+
+    // Use this for initialization
+    void Start () {
 	
-        
+        pointTextREF = GameObject.FindGameObjectWithTag("PointText");
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+
 	
 	}
 
@@ -26,6 +30,8 @@ public class ScoreControl : MonoBehaviour
     {
 
         CurrentScore += points;
+
+        pointTextREF.GetComponent<PointTextControl>().GotPoints(points);
 
         scoreField.text = "Score: " + CurrentScore;
 

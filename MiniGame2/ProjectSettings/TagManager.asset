@@ -8,6 +8,12 @@ TagManager:
   - WayPoint
   - UI
   - PickUp
+<<<<<<< HEAD
+  - NearMissText
+  - PointText
+=======
+  - Obstacle
+>>>>>>> fafd05eeadb13e72e2ae8aa44650c78d44c7abfe
   layers:
   - Default
   - TransparentFX

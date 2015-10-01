@@ -2650,7 +2650,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11456620, guid: e6d47390814c7254fbb40b038a48b4fc, type: 2}
+      propertyPath: MaxDistanceToObstacle
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 133588, guid: e6d47390814c7254fbb40b038a48b4fc, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11456620, guid: e6d47390814c7254fbb40b038a48b4fc, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e6d47390814c7254fbb40b038a48b4fc, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &669086599
@@ -4931,7 +4940,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 467246, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 32.9900017
+      value: 32.5600014
       objectReference: {fileID: 0}
     - target: {fileID: 467246, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7129,6 +7138,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1275426442}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1337411666 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11466622, guid: 0230654f39fe68444b38a7b85f4108b3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1369289415}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1369289415
 Prefab:
   m_ObjectHideFlags: 0
@@ -7170,8 +7185,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22479966, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11445032, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
+      propertyPath: scoreField
+      value: 
+      objectReference: {fileID: 1337411666}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
   m_IsPrefabParent: 0
@@ -8451,6 +8470,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6560192, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
   m_IsPrefabParent: 0
@@ -8627,6 +8650,24 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &1685793959 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 194466, guid: e6d47390814c7254fbb40b038a48b4fc, type: 2}
+  m_PrefabInternal: {fileID: 654881161}
+--- !u!114 &1685793961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1685793959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297e6f9f7f3237e42a7d797a013cdb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 40
+  MaxDistanceToObstacle: 250
+  MinDistanceToObstacle: 50
 --- !u!43 &1687491478
 Mesh:
   m_ObjectHideFlags: 0
