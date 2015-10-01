@@ -9,7 +9,7 @@ public class AdrenalineController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        AdrenalineBar.value = 100;
+        AdrenalineBar.value = 0;
 	}
 	
     public void DecreaseAdrenaline(float amount)
