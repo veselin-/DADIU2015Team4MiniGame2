@@ -7191,6 +7191,10 @@ Prefab:
       propertyPath: scoreField
       value: 
       objectReference: {fileID: 1337411666}
+    - target: {fileID: 119932, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
   m_IsPrefabParent: 0
@@ -8473,6 +8477,10 @@ Prefab:
     - target: {fileID: 6560192, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 171578, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
