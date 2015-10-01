@@ -240,7 +240,7 @@ namespace ProBuilder2.EditorCommon
 
 			int pbObjectMatches = 0, pbEntityMatches = 0;
 
-			// Shows a detailed tree view of all the properties in this serializedobject.
+			// Shows a detailed Trees view of all the properties in this serializedobject.
 			// GUILayout.Label( SerializedObjectToString(this.serializedObject) );
 
 			SerializedProperty iterator = this.serializedObject.GetIterator();
