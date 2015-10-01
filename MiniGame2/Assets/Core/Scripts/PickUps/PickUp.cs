@@ -27,7 +27,7 @@ public class PickUp : MonoBehaviour {
         renderers = GetComponentsInChildren<Renderer>();
 
 
-        scoreControl = GameObject.FindGameObjectWithTag("ScoreController").GetComponent<ScoreControl>();
+        scoreControl = GameObject.FindGameObjectWithTag("UI").GetComponent<ScoreControl>();
 
         if (type == Type.Coin)
         {
