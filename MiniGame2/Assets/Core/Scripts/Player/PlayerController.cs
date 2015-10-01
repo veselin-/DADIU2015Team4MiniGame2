@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 	
 		if(!RotateLeft && !RotateRight)
 		{
@@ -51,13 +51,14 @@ public class PlayerController : MonoBehaviour {
 			RotateAnim.SetBool("TurnRight", true);
 
 		}
+	}
 
+	void Update()
+	{
 		if (Input.GetKeyDown (KeyCode.Escape))
 		{
 			Application.LoadLevel(Application.loadedLevel);
 		}
-
-
 	}
 
 	void MoveFromTo(Transform from, Transform to, float speed)
