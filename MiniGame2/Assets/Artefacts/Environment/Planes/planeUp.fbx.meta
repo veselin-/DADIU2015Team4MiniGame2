@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: 3bffd8e07b85c0742a1982d39c9a1963
-timeCreated: 1443704717
+guid: 0e1c298afd62388408afeaef35f3989b
+timeCreated: 1443705658
 licenseType: Pro
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
-    100002: treeTop
-    100004: wood
     400000: //RootNode
-    400002: treeTop
-    400004: wood
-    2300000: treeTop
-    2300002: wood
-    3300000: treeTop
-    3300002: wood
-    4300000: wood
-    4300002: treeTop
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pPlane14
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -40,7 +34,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 10
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -74,7 +68,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   additionalBone: 0
   userData: 
   assetBundleName: 
