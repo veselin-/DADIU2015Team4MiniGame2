@@ -15,3 +15,5 @@ EditorBuildSettings:
     path: Assets/Scenes/PrototypeScenes/startSceneAW.unity
   - enabled: 1
     path: Assets/Scenes/PrototypeScenes/FollowPathVes.unity
+  - enabled: 1
+    path: Assets/Scenes/PrototypeScenes/PickUpsAndAdrenalinTMogBO.unity
