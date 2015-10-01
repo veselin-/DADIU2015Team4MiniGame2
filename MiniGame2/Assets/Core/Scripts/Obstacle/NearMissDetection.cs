@@ -15,6 +15,9 @@ public class NearMissDetection : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        adrenalineController.IncreaseAdrenaline(AdrenalineAwarded);
+        if (other.tag == "Player")
+        {
+            adrenalineController.IncreaseAdrenaline(AdrenalineAwarded);
+        }
     }
 }

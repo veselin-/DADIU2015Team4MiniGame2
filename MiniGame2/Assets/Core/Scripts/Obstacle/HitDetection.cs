@@ -15,10 +15,12 @@ public class HitDetection : MonoBehaviour {
 
     IEnumerator OnTriggerEnter(Collider collider)
     {
-        adrenalineController.DecreaseAdrenaline(AdrenalinePenalty);
-        collider.enabled = false;
-        yield return new WaitForSeconds(HitSafePeriod);
-        collider.enabled = true;
-        
+        if (collider.tag == "Player")
+        {
+            adrenalineController.DecreaseAdrenaline(AdrenalinePenalty);
+            collider.enabled = false;
+            yield return new WaitForSeconds(HitSafePeriod);
+            collider.enabled = true;
+        }
     }
 }
