@@ -8,6 +8,8 @@ TagManager:
   - WayPoint
   - UI
   - PickUp
+  - NearMissText
+  - PointText
   layers:
   - Default
   - TransparentFX

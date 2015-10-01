@@ -2648,7 +2648,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 420686, guid: e6d47390814c7254fbb40b038a48b4fc, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6d47390814c7254fbb40b038a48b4fc, type: 2}
@@ -4931,7 +4931,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 467246, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 32.5600014
+      value: 32.9900017
       objectReference: {fileID: 0}
     - target: {fileID: 467246, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
       propertyPath: m_LocalRotation.x
@@ -7129,12 +7129,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1275426442}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1337411666 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11466622, guid: 0230654f39fe68444b38a7b85f4108b3,
-    type: 2}
-  m_PrefabInternal: {fileID: 1369289415}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1369289415
 Prefab:
   m_ObjectHideFlags: 0
@@ -7178,10 +7172,6 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11445032, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
-      propertyPath: scoreField
-      value: 
-      objectReference: {fileID: 1337411666}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
   m_IsPrefabParent: 0
@@ -8825,25 +8815,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1694467682}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1712475454 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 143714, guid: e6d47390814c7254fbb40b038a48b4fc, type: 2}
-  m_PrefabInternal: {fileID: 654881161}
---- !u!54 &1712475456
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1712475454}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1761972110
 GameObject:
   m_ObjectHideFlags: 0

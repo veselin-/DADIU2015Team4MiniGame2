@@ -4,6 +4,7 @@ using System.Collections;
 public class NearMissDetectionCont : MonoBehaviour {
 
     private AdrenalineController adrenalineController;
+    private NearMissControl nearMissControl;
     public int AdrenalineAwarded = 2;
     public float UpdateFrequency = 1;
     private float lastDamage;
@@ -12,6 +13,7 @@ public class NearMissDetectionCont : MonoBehaviour {
     void Start()
     {
         adrenalineController = GameObject.FindGameObjectWithTag("UI").GetComponent<AdrenalineController>();
+        nearMissControl = GameObject.FindGameObjectWithTag("NearMissText").GetComponent<NearMissControl>();
     }
 
     private void OnTriggerStay(Collider other)
@@ -23,6 +25,7 @@ public class NearMissDetectionCont : MonoBehaviour {
             {
                 lastDamage = 0;
                 adrenalineController.IncreaseAdrenaline(AdrenalineAwarded);
+                nearMissControl.NearMiss();
             }
         }
     }
