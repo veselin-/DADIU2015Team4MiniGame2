@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 168136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -235.5, y: -78.8000031, z: 137}
+  m_LocalPosition: {x: 183.729156, y: -18.3808708, z: 136.928482}
   m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
   Height: 31
   Seed: 
   UseRandomSeed: 0
-  RandomFillPercent: 58
+  RandomFillPercent: 33
   HeightUpperLimit: 60
   HeightLowerLimit: 33
   Trees:

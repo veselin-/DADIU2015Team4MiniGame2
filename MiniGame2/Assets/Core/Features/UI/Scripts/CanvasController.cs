@@ -67,7 +67,7 @@ public class CanvasController : MonoBehaviour {
 
     public void startLevel()
     {
-        Application.LoadLevel("inGameSceneAW");
+		Application.LoadLevel("Level01");
     }
 
     public void startSceneLoad()
