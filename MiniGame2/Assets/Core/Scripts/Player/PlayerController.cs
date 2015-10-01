@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	public bool RotateLeft, RotateRight = false; 
-
+	public float MovementRange = 5f;
 	public Animator RotateAnim;
 	public Transform Middle, LeftPos, RightPos;
 	public float MoveSpeed = 0.5f;
@@ -28,17 +28,25 @@ public class PlayerController : MonoBehaviour {
 		}
 		else if(RotateLeft)
 		{
-			//MoveFromTo(transform, LeftPos, MoveSpeed);
 			MoveSpeed += additionSpeed;
-			transform.Translate(Vector3.left * Time.deltaTime * MoveSpeed);
+			MoveFromTo(transform, LeftPos, MoveSpeed);
+			/*
+			Vector3 newPos = Vector3.left * Time.deltaTime * MoveSpeed;
+			transform.Translate(newPos);
+			*/
 			RotateAnim.SetBool("TurnRight", false);
 			RotateAnim.SetBool("TurnLeft", true);
 		}
 		else if(RotateRight)
 		{
 			MoveSpeed += additionSpeed;
-			//MoveFromTo(transform, RightPos, MoveSpeed);
-			transform.Translate(Vector3.right * Time.deltaTime * MoveSpeed);
+			MoveFromTo(transform, RightPos, MoveSpeed);
+			//transform.Translate(Vector3.right * Time.deltaTime * MoveSpeed);
+			//Vector3.ClampMagnitude(newPos, MovementRange)
+			/*
+			Vector3 newPos = Vector3.right * Time.deltaTime * MoveSpeed;
+			transform.Translate(newPos);
+			*/
 			RotateAnim.SetBool("TurnLeft", false);
 			RotateAnim.SetBool("TurnRight", true);
 

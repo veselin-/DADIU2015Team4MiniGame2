@@ -30,6 +30,7 @@
 
 			// Calculate the current rotation angles
 			var wantedRotationAngle = target.eulerAngles.y;
+			//var wantedRotationAngle = target.rotation;
 			var wantedHeight = target.position.y + height;
 
 			var currentRotationAngle = transform.eulerAngles.y;
@@ -54,5 +55,7 @@
 
 			// Always look at the target
 			transform.LookAt(target);
+
+
 		}
 	}
