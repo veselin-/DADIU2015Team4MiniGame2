@@ -720,9 +720,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .119675659, g: .0882353187, b: 1, a: 1}
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 21969a2bf128605479bfd38d542e2fb1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -871,8 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 483686ce2a35d20428ad3ef8d1a76b2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentScore: 0
-  scoreField: {fileID: 0}
+  scoreField: {fileID: 11417298}
 --- !u!114 &11446456
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1130,7 +1129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0a6ec18bbd707d408cec9ac110811e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AdrenalineBar: {fileID: 0}
+  AdrenalineBar: {fileID: 11454510}
 --- !u!114 &11462352
 MonoBehaviour:
   m_ObjectHideFlags: 1

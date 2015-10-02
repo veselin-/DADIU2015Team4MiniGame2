@@ -13,8 +13,12 @@ public class PlayerController : MonoBehaviour {
 
 	public float additionSpeed = 0.1f;
 
+	private AudioManager audioMngr;
+
 	void Start () {
 		StartSpeed = MoveSpeed;
+		audioMngr = GameObject.FindObjectOfType<AudioManager> ();
+		audioMngr.ThemeMusicPlay ();
 	}
 	
 	// Update is called once per frame
