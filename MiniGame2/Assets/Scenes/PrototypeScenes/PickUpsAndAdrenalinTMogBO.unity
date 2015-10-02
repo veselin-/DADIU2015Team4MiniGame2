@@ -4584,7 +4584,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 189699791}
   - 114: {fileID: 648391606}
-  - 114: {fileID: 648391607}
   m_Layer: 0
   m_Name: PlayerHolderCam
   m_TagString: PlayerHolder
@@ -4614,22 +4613,6 @@ MonoBehaviour:
   MoveSpeed: .5
   StartSpeed: 0
   additionSpeed: .100000001
---- !u!114 &648391607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 648391605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 297e6f9f7f3237e42a7d797a013cdb10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  moveTowardsObject: 0
-  MaxDistanceToObstacle: 100
-  MinDistanceToObstacle: 50
-  MinAdrenalin: 0
 --- !u!1001 &654881161
 Prefab:
   m_ObjectHideFlags: 0
@@ -19209,7 +19192,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22479966, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22444518, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.y
@@ -20745,6 +20728,7 @@ GameObject:
   - 65: {fileID: 1616139169}
   - 54: {fileID: 1616139168}
   - 114: {fileID: 1616139167}
+  - 114: {fileID: 1616139171}
   m_Layer: 0
   m_Name: ElephantModel
   m_TagString: Player
@@ -20826,6 +20810,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1616139171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1616139165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297e6f9f7f3237e42a7d797a013cdb10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  moveTowardsObject: 0
+  MaxDistanceToObstacle: 100
+  MinDistanceToObstacle: 50
+  MinAdrenalin: 0
 --- !u!1 &1617398363
 GameObject:
   m_ObjectHideFlags: 0
