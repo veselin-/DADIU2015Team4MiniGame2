@@ -7,9 +7,14 @@ public class TutorialResume : MonoBehaviour
 
     public Text TextBox;
 
+    
+
 	// Use this for initialization
-	void Start () {
-	
+	void Start ()
+	{
+
+	    
+
 	}
 	
 	// Update is called once per frame
@@ -19,8 +24,11 @@ public class TutorialResume : MonoBehaviour
 
     public void Resume()
     {
+
         TextBox.enabled = false;
+
         Time.timeScale = 1f;
+        
     }
 
 }
