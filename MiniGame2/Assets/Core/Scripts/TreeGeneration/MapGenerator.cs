@@ -10,6 +10,7 @@ namespace Assets.Core.Scripts.TreeGeneration
         public int Width;
         public int Height;
         public int NumberOfClosters;
+        public int NumberOfStones;
 
         public string Seed;
         public bool UseRandomSeed;
@@ -24,6 +25,7 @@ namespace Assets.Core.Scripts.TreeGeneration
         public float SizeVariation;
 
         public GameObject[] Trees;
+        public GameObject[] Stones;
 
         private List<List<Vector3>> _pointsInPlane;
         private float _largestY;
@@ -65,8 +67,21 @@ namespace Assets.Core.Scripts.TreeGeneration
                 _pointsInPlane.Add(t);
             }
 
+            // Generate seeds for clusters
             GenerateClusters();
-            Draw();
+
+            // Actually adds trees to the cluster, otherwise only lonely trees
+            for (var i = 0; i < 2; i++)
+            {
+                SmoothClusters();
+            }
+
+            // Add stones
+            GeneateStones();
+
+            DrawTrees();
+            DrawStones();
+
         }
 
         void GenerateClusters()
@@ -74,13 +89,12 @@ namespace Assets.Core.Scripts.TreeGeneration
             _map = new int[Width, Height];
             var numCLusters = 0;
             var maxTries = 0;
-            var r = new System.Random();
 
             //Find some starting points, within the defines bounds (maxTries there to make sure no infinite loop.
             while (numCLusters < NumberOfClosters && maxTries++ < 500 && _lowerBoundaryY < _upperBoundaryY)
             {
-                var x = r.Next(0, _pointsInPlane.Count);
-                var y = r.Next(0, _pointsInPlane[x].Count);
+                var x = Random.Range(0, _pointsInPlane.Count);
+                var y = Random.Range(0, _pointsInPlane[x].Count);
 
                 // Not a valid candidate
                 if (!(_pointsInPlane[x][y].y < _upperBoundaryY) || !(_pointsInPlane[x][y].y > _lowerBoundaryY))
@@ -88,12 +102,6 @@ namespace Assets.Core.Scripts.TreeGeneration
 
                 _map[x, y] = 1;
                 numCLusters++;
-            }
-
-            // Actually adds trees to the cluster, otherwise only lonely trees
-            for (var i = 0; i < 2; i++)
-            {
-                SmoothClusters();
             }
         }
 
@@ -134,6 +142,25 @@ namespace Assets.Core.Scripts.TreeGeneration
 
             return wallCount;
         }
+
+        void GeneateStones()
+        {
+            var numStones = 0;
+            var maxTries = 0;
+            //Find some starting points, within the defines bounds (maxTries there to make sure no infinite loop.
+            while (numStones < NumberOfClosters && maxTries++ < 500 && _lowerBoundaryY < _upperBoundaryY)
+            {
+                var x = Random.Range(0, _pointsInPlane.Count);
+                var y = Random.Range(0, _pointsInPlane[x].Count);
+
+                // Not a valid candidate
+                if (!(_pointsInPlane[x][y].y < _upperBoundaryY) || !(_pointsInPlane[x][y].y > _lowerBoundaryY) || _map[x, y] != 0)
+                    continue;
+
+                _map[x, y] = 2;
+                numStones++;
+            }
+        }
         
         void OnDrawGizmos()
         {
@@ -148,7 +175,7 @@ namespace Assets.Core.Scripts.TreeGeneration
                 }
         }
 
-        private void Draw()
+        private void DrawTrees()
         {
             var thisMatrix = transform.localToWorldMatrix;
             if (_map == null) return;
@@ -157,7 +184,7 @@ namespace Assets.Core.Scripts.TreeGeneration
                 for (int y = 0; y < Height; y++)
                 {
                     // There should not be a tree here
-                    if (_map[x,y] == 0)
+                    if (_map[x,y] != 1)
                         continue;
 
                     // Are we outsite the boundary?
@@ -179,6 +206,39 @@ namespace Assets.Core.Scripts.TreeGeneration
                     tree.transform.localScale = scale;
                 }
         }
+
+        void DrawStones()
+        {
+            var thisMatrix = transform.localToWorldMatrix;
+            if (_map == null) return;
+
+            for (int x = 0; x < Width; x++)
+                for (int y = 0; y < Height; y++)
+                {
+                    // There should not be a stone here
+                    if (_map[x, y] != 2)
+                        continue;
+
+                    // Are we outsite the boundary?
+                    var pointInPlain = _pointsInPlane[x][y];
+                    if (pointInPlain.y < _lowerBoundaryY || pointInPlain.y > _upperBoundaryY)
+                        continue;
+
+                    // Spawn the tree at that position
+                    var stone = (GameObject)Instantiate(Stones[Random.Range(0, Stones.Length)], thisMatrix.MultiplyPoint3x4(pointInPlain), Quaternion.identity);
+
+                    // Random rotation
+                    var rot = stone.transform.localRotation;
+                    rot.y = Random.Range(0, 360);
+                    stone.transform.rotation = rot;
+
+                    // Random scale
+                    var scale = stone.transform.localScale;
+                    scale = scale * (1 + Random.Range(0, SizeVariation) / 100f);
+                    stone.transform.localScale = scale;
+                }
+        }
+
 
     }
 }
