@@ -11,7 +11,7 @@ GameObject:
   - 65: {fileID: 6580816}
   - 114: {fileID: 11467324}
   - 54: {fileID: 5452790}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TutorialTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123980}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 7.15999985}
+  m_LocalRotation: {x: 0, y: .707107008, z: 0, w: .70710665}
+  m_LocalPosition: {x: -243.169998, y: -.300000012, z: -.400000006}
   m_LocalScale: {x: 16.5201702, y: 13.1648321, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -69,7 +69,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextBox: {fileID: 0}
-  TutorialText: This is a tutorial text!!
+  TutorialText: (*NOT IMPLEMENTED YET*) Like trees, rocks can also be bursed through
+    using adrenaline! (Yellow bar top left, earned when near missing trees, need better
+    text)
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
