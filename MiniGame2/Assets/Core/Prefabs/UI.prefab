@@ -1454,9 +1454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803971fe667a03f4ca2e2feba813ece3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundButton: {fileID: 0}
-  soundButtonOn: {fileID: 21300000, guid: a7b1d3ec0a8edd24c814cd9af43d0766, type: 3}
-  soundButtonOff: {fileID: 21300000, guid: 8719c2306baf29244ae604bccf21824c, type: 3}
+  soundButton: {fileID: 11433760}
+  soundButtonOn: {fileID: 21300000, guid: 19c687ce24791b540821029adeb22837, type: 3}
+  soundButtonOff: {fileID: 21300000, guid: e233c9b436058b04f9f4f94432caa2f4, type: 3}
   levelPopUpMenu: {fileID: 0}
   pauseMenu: {fileID: 160152}
   levelHighscore: {fileID: 0}
@@ -1589,7 +1589,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
 --- !u!223 &22380072
 Canvas:
   m_ObjectHideFlags: 1
@@ -1606,7 +1606,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
 --- !u!224 &22403274
 RectTransform:
   m_ObjectHideFlags: 1

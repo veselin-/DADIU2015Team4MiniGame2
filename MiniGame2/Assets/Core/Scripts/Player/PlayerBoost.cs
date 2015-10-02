@@ -57,6 +57,8 @@ public class PlayerBoost : MonoBehaviour
         if (adrenalineController.AdrenalineBar.value < MinAdrenalin)
             return;
 
+        
+
         //We use the y coordinate of the mouse vs the player because the obstacle always is in front of the player.
         float disPlayerAndMouseClick = Mathf.Abs(mousePosClicked.y - Camera.main.WorldToScreenPoint(transform.position).y);
         
@@ -65,6 +67,7 @@ public class PlayerBoost : MonoBehaviour
         {
             moveTowardsObject = true;
             targetPosition = new Vector3(position.x, this.transform.position.y, position.z);
+            adrenalineController.DecreaseAdrenaline(25f);
         }
     }
 }
