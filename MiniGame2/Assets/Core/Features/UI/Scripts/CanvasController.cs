@@ -8,6 +8,7 @@ public class CanvasController : MonoBehaviour {
     public Sprite soundButtonOn, soundButtonOff;
     private bool soundButtonSwitch = false;
     public GameObject levelPopUpMenu, pauseMenu;
+    public Text levelHighscore;
 	// Use this for initialization
     void Awake()
     {
@@ -116,5 +117,10 @@ public class CanvasController : MonoBehaviour {
     {
         Application.LoadLevel("Level01");
         Time.timeScale = 1;
+    }
+
+    public void showLevelHighscore()
+    {
+        levelHighscore.text = "Highscore: " + PlayerPrefs.GetInt("Highscore");
     }
 }

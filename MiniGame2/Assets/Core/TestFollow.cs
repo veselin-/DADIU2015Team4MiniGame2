@@ -54,6 +54,8 @@ public class TestFollow : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
+        if(speed == 0)
+            return;
 
 		Quaternion q = new Quaternion(); // = transform.localRotation;
 		transform.position = Spline.MoveOnPath(path, transform.position, ref t, ref q, speed, 700, EasingType.Sine, true, true);
