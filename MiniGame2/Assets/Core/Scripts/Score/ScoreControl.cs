@@ -17,7 +17,7 @@ public class ScoreControl : MonoBehaviour
         //PlayerPrefs.SetInt("Highscore" + Application.loadedLevelName, 0);
         pointTextREF = GameObject.FindGameObjectWithTag("PointText");
         CurrentScore = 0;
-        scoreField.text = "Score: " + CurrentScore;
+        scoreField.text = "" + CurrentScore;
 	}
 	
 	// Update is called once per frame
@@ -34,7 +34,7 @@ public class ScoreControl : MonoBehaviour
 
         pointTextREF.GetComponent<PointTextControl>().GotPoints(points);
 
-        scoreField.text = "Score: " + CurrentScore;  
+        scoreField.text = "" + CurrentScore;  
 
     }
 
