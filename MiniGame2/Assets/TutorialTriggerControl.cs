@@ -31,6 +31,8 @@ public class TutorialTriggerControl : MonoBehaviour
 
             TextBox.text = TutorialText;
 
+            
+
             TextBox.enabled = true;
 
 
