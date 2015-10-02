@@ -59,7 +59,7 @@ public class PickUp : MonoBehaviour {
     private void OnTriggerEnter(Collider col)
     {
 
-        Debug.Log("Hit it!!");
+       // Debug.Log("Hit it!!");
         if (col.tag == "Player")
         {
             if (type == Type.Coin)
