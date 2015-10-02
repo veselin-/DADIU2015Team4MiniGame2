@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: af33b57453bc3ac42af98e35afc99a6a
-timeCreated: 1443792576
+guid: b837826f0b3bf654bbaf59e7c844ec94
+timeCreated: 1443800719
 licenseType: Pro
 ModelImporter:
   serializedVersion: 18
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: pPlane11
+    4300000: pPlane15
   materials:
     importMaterials: 1
     materialName: 0
