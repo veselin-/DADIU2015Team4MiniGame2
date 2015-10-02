@@ -31,7 +31,7 @@ GameObject:
   - 65: {fileID: 6574556}
   - 114: {fileID: 11430234}
   m_Layer: 0
-  m_Name: stone_02
+  m_Name: stone_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
