@@ -64,7 +64,7 @@ public class PickUp : MonoBehaviour {
         {
             if (type == Type.Coin)
             {
-				//audioMngr.CoinsPlay();
+				audioMngr.CoinsPlay();
                 GetComponent<ParticleSystem>().Play();
 
                 scoreControl.AddPoints(PointsWorth);
