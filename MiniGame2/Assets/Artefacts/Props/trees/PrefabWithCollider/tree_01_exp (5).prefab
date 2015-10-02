@@ -34,6 +34,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &144184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 440130}
+  - 114: {fileID: 11466684}
+  - 114: {fileID: 11475556}
+  - 65: {fileID: 6578826}
+  m_Layer: 0
+  m_Name: Obstacle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &190154
 GameObject:
   m_ObjectHideFlags: 0
@@ -43,7 +61,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 462242}
   - 65: {fileID: 6526392}
-  - 114: {fileID: 11405902}
+  - 114: {fileID: 11435014}
   m_Layer: 0
   m_Name: tree_01_exp (5)
   m_TagString: Untagged
@@ -75,6 +93,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 462242}
   m_RootOrder: 0
+--- !u!4 &440130
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 462242}
+  m_RootOrder: 2
 --- !u!4 &462242
 Transform:
   m_ObjectHideFlags: 1
@@ -82,11 +112,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.67000008, y: -77.5999985, z: 138.169998}
+  m_LocalPosition: {x: -25.5964546, y: -75.5411148, z: 135.790314}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 440046}
   - {fileID: 412082}
+  - {fileID: 440130}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!23 &2361868
@@ -163,7 +194,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.10000002, y: 1.60000002, z: 1.60000002}
   m_Center: {x: 0, y: .75999999, z: 0}
---- !u!114 &11405902
+--- !u!65 &6578826
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144184}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .620000005, y: 1.20000005, z: .689999998}
+  m_Center: {x: 0, y: .649999976, z: 0}
+--- !u!114 &11435014
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -171,11 +214,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 190154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a564973a19d9304ca3f0137f5f0fbfd, type: 3}
+  m_Script: {fileID: 11500000, guid: cda9b9e754f68a6498ec1d0b474ed862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AdrenalineAwarded: 10
-  UpdateFrequency: .200000003
+--- !u!114 &11466684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54f3d14a0f1fd4d4aa10014ea8c31049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HitSafePeriod: .300000012
+  AdrenalinePenalty: 30
+--- !u!114 &11475556
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1582a271928a52c4ea517c4e58fb0ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
