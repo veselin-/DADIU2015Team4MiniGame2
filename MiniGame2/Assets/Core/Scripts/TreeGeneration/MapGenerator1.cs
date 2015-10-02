@@ -1,18 +1,18 @@
 ﻿using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+
 using UnityEngine;
 
-namespace Assets.Core.Scripts.TreeGeneration
+namespace Assets
 {
-    public class MapGenerator : MonoBehaviour
+    public class MapGenerator1 : MonoBehaviour
     {
         public int Width;
         public int Height;
 
         public string Seed;
         public bool UseRandomSeed;
-        public bool UserClusterGeneration;
 
         [Range(0, 100)]
         public int RandomFillPercent;
@@ -22,9 +22,7 @@ namespace Assets.Core.Scripts.TreeGeneration
 
         [Range(0, 100)]
         public int HeightLowerLimit;
-
-        public int NumberOfClosters;
-
+        
         private List<List<Vector3>> _pointsInPlane;
         private float _largestY;
         private float _smallestY;
@@ -32,18 +30,11 @@ namespace Assets.Core.Scripts.TreeGeneration
         private float _upperBoundaryY;
 
         public GameObject[] Trees;
-
+        
         int[,] map;
 
         void Start()
         {
-            // Seed vs 'true' random
-            if (UseRandomSeed)
-            {
-                Seed = Random.value.ToString(CultureInfo.InvariantCulture);
-            }
-            Random.seed = Seed.GetHashCode();
-
             var vertices = GetComponent<MeshFilter>().mesh.vertices;
             vertices = vertices.OrderBy(s => s.x).ThenBy(s => s.z).ToArray();
             var v1 = vertices.OrderBy(s => s.y);
@@ -64,65 +55,13 @@ namespace Assets.Core.Scripts.TreeGeneration
                 }
                 _pointsInPlane.Add(t);
             }
-
-            if (UserClusterGeneration)
-            {
-                GenerateClusters();
-            }
-            else
-            {
-                GenerateMap();
-            }
             
+            GenerateMap();
             Draw();
         }
 
         void Update()
         {
-        }
-
-
-        void GenerateClusters()
-        {
-            map = new int[Width, Height];
-            var numCLusters = 0;
-            var maxTries = 0;
-            var r = new System.Random();
-            while (numCLusters < NumberOfClosters && maxTries++ < 500)
-            {
-                var x = r.Next(0, _pointsInPlane.Count);
-                var y = r.Next(0, _pointsInPlane[x].Count);
-
-                if (_pointsInPlane[x][y].y < _upperBoundaryY && _pointsInPlane[x][y].y > _lowerBoundaryY)
-                {
-                    map[x, y] = 1;
-                    numCLusters++;
-                }
-                Debug.Log(maxTries);
-            }
-
-            for (var i = 0; i < 2; i++)
-            {
-                SmoothClusters();
-            }
-        }
-
-        private void SmoothClusters()
-        {
-            for (int x = 0; x < Width; x++)
-            {
-                for (int y = 0; y < Height; y++)
-                {
-                    int neighbourWallTiles = GetSurroundingWallCount(x, y);
-
-                    if (map[x, y] == 1)
-                        continue;
-                    if (neighbourWallTiles > 0 && Random.Range(0,100) < 15)
-                        map[x, y] = 1;
-                    else
-                        map[x, y] = 0;
-                }
-            }
         }
 
         void GenerateMap()
@@ -139,11 +78,18 @@ namespace Assets.Core.Scripts.TreeGeneration
 
         void RandomFillMap()
         {
+            if (UseRandomSeed)
+            {
+                Seed = Random.value.ToString(CultureInfo.InvariantCulture);
+            }
+
+            var pseudoRandom = new System.Random(Seed.GetHashCode());
+
             for (int x = 0; x < Width; x++)
             {
                 for (int y = 0; y < Height; y++)
                 {
-                    map[x, y] = (Random.Range(0, 100) < RandomFillPercent) ? 1 : 0;
+                    map[x, y] = (pseudoRandom.Next(0, 100) < RandomFillPercent) ? 1 : 0;
                 }
             }
         }
@@ -217,7 +163,7 @@ namespace Assets.Core.Scripts.TreeGeneration
                         continue;
 
                     // Spawn the tree at that position
-                    Instantiate(Trees[Random.Range(0, Trees.Length)], thisMatrix.MultiplyPoint3x4(pointInPlain), Quaternion.identity);
+                    Instantiate(Trees[new System.Random().Next(0, Trees.Length)], thisMatrix.MultiplyPoint3x4(pointInPlain), Quaternion.identity);
                 }
         }
 

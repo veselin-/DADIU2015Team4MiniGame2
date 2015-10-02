@@ -94,9 +94,9 @@ MonoBehaviour:
   Height: 31
   Seed: 
   UseRandomSeed: 0
-  RandomFillPercent: 100
-  HeightUpperLimit: 100
-  HeightLowerLimit: 0
+  RandomFillPercent: 61
+  HeightUpperLimit: 81
+  HeightLowerLimit: 27
   Trees:
   - {fileID: 100000, guid: 3bffd8e07b85c0742a1982d39c9a1963, type: 3}
   - {fileID: 100002, guid: 509485df3d5cf6e438c25d0f073e1e4f, type: 3}
