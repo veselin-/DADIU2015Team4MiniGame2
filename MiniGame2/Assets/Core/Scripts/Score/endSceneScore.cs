@@ -6,7 +6,11 @@ public class endSceneScore : MonoBehaviour {
     public Text highscore, showCurrentScore;
     // Use this for initialization
     void Start () {
-        highscore.text = "Highscore: " + PlayerPrefs.GetInt("Highscore" + Application.loadedLevelName);
+        if (ScoreControl.CurrentScore > PlayerPrefs.GetInt("Highscore"))
+        {
+            PlayerPrefs.SetInt("Highscore", ScoreControl.CurrentScore);
+        }
+        highscore.text = "Highscore: " + PlayerPrefs.GetInt("Highscore");
         showCurrentScore.text = "Current score: " + ScoreControl.CurrentScore;
     }
 	
