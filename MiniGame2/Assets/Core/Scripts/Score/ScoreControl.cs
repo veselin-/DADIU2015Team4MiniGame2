@@ -6,7 +6,7 @@ public class ScoreControl : MonoBehaviour
 {
 
 
-    public int CurrentScore;
+    public static int CurrentScore;
 
     public Text scoreField;
 
@@ -14,7 +14,6 @@ public class ScoreControl : MonoBehaviour
 
     // Use this for initialization
     void Start () {
-	
         pointTextREF = GameObject.FindGameObjectWithTag("PointText");
 
 	}
