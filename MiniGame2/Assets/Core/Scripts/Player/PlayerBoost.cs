@@ -40,7 +40,7 @@ public class PlayerBoost : MonoBehaviour
         }
         if (moveBack)
         {
-            transform.localPosition = Vector3.MoveTowards(transform.localPosition, Vector3.up, speed*Time.deltaTime);
+            transform.localPosition = Vector3.MoveTowards(transform.localPosition, Vector3.zero, speed*Time.deltaTime);
         }
     }
 
