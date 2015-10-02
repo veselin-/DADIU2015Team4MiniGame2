@@ -42,13 +42,13 @@ public class AudioManager : MonoBehaviour {
 	}
 	public void WindPlay()
 	{
-		//wind.Play ();
-        veselinPleaseDance.Play();
+		wind.Play ();
+        //veselinPleaseDance.Play();
 	}
 	public void WindStop()
 	{
-		//wind.Stop ();
-        veselinPleaseDance.Stop();
+		wind.Stop ();
+        //veselinPleaseDance.Stop();
     }
 	public void FlappingPlay()
 	{
