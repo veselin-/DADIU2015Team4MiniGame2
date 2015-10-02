@@ -6,6 +6,7 @@ public class TutorialTriggerControl : MonoBehaviour
 {
 
     public Text TextBox;
+   
 
     public string TutorialText;
 
@@ -30,7 +31,7 @@ public class TutorialTriggerControl : MonoBehaviour
             Time.timeScale = 0f;
 
             TextBox.text = TutorialText;
-
+            
             
 
             TextBox.enabled = true;
