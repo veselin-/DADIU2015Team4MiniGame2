@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource coins;
 	public AudioSource buttonClick;
 	public AudioSource hitGround;
+    public AudioSource veselinPleaseDance;
 
 
 	public AudioMixer MasterMixer;
@@ -22,32 +23,13 @@ public class AudioManager : MonoBehaviour {
 
 	void Awake()
 	{
-		PlayerPrefs.SetString("Sound", "On");
-		AudioListener.pause = false;
+
 	}
 
 	void Start()
 	{
-		//PlayerPrefs.GetString ("");
-		if(!PlayerPrefs.HasKey("Sound"))
-		{
-			PlayerPrefs.SetString("Sound", "On");
-			AudioListener.pause = false;
-			//LanguageManager.Instance.LoadLanguage(PlayerPrefs.GetString ("Sound"));
-		}
 
-
-		if (PlayerPrefs.GetString ("Sound").Equals ("On")) {
-			//PlayerPrefs.SetString("Sound", "Off");
-			AudioListener.pause = false;
-		} else
-		{
-			//PlayerPrefs.SetString("Sound", "On");
-			AudioListener.pause = true;
-		}
 	}
-
-
 
 	public void MusicPlay()
 	{
@@ -60,12 +42,14 @@ public class AudioManager : MonoBehaviour {
 	}
 	public void WindPlay()
 	{
-		wind.Play ();
+		//wind.Play ();
+        veselinPleaseDance.Play();
 	}
 	public void WindStop()
 	{
-		wind.Stop ();
-	}
+		//wind.Stop ();
+        veselinPleaseDance.Stop();
+    }
 	public void FlappingPlay()
 	{
 		flapping.Play ();
