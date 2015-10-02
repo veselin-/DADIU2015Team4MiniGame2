@@ -19,9 +19,23 @@ public class NearMissDetection : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
+
 			audioMngr.NearMissPlay();
+
+            Debug.Log("NearMiss");
+            StartCoroutine(NearMiss(other.gameObject));
+        }
+    }
+
+    IEnumerator NearMiss(GameObject go)
+    {
+        yield return new WaitForSeconds(.1f);
+        if (go.GetComponent<Collider>().enabled)
+      {
             adrenalineController.IncreaseAdrenaline(AdrenalineAwarded);
             nearMissControl.NearMiss();
-        }
+       }
+        yield return null;
+       
     }
 }
