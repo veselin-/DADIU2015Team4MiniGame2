@@ -697,7 +697,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 926880356}
-        m_MethodName: setHighscoreForLevel
+        m_MethodName: showLevelHighscore
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1000,6 +1000,10 @@ Prefab:
       propertyPath: highscore
       value: 
       objectReference: {fileID: 1661210177}
+    - target: {fileID: 11425850, guid: 53d00a3805896584e9175e0bb42658dd, type: 2}
+      propertyPath: levelHighscore
+      value: 
+      objectReference: {fileID: 1661210177}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 53d00a3805896584e9175e0bb42658dd, type: 2}
   m_IsPrefabParent: 0
@@ -1201,7 +1205,6 @@ GameObject:
   - 224: {fileID: 1661210175}
   - 222: {fileID: 1661210178}
   - 114: {fileID: 1661210177}
-  - 114: {fileID: 1661210176}
   m_Layer: 5
   m_Name: Highscore
   m_TagString: Untagged
@@ -1226,18 +1229,6 @@ RectTransform:
   m_AnchoredPosition: {x: -.400001526, y: 0}
   m_SizeDelta: {x: -1, y: 2}
   m_Pivot: {x: .5, y: .5}
---- !u!114 &1661210176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1661210174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b63b61f6d3abd1547bf9affa4762cbd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  highscore: {fileID: 1661210177}
 --- !u!114 &1661210177
 MonoBehaviour:
   m_ObjectHideFlags: 0
