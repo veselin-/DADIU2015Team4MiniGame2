@@ -1637,6 +1637,10 @@ Prefab:
       propertyPath: speed
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 6520830, guid: 71add0f4f889d4f4a8a01107874c7cb2, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71add0f4f889d4f4a8a01107874c7cb2, type: 2}
   m_IsPrefabParent: 0
@@ -12825,6 +12829,10 @@ Prefab:
       propertyPath: m_Name
       value: Obstacle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6560192, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
+      propertyPath: m_Size.z
+      value: 2.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
   m_IsPrefabParent: 0
@@ -15642,7 +15650,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22479966, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22444518, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.y
@@ -16878,6 +16886,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6560192, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
+      propertyPath: m_Size.z
+      value: 1.89999998
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dae46516e86d9cb4b99d1016cd885bed, type: 2}
   m_IsPrefabParent: 0
@@ -16896,7 +16908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1680709533
 Transform:
   m_ObjectHideFlags: 0
