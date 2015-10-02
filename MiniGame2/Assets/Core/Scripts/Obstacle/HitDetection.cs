@@ -18,11 +18,17 @@ public class HitDetection : MonoBehaviour {
     {
         if (collider.tag == "Player")
         {
-			audioMngr.FailPlay();
-            adrenalineController.DecreaseAdrenaline(AdrenalinePenalty);
-            collider.enabled = false;
-            yield return new WaitForSeconds(HitSafePeriod);
-            collider.enabled = true;
+            if (collider.gameObject.GetComponent<PlayerBoost>().moveTowardsObject) {
+                collider.gameObject.GetComponent<PlayerBoost>().BoostHit();
+                Destroy(transform.parent.gameObject);
+            }
+            else {
+                audioMngr.FailPlay();
+                adrenalineController.DecreaseAdrenaline(AdrenalinePenalty);
+                collider.enabled = false;
+                yield return new WaitForSeconds(HitSafePeriod);
+                collider.enabled = true;
+            }
         }
     }
 }

@@ -9,10 +9,9 @@ public class ObstacleClicked : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
-
-        playerBoost = GameObject.FindGameObjectWithTag("Player").transform.parent.GetComponent<PlayerBoost>();
-
+        playerBoost = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBoost>();
+        if(playerBoost == null)
+            Debug.LogError("Cannot find boost controller");
 	}
 	
 	// Update is called once per frame
@@ -23,7 +22,10 @@ public class ObstacleClicked : MonoBehaviour {
 
     void OnMouseDown()
     {
-        playerBoost.MoveTowardsObstacle(this.transform.position, Input.mousePosition);
+        Debug.Log("CLicked!");
+        var mousePos = Input.mousePosition;
+        var transPos = this.transform.position;
+        playerBoost.MoveTowardsObstacle(transPos, mousePos);
            
     }
 }

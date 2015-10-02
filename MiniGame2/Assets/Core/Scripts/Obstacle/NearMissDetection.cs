@@ -20,7 +20,7 @@ public class NearMissDetection : MonoBehaviour {
         if (other.tag == "Player")
         {
 
-			audioMngr.NearMissPlay();
+			//audioMngr.NearMissPlay();
 
             Debug.Log("NearMiss");
             StartCoroutine(NearMiss(other.gameObject));

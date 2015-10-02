@@ -4,7 +4,7 @@ using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour {
 
-	public AudioSource music;
+	public AudioSource themeMusic;
 	public AudioSource flapping;
 	public AudioSource success;
 	public AudioSource wind;
@@ -31,14 +31,14 @@ public class AudioManager : MonoBehaviour {
 
 	}
 
-	public void MusicPlay()
+	public void ThemeMusicPlay()
 	{
-		music.Play ();
+		themeMusic.Play ();
 	}
 
-	public void MusicStop()
+	public void ThemeMusicStop()
 	{
-		music.Stop ();
+		themeMusic.Stop ();
 	}
 	public void WindPlay()
 	{
