@@ -19,13 +19,13 @@ public class PickUp : MonoBehaviour {
     public float RotationSpeed = 1f;
 
     private Renderer[] renderers;
-
+	private AudioManager audioMngr;
     // Use this for initialization
     void Start()
     {
 
         renderers = GetComponentsInChildren<Renderer>();
-
+		audioMngr = GameObject.FindObjectOfType<AudioManager> ();
 
         scoreControl = GameObject.FindGameObjectWithTag("UI").GetComponent<ScoreControl>();
 
@@ -64,6 +64,7 @@ public class PickUp : MonoBehaviour {
         {
             if (type == Type.Coin)
             {
+				audioMngr.CoinsPlay();
                 GetComponent<ParticleSystem>().Play();
 
                 scoreControl.AddPoints(PointsWorth);

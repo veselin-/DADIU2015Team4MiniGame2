@@ -9,16 +9,27 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource success;
 	public AudioSource wind;
 	public AudioSource fail;
-	public AudioSource pose;
+	public AudioSource nearmiss;
 	public AudioSource electrified;
-	public AudioSource thunder;
+	public AudioSource coins;
 	public AudioSource buttonClick;
 	public AudioSource hitGround;
+    public AudioSource veselinPleaseDance;
 
 
 	public AudioMixer MasterMixer;
 	public AudioMixer MusicMixer;
 	public AudioMixer SoundFXMixer;
+
+	void Awake()
+	{
+
+	}
+
+	void Start()
+	{
+
+	}
 
 	public void MusicPlay()
 	{
@@ -31,12 +42,14 @@ public class AudioManager : MonoBehaviour {
 	}
 	public void WindPlay()
 	{
-		wind.Play ();
+		//wind.Play ();
+        veselinPleaseDance.Play();
 	}
 	public void WindStop()
 	{
-		wind.Stop ();
-	}
+		//wind.Stop ();
+        veselinPleaseDance.Stop();
+    }
 	public void FlappingPlay()
 	{
 		flapping.Play ();
@@ -72,14 +85,14 @@ public class AudioManager : MonoBehaviour {
 		fail.Stop ();
 	}
 
-	public void PosePlay()
+	public void NearMissPlay()
 	{
-		pose.Play ();
+		nearmiss.Play ();
 	}
 	
-	public void PoseStop()
+	public void NearMissStop()
 	{
-		pose.Stop ();
+		nearmiss.Stop ();
 	}
 
 	public void ElectrifiedPlay()
@@ -92,14 +105,14 @@ public class AudioManager : MonoBehaviour {
 		electrified.Stop ();
 	}
 
-	public void ThunderPlay()
+	public void CoinsPlay()
 	{
-		thunder.Play ();
+		coins.Play ();
 	}
 	
-	public void ThunderStop()
+	public void CoinsStop()
 	{
-		thunder.Stop ();
+		coins.Stop ();
 	}
 	
 	public void HitGroundPlay()

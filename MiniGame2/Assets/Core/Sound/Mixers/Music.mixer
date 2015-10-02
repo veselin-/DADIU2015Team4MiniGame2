@@ -6,7 +6,7 @@ AudioMixerController:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Music
-  m_OutputGroup: {fileID: 24300001, guid: 022dbac2784ee4025b03274df98e64ba, type: 2}
+  m_OutputGroup: {fileID: 24314886, guid: 022dbac2784ee4025b03274df98e64ba, type: 2}
   m_MasterGroup: {fileID: 24300001}
   m_Snapshots:
   - {fileID: 24500003}
@@ -61,5 +61,5 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 31487f07c770c458f8f5f905709c82dd
   m_FloatValues:
-    16db80dceeeb94ffb83276394ce59a8a: -34.4562874
+    16db80dceeeb94ffb83276394ce59a8a: 0
   m_TransitionOverrides: {}
