@@ -8,7 +8,6 @@ public class AdrenalineController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-
         AdrenalineBar.value = 50f;
 	}
 	

@@ -2024,6 +2024,14 @@ Prefab:
       propertyPath: speed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 11482660, guid: 71add0f4f889d4f4a8a01107874c7cb2, type: 2}
+      propertyPath: MaxDistanceToObstacle
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 11482660, guid: 71add0f4f889d4f4a8a01107874c7cb2, type: 2}
+      propertyPath: MinDistanceToObstacle
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71add0f4f889d4f4a8a01107874c7cb2, type: 2}
   m_IsPrefabParent: 0
@@ -2610,6 +2618,21 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 445896, guid: 27715b5f3200d5e44b51b9430e27e3a0, type: 2}
   m_PrefabInternal: {fileID: 1052550136}
+--- !u!1 &1165430640 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 105660, guid: 9cd2c2c125541bf459f3ac7cb82de284, type: 2}
+  m_PrefabInternal: {fileID: 1390994695}
+--- !u!114 &1165430644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1165430640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1582a271928a52c4ea517c4e58fb0ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1175561614
 GameObject:
   m_ObjectHideFlags: 0
@@ -2866,7 +2889,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 474734, guid: 9cd2c2c125541bf459f3ac7cb82de284, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 201.539993
+      value: 188.880005
       objectReference: {fileID: 0}
     - target: {fileID: 474734, guid: 9cd2c2c125541bf459f3ac7cb82de284, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3266,8 +3289,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  MaxDistanceToObstacle: 100
-  MinDistanceToObstacle: 50
+  moveTowardsObject: 0
+  MaxDistanceToObstacle: 500
+  MinDistanceToObstacle: 10
+  MinAdrenalin: 0
 --- !u!1001 &1657942347
 Prefab:
   m_ObjectHideFlags: 0
