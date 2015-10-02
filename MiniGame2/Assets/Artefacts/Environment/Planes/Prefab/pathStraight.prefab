@@ -200,15 +200,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Width: 11
   Height: 31
+  NumberOfClosters: 10
+  NumberOfStones: 10
   Seed: 
   UseRandomSeed: 0
-  RandomFillPercent: 33
   HeightUpperLimit: 60
   HeightLowerLimit: 33
+  SizeVariation: 0
   Trees:
-  - {fileID: 100000, guid: 3bffd8e07b85c0742a1982d39c9a1963, type: 3}
-  - {fileID: 100002, guid: 509485df3d5cf6e438c25d0f073e1e4f, type: 3}
-  - {fileID: 100016, guid: d1d58081109c2204185e613c805a9e28, type: 3}
+  - {fileID: 100000, guid: 6f0e45e5a7aa19b46a33272684b39e37, type: 3}
+  - {fileID: 100000, guid: fab84984b4ad3fc448fe0ced78c0cb78, type: 3}
+  - {fileID: 100000, guid: c83523f54d7bbb540841892d09d7205a, type: 3}
+  Stones: []
 --- !u!114 &11441594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,15 +225,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Width: 11
   Height: 31
+  NumberOfClosters: 10
+  NumberOfStones: 10
   Seed: 
   UseRandomSeed: 0
-  RandomFillPercent: 33
   HeightUpperLimit: 60
   HeightLowerLimit: 33
+  SizeVariation: 0
   Trees:
-  - {fileID: 100000, guid: 3bffd8e07b85c0742a1982d39c9a1963, type: 3}
-  - {fileID: 100002, guid: 509485df3d5cf6e438c25d0f073e1e4f, type: 3}
-  - {fileID: 100016, guid: d1d58081109c2204185e613c805a9e28, type: 3}
+  - {fileID: 100000, guid: 6f0e45e5a7aa19b46a33272684b39e37, type: 3}
+  - {fileID: 100000, guid: fab84984b4ad3fc448fe0ced78c0cb78, type: 3}
+  - {fileID: 100000, guid: c83523f54d7bbb540841892d09d7205a, type: 3}
+  Stones: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
