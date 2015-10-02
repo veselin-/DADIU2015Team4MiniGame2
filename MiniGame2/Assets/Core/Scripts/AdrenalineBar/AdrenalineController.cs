@@ -14,6 +14,10 @@ public class AdrenalineController : MonoBehaviour {
     public void DecreaseAdrenaline(float amount)
     {
         AdrenalineBar.value -= amount;
+        if (AdrenalineBar.value < 1)
+        {
+            Application.LoadLevel("gameOverSceneAW");
+        }
     }
 
     public void IncreaseAdrenaline(float amount)
