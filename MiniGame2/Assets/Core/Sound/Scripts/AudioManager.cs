@@ -9,9 +9,9 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource success;
 	public AudioSource wind;
 	public AudioSource fail;
-	public AudioSource pose;
+	public AudioSource nearmiss;
 	public AudioSource electrified;
-	public AudioSource thunder;
+	public AudioSource coins;
 	public AudioSource buttonClick;
 	public AudioSource hitGround;
 
@@ -19,6 +19,35 @@ public class AudioManager : MonoBehaviour {
 	public AudioMixer MasterMixer;
 	public AudioMixer MusicMixer;
 	public AudioMixer SoundFXMixer;
+
+	void Awake()
+	{
+		PlayerPrefs.SetString("Sound", "On");
+		AudioListener.pause = false;
+	}
+
+	void Start()
+	{
+		//PlayerPrefs.GetString ("");
+		if(!PlayerPrefs.HasKey("Sound"))
+		{
+			PlayerPrefs.SetString("Sound", "On");
+			AudioListener.pause = false;
+			//LanguageManager.Instance.LoadLanguage(PlayerPrefs.GetString ("Sound"));
+		}
+
+
+		if (PlayerPrefs.GetString ("Sound").Equals ("On")) {
+			//PlayerPrefs.SetString("Sound", "Off");
+			AudioListener.pause = false;
+		} else
+		{
+			//PlayerPrefs.SetString("Sound", "On");
+			AudioListener.pause = true;
+		}
+	}
+
+
 
 	public void MusicPlay()
 	{
@@ -72,14 +101,14 @@ public class AudioManager : MonoBehaviour {
 		fail.Stop ();
 	}
 
-	public void PosePlay()
+	public void NearMissPlay()
 	{
-		pose.Play ();
+		nearmiss.Play ();
 	}
 	
-	public void PoseStop()
+	public void NearMissStop()
 	{
-		pose.Stop ();
+		nearmiss.Stop ();
 	}
 
 	public void ElectrifiedPlay()
@@ -92,14 +121,14 @@ public class AudioManager : MonoBehaviour {
 		electrified.Stop ();
 	}
 
-	public void ThunderPlay()
+	public void CoinsPlay()
 	{
-		thunder.Play ();
+		coins.Play ();
 	}
 	
-	public void ThunderStop()
+	public void CoinsStop()
 	{
-		thunder.Stop ();
+		coins.Stop ();
 	}
 	
 	public void HitGroundPlay()

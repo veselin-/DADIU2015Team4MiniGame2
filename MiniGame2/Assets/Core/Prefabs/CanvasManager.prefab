@@ -42,6 +42,8 @@ MonoBehaviour:
   soundButton: {fileID: 0}
   soundButtonOn: {fileID: 21300000, guid: 87984ddac78ea5b43a1d72e0f7d62fee, type: 3}
   soundButtonOff: {fileID: 21300000, guid: 961868176abe4084f814bbce4bb4a434, type: 3}
+  levelPopUpMenu: {fileID: 0}
+  pauseMenu: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

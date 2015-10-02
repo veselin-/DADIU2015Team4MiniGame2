@@ -10,7 +10,23 @@ public class CanvasController : MonoBehaviour {
     public GameObject levelPopUpMenu, pauseMenu;
 	// Use this for initialization
 	void Start () {
-	
+		if (PlayerPrefs.GetString ("Sound").Equals ("On")) {
+			//PlayerPrefs.SetString("Sound", "Off");
+			AudioListener.pause = false;
+			if(soundButton != null)
+			{
+				soundButton.sprite = soundButtonOn;
+			}
+		} 
+		else if (PlayerPrefs.GetString ("Sound").Equals ("Off"))
+		{
+			//PlayerPrefs.SetString("Sound", "On");
+			AudioListener.pause = true;
+			if(soundButton != null)
+			{
+				soundButton.sprite = soundButtonOff;
+			}
+		}
 	}
 	
 	// Update is called once per frame
@@ -31,16 +47,31 @@ public class CanvasController : MonoBehaviour {
 
     public void SoundOnOrOff()
     {
+		if (PlayerPrefs.GetString ("Sound").Equals ("On")) {
+			PlayerPrefs.SetString("Sound", "Off");
+			soundButton.sprite = soundButtonOff;
+			AudioListener.pause = true;
+		} else
+		{
+			PlayerPrefs.SetString("Sound", "On");
+			AudioListener.pause = false;
+			soundButton.sprite = soundButtonOn;
+		}
+
+		/*
         if (soundButtonSwitch == false)
         {
             soundButton.sprite = soundButtonOff;
+			AudioListener.pause = true;
             soundButtonSwitch = true;
         }
         else
         {
             soundButton.sprite = soundButtonOn;
+			AudioListener.pause = false;
             soundButtonSwitch = false;
         }
+        */
     }
 
     public void openLevelMenu()
@@ -77,7 +108,7 @@ public class CanvasController : MonoBehaviour {
 
     public void restartLevel()
     {
-        Application.LoadLevel("inGameSceneAW");
+        Application.LoadLevel("Level01");
         Time.timeScale = 1;
     }
 }
