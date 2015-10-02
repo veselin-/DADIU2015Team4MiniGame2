@@ -84,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -120.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473544}
@@ -200,15 +200,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Width: 37
   Height: 11
+  NumberOfClosters: 10
+  NumberOfStones: 10
   Seed: 
   UseRandomSeed: 1
-  RandomFillPercent: 30
   HeightUpperLimit: 72
   HeightLowerLimit: 24
+  SizeVariation: 0
   Trees:
-  - {fileID: 100000, guid: 3bffd8e07b85c0742a1982d39c9a1963, type: 3}
-  - {fileID: 100002, guid: 509485df3d5cf6e438c25d0f073e1e4f, type: 3}
-  - {fileID: 100016, guid: d1d58081109c2204185e613c805a9e28, type: 3}
+  - {fileID: 100000, guid: 6f0e45e5a7aa19b46a33272684b39e37, type: 3}
+  - {fileID: 100000, guid: fab84984b4ad3fc448fe0ced78c0cb78, type: 3}
+  - {fileID: 100000, guid: c83523f54d7bbb540841892d09d7205a, type: 3}
+  Stones:
+  - {fileID: 100000, guid: a3888bf1b938f9f48b68a3ab00b7328d, type: 3}
+  - {fileID: 100000, guid: ba491214ebeed834a9d1135191141f59, type: 3}
+  - {fileID: 100000, guid: 8b76c2ec27c10994cb86f8bc3fb40413, type: 3}
 --- !u!114 &11479804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,15 +228,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Width: 37
   Height: 11
+  NumberOfClosters: 10
+  NumberOfStones: 10
   Seed: 
   UseRandomSeed: 1
-  RandomFillPercent: 30
   HeightUpperLimit: 80
   HeightLowerLimit: 19
+  SizeVariation: 0
   Trees:
-  - {fileID: 100000, guid: 3bffd8e07b85c0742a1982d39c9a1963, type: 3}
-  - {fileID: 100002, guid: 509485df3d5cf6e438c25d0f073e1e4f, type: 3}
-  - {fileID: 100016, guid: d1d58081109c2204185e613c805a9e28, type: 3}
+  - {fileID: 100000, guid: 6f0e45e5a7aa19b46a33272684b39e37, type: 3}
+  - {fileID: 100000, guid: fab84984b4ad3fc448fe0ced78c0cb78, type: 3}
+  - {fileID: 100000, guid: c83523f54d7bbb540841892d09d7205a, type: 3}
+  Stones:
+  - {fileID: 100000, guid: a3888bf1b938f9f48b68a3ab00b7328d, type: 3}
+  - {fileID: 100000, guid: ba491214ebeed834a9d1135191141f59, type: 3}
+  - {fileID: 100000, guid: 8b76c2ec27c10994cb86f8bc3fb40413, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

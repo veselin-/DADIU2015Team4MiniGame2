@@ -177,6 +177,9 @@ namespace Assets.Core.Scripts.TreeGeneration
 
         private void DrawTrees()
         {
+            if(Trees.Length < 1)
+                return;
+            
             var thisMatrix = transform.localToWorldMatrix;
             if (_map == null) return;
 
@@ -209,6 +212,9 @@ namespace Assets.Core.Scripts.TreeGeneration
 
         void DrawStones()
         {
+            if(Stones.Length < 1)
+                return;
+
             var thisMatrix = transform.localToWorldMatrix;
             if (_map == null) return;
 
