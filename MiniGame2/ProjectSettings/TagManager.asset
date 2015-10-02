@@ -9,6 +9,9 @@ TagManager:
   - UI
   - PickUp
   - Obstacle
+  - PointText
+  - NearMissText
+  - PlayerHolder
   layers:
   - Default
   - TransparentFX

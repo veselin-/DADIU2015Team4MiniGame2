@@ -15,12 +15,18 @@ public class HitDetection : MonoBehaviour {
 
     IEnumerator OnTriggerEnter(Collider collider)
     {
-        if (collider.tag == "Player")
+        if (collider.tag == "PlayerHolder")
         {
-            adrenalineController.DecreaseAdrenaline(AdrenalinePenalty);
-            collider.enabled = false;
-            yield return new WaitForSeconds(HitSafePeriod);
-            collider.enabled = true;
+            if (collider.gameObject.GetComponent<PlayerBoost>().moveTowardsObject) {
+                collider.gameObject.GetComponent<PlayerBoost>().BoostHit();
+                Destroy(gameObject);
+            }
+            else { 
+                adrenalineController.DecreaseAdrenaline(AdrenalinePenalty);
+                collider.enabled = false;
+                yield return new WaitForSeconds(HitSafePeriod);
+                collider.enabled = true;
+            }
         }
     }
 }
