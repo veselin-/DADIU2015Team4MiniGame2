@@ -35,10 +35,10 @@ public class ScoreControl : MonoBehaviour
 
         scoreField.text = "Score: " + CurrentScore;
 
-        if (CurrentScore > PlayerPrefs.GetInt("Highscore"))
+        if (CurrentScore > PlayerPrefs.GetInt("Highscore"+Application.loadedLevelName))
         {
 
-            PlayerPrefs.SetInt("Highscore", CurrentScore);
+            PlayerPrefs.SetInt("Highscore" + Application.loadedLevelName, CurrentScore);
 
         }
       
