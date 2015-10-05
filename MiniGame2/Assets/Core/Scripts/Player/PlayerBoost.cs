@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.ImageEffects;
 
 public class PlayerBoost : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerBoost : MonoBehaviour
     public float MaxDistanceToObstacle = 100;
     public float MinDistanceToObstacle = 50;
     public float MinAdrenalin;
+    public float MotionBlurAmount = 10f;
     private AdrenalineController adrenalineController;
     private float _oldSpeed = 0;
 
@@ -30,17 +32,21 @@ public class PlayerBoost : MonoBehaviour
     {
         if (moveTowardsObject) { 
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed*Time.deltaTime);
+            Camera.main.GetComponent<CameraMotionBlur>().velocityScale = MotionBlurAmount;
         }
         if (Vector3.Distance(transform.position, targetPosition) <= 1) { 
             moveBack = true;
+            Camera.main.GetComponent<CameraMotionBlur>().velocityScale = 0f;
         }
         if (transform.localPosition.Equals(Vector3.zero))
         {
             moveBack = false;
+            Camera.main.GetComponent<CameraMotionBlur>().velocityScale = 0f;
         }
         if (moveBack)
         {
             transform.localPosition = Vector3.MoveTowards(transform.localPosition, Vector3.zero, speed*Time.deltaTime);
+            Camera.main.GetComponent<CameraMotionBlur>().velocityScale = 0f;
         }
     }
 
@@ -64,7 +70,7 @@ public class PlayerBoost : MonoBehaviour
         if (dot < MaxDistanceToObstacle && dot > MinDistanceToObstacle)
         {
             moveTowardsObject = true;
-            targetPosition = new Vector3(position.x, this.transform.position.y, position.z);
+            targetPosition = new Vector3(position.x, position.y, position.z);
             adrenalineController.DecreaseAdrenaline(25f);
         }
     }
