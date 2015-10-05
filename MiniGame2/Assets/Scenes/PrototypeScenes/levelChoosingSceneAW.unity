@@ -1138,6 +1138,7 @@ GameObject:
   - 224: {fileID: 1661210175}
   - 222: {fileID: 1661210178}
   - 114: {fileID: 1661210177}
+  - 114: {fileID: 1661210176}
   m_Layer: 5
   m_Name: Highscore
   m_TagString: Untagged
@@ -1162,6 +1163,18 @@ RectTransform:
   m_AnchoredPosition: {x: -.400001526, y: 0}
   m_SizeDelta: {x: -1, y: 2}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &1661210176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1661210174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaf745504a18da429e64dafbeb87ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedID: Phrases/HighScore
 --- !u!114 &1661210177
 MonoBehaviour:
   m_ObjectHideFlags: 0
