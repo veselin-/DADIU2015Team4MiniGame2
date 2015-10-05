@@ -20,7 +20,7 @@ public class HitDetection : MonoBehaviour {
         {
             if (collider.gameObject.GetComponent<PlayerBoost>().moveTowardsObject) {
                 collider.gameObject.GetComponent<PlayerBoost>().BoostHit();
-                Destroy(transform.parent.gameObject);
+                Destroy(transform.parent.parent.gameObject);
             }
             else {
                 audioMngr.FailPlay();
