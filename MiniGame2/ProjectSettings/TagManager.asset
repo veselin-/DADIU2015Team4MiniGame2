@@ -11,6 +11,7 @@ TagManager:
   - Obstacle
   - NearMissText
   - PointText
+  - TutorialUI
   layers:
   - Default
   - TransparentFX
