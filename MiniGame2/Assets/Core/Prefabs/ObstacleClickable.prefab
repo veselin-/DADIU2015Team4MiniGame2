@@ -31,7 +31,7 @@ GameObject:
   - 65: {fileID: 6560192}
   - 114: {fileID: 11456862}
   m_Layer: 0
-  m_Name: Obstacle
+  m_Name: ObstacleClickable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
