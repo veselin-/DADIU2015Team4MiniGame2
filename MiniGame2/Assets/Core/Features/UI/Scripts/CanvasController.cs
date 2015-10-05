@@ -101,7 +101,7 @@ public class CanvasController : MonoBehaviour {
 
     public void startLevelTuto()
     {
-        Application.LoadLevel("levelTutorial");
+        Application.LoadLevel("levelTutorialRemake");
     }
 
     public void startLevelOne()
