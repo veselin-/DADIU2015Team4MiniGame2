@@ -13,6 +13,15 @@ public class CanvasController : MonoBehaviour {
     void Awake()
     {
         //PlayerPrefs.SetString("Sound", "On");
+        if (!PlayerPrefs.HasKey("Language"))
+        {
+            PlayerPrefs.SetString("Language", "English");
+            LanguageManager.Instance.LoadLanguage(PlayerPrefs.GetString("Language"));
+        }
+        else
+        {
+            LanguageManager.Instance.LoadLanguage(PlayerPrefs.GetString("Language"));
+        }
     }
     
 	void Start () {
@@ -66,19 +75,6 @@ public class CanvasController : MonoBehaviour {
             AudioListener.pause = false;
             soundButton.sprite = soundButtonOn;
         }
-
-        //     if (soundButtonSwitch == false)
-        //     {
-        //         soundButton.sprite = soundButtonOff;
-        //AudioListener.pause = true;
-        //         soundButtonSwitch = true;
-        //     }
-        //     else
-        //     {
-        //         soundButton.sprite = soundButtonOn;
-        //AudioListener.pause = false;
-        //         soundButtonSwitch = false;
-        //     }
     }
 
     public void openLevelMenu()
@@ -122,5 +118,16 @@ public class CanvasController : MonoBehaviour {
     public void showLevelHighscore()
     {
         levelHighscore.text = "Highscore: " + PlayerPrefs.GetInt("Highscore");
+    }
+
+    public void languageChange(string language)
+    {
+        LanguageManager.Instance.LoadLanguage(language);
+        PlayerPrefs.SetString("Language", language);
+        LocalizedText[] texts = FindObjectsOfType<LocalizedText>();
+        foreach (LocalizedText text in texts)
+        {
+            text.LocalizeText();
+        }
     }
 }
