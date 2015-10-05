@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 402462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_cheek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,7 +23,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 428886}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:tali_H
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - 4: {fileID: 467516}
   - 33: {fileID: 3358720}
   - 23: {fileID: 2381280}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: helmet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412664}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_toeEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 407150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L__clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEarMiddle_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444544}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEarStart_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488724}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:tail_F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +130,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 408590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_femur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414968}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEarEnd_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -160,7 +160,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426714}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -175,7 +175,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486590}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: goggles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 434238}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:mainCtrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 466084}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_ear_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447862}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:tail_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,7 +239,7 @@ GameObject:
   - 65: {fileID: 6563666}
   - 114: {fileID: 11432842}
   - 114: {fileID: 11483778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 434658}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:spineB_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_ear_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431498}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEarMiddle_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -299,7 +299,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 498550}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_ear_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -314,7 +314,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 491608}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:trunk_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 404852}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:headConnecter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +344,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:geo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 481596}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEarEnd_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 417846}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:spine_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -389,7 +389,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 471386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_ear_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -404,7 +404,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 454972}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -419,7 +419,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 429306}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:spine_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,7 +437,7 @@ GameObject:
   - 33: {fileID: 3389784}
   - 65: {fileID: 6534648}
   - 23: {fileID: 2381428}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -452,7 +452,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412814}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEarEnd_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -467,7 +467,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496776}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEar_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +482,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 408086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L__handStabilizer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 430806}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_femur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 471990}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:jaw_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -527,7 +527,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 449492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:spine_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +542,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 409392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEarMiddle_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +558,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 433832}
   - 137: {fileID: 13749366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:elephantBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +573,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489636}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEarEndEnd_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -588,7 +588,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 440088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEar_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -603,7 +603,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CameraHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +618,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:ctrls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413410}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +648,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 407760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: helmet 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +663,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460290}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:jaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -678,7 +678,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 440488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +693,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 451488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R__clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R__wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -723,7 +723,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 420686}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -738,7 +738,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 454762}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEar_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -753,7 +753,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 436604}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R__shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -771,7 +771,7 @@ GameObject:
   - 33: {fileID: 3321422}
   - 65: {fileID: 6501798}
   - 23: {fileID: 2375804}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -790,7 +790,7 @@ GameObject:
   - 124: {fileID: 12425230}
   - 92: {fileID: 9265776}
   - 81: {fileID: 8168380}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +805,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476630}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_ear_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +821,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 448702}
   - 114: {fileID: 11409684}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerHolderCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -836,7 +836,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 405226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:hip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -852,7 +852,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 418516}
   - 137: {fileID: 13753074}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:goggles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -867,7 +867,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 477604}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:trunk_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -882,7 +882,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 467492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_heelEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -897,7 +897,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:tail_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -912,7 +912,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 416488}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_ear_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -927,7 +927,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CameraHolder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -942,7 +942,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_toeEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -957,7 +957,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419064}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L__elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -972,7 +972,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 469092}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:tail_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -990,7 +990,7 @@ GameObject:
   - 33: {fileID: 3388492}
   - 65: {fileID: 6598116}
   - 23: {fileID: 2308248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1007,7 +1007,7 @@ GameObject:
   - 4: {fileID: 457848}
   - 198: {fileID: 19864038}
   - 199: {fileID: 19956182}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ParticleHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1028,7 +1028,7 @@ GameObject:
   - 114: {fileID: 11413622}
   - 114: {fileID: 11482660}
   - 114: {fileID: 11431964}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ElephantModel
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1044,7 +1044,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 418770}
   - 95: {fileID: 9582386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ElephantHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1059,7 +1059,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 488234}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:noTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1074,7 +1074,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400210}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:trunk_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1089,7 +1089,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEarMiddle_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1104,7 +1104,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 440436}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:tail_G
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1119,7 +1119,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 492554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R__handStabilizer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1134,7 +1134,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419616}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerPositionsMiddle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1149,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappy_middle_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1164,7 +1164,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 492384}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEarMiddle_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1180,7 +1180,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 483218}
   - 114: {fileID: 11499012}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1195,7 +1195,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 417986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1210,7 +1210,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 414820}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_ear_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1226,7 +1226,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 438550}
   - 114: {fileID: 11456640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CameraHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1241,7 +1241,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 477286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_ear_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1256,7 +1256,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 478110}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_cheek_zero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1271,7 +1271,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1288,7 +1288,7 @@ GameObject:
   - 4: {fileID: 473440}
   - 198: {fileID: 19846200}
   - 199: {fileID: 19967602}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ParticleHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1303,7 +1303,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423796}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_ear_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1318,7 +1318,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432004}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1333,7 +1333,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448034}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_ear_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1350,7 +1350,7 @@ GameObject:
   - 4: {fileID: 410498}
   - 33: {fileID: 3306020}
   - 23: {fileID: 2314120}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LeftPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1365,7 +1365,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1383,7 +1383,7 @@ GameObject:
   - 33: {fileID: 3384096}
   - 65: {fileID: 6599480}
   - 23: {fileID: 2309170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1398,7 +1398,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEarEnd_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1413,7 +1413,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappy_middle_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1428,7 +1428,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432094}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_cheek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1443,7 +1443,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 404364}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_toe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1458,7 +1458,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 450132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:trunk_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,7 +1473,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 444716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEarEndEnd_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1488,7 +1488,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 494214}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEarStart_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1503,7 +1503,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:tail_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1518,7 +1518,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 470944}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEar_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1533,7 +1533,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 437262}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEarEnd_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1548,7 +1548,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 430076}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_ankle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1563,7 +1563,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:tail_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1578,7 +1578,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_ankle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1593,7 +1593,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L__wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1608,7 +1608,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427260}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEarMiddle_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1623,7 +1623,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432888}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R__elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1638,7 +1638,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452694}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1656,7 +1656,7 @@ GameObject:
   - 33: {fileID: 3308108}
   - 65: {fileID: 6585344}
   - 23: {fileID: 2378840}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1671,7 +1671,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 491854}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:belly_zero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1686,7 +1686,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426768}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:trunk_G
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1701,7 +1701,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427314}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:trunk_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1716,7 +1716,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_cheek_zero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1731,7 +1731,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412466}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:trunk_F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1746,7 +1746,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482878}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_flappyEarStart_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1761,7 +1761,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 480852}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:tail_I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1776,7 +1776,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 461650}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:root_ctrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1791,7 +1791,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 455652}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:tail_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1812,7 +1812,8 @@ GameObject:
   - 81: {fileID: 8116930}
   - 114: {fileID: 11487382}
   - 114: {fileID: 11421414}
-  m_Layer: 0
+  - 114: {fileID: 11436878}
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1828,7 +1829,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 436646}
   - 95: {fileID: 9525752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1845,7 +1846,7 @@ GameObject:
   - 4: {fileID: 407092}
   - 33: {fileID: 3344482}
   - 23: {fileID: 2352918}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1860,7 +1861,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499574}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEarStart_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1875,7 +1876,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 435666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_heelEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1890,7 +1891,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 468720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L_flappyEarEnd_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1905,7 +1906,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 464232}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:L__shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1920,7 +1921,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447534}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1938,7 +1939,7 @@ GameObject:
   - 33: {fileID: 3344650}
   - 65: {fileID: 6546672}
   - 23: {fileID: 2332510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1953,7 +1954,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448130}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:belly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1968,7 +1969,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 420168}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:R_toe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1983,7 +1984,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 401088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1998,7 +1999,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 480256}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:masterCtrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2013,7 +2014,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephant_keepSmoothIn_Unity_REF:head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4337,6 +4338,7 @@ MonoBehaviour:
   MaxDistanceToObstacle: 100
   MinDistanceToObstacle: 50
   MinAdrenalin: 0
+  MotionBlurAmount: 10
 --- !u!114 &11432842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4353,6 +4355,39 @@ MonoBehaviour:
   MaxDistanceToObstacle: 150
   MinDistanceToObstacle: 10
   MinAdrenalin: 50
+  MotionBlurAmount: 10
+--- !u!114 &11436878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 186852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e9b95cf609d96409b6c40519432957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filterType: 1
+  preview: 0
+  previewScale: {x: 1, y: 1, z: 1}
+  movementScale: 0
+  rotationScale: 1
+  maxVelocity: 8
+  minVelocity: .100000001
+  velocityScale: .375
+  softZDistance: .00499999989
+  velocityDownsample: 3
+  excludeLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  shader: {fileID: 4800000, guid: 85a88efa8c871af4a9d17c64791b6f4f, type: 3}
+  dx11MotionBlurShader: {fileID: 4800000, guid: f1b13d7a80660504a858ea24cfa418c6,
+    type: 3}
+  replacementClear: {fileID: 4800000, guid: 7699c5fbfa27745a1abe111ab7bf9785, type: 3}
+  noiseTexture: {fileID: 2800000, guid: 31f5a8611c4ed1245b18456206e798dc, type: 3}
+  jitter: .0500000007
+  showVelocity: 0
+  showVelocityScale: 1
 --- !u!114 &11456640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4385,6 +4420,7 @@ MonoBehaviour:
   MaxDistanceToObstacle: 500
   MinDistanceToObstacle: 10
   MinAdrenalin: 0
+  MotionBlurAmount: 10
 --- !u!114 &11483778
 MonoBehaviour:
   m_ObjectHideFlags: 1
