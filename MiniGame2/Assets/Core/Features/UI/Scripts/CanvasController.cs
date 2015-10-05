@@ -99,9 +99,14 @@ public class CanvasController : MonoBehaviour {
         Time.timeScale = 1;
     }
 
-    public void startLevel()
+    public void startLevelTuto()
     {
-		Application.LoadLevel("levelTutorial");
+        Application.LoadLevel("levelTutorial");
+    }
+
+    public void startLevelOne()
+    {
+        Application.LoadLevel("levelOne");
     }
 
     public void startSceneLoad()
@@ -111,7 +116,7 @@ public class CanvasController : MonoBehaviour {
 
     public void restartLevel()
     {
-        Application.LoadLevel("levelTutorial");
+        Application.LoadLevel(Application.loadedLevelName);
         Time.timeScale = 1;
     }
 

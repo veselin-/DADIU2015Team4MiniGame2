@@ -10,7 +10,7 @@ public class NearMissControl : MonoBehaviour {
 
         elephantREF = GameObject.FindGameObjectWithTag("Player").transform;
 
-        GetComponent<TextMesh>().text = "";
+        //GetComponent<TextMesh>().text = "";
 
     }
 	
@@ -24,7 +24,5 @@ public class NearMissControl : MonoBehaviour {
         transform.position = elephantREF.position;
         transform.LookAt(Camera.main.transform);
         transform.Rotate(0f, 180f, 0f);
-        
     }
-
 }
