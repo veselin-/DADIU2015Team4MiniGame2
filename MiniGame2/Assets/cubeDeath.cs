@@ -5,6 +5,9 @@ public class cubeDeath : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col)
 	{
-		Application.LoadLevel ("gameOverSceneAW");
+        if (col.tag == "Player")
+        {
+            Application.LoadLevel("gameOverSceneAW");
+        }
 	}
 }
