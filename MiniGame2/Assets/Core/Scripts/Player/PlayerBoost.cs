@@ -64,7 +64,7 @@ public class PlayerBoost : MonoBehaviour
         if (dot < MaxDistanceToObstacle && dot > MinDistanceToObstacle)
         {
             moveTowardsObject = true;
-            targetPosition = new Vector3(position.x, this.transform.position.y, position.z);
+            targetPosition = new Vector3(position.x, position.y, position.z);
             adrenalineController.DecreaseAdrenaline(25f);
         }
     }
