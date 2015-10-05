@@ -51,19 +51,17 @@ public class PlayerBoost : MonoBehaviour
     }
 
 
-    public void MoveTowardsObstacle(Vector3 position, Vector3 mousePosClicked)
+    public void MoveTowardsObstacle(Vector3 position)
     {
         // We need some amount of adrenaline to do this
         if (adrenalineController.AdrenalineBar.value < MinAdrenalin)
             return;
 
-        
+        //The cosine of the angle between the two vectors, it will be positive if the target position is in front of the player
+        Vector3 heading = position - transform.position;
+        float dot = Vector3.Dot(heading, transform.forward);
 
-        //We use the y coordinate of the mouse vs the player because the obstacle always is in front of the player.
-        float disPlayerAndMouseClick = Mathf.Abs(mousePosClicked.y - Camera.main.WorldToScreenPoint(transform.position).y);
-        
-        //We need to make sure that the distance is taken care of in both the screen and world distance.
-        if (!moveTowardsObject && disPlayerAndMouseClick > MinDistanceToObstacle && disPlayerAndMouseClick < MaxDistanceToObstacle && Vector3.Distance(position, transform.position) < MaxDistanceToObstacle)
+        if (dot < MaxDistanceToObstacle && dot > MinDistanceToObstacle)
         {
             moveTowardsObject = true;
             targetPosition = new Vector3(position.x, this.transform.position.y, position.z);
