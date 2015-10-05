@@ -2,11 +2,14 @@
 <Root>
   <Phrases>
     <Hello>Hello World!</Hello>
-    <StartGame>Start game</StartGame>
+    <StartGame>Tap anywhere to start</StartGame>
     <Credits>Credits</Credits>
     <Title>Skyphant</Title>
     <Score>Your score: </Score>
     <HighScore>Highscore: </HighScore>
+    <RestartGame>Restart level</RestartGame>
+    <LevelMenu>Level select</LevelMenu>
+    <NearMiss>Close one!!!</NearMiss>
   </Phrases>
   <LanguageNames>
     <English>English</English>
