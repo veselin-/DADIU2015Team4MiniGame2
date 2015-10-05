@@ -775,9 +775,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+    - target: {fileID: 0}
       propertyPath: TextBox
       value: 
       objectReference: {fileID: 1791654501}
@@ -785,7 +785,7 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+    - target: {fileID: 0}
       propertyPath: TutorialText
       value: (*NOT IMPLEMENTED YET*) Trees can be bursed through using adrenaline!
         (Yellow bar top left, earned when near missing trees, need better text)
@@ -793,10 +793,6 @@ Prefab:
     - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_Name
       value: tutorialTriggerAdrenaline
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434946, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: localizedID2
-      value: Phrases/BoostT
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
@@ -1359,7 +1355,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .707107008
+      value: .70710659
       objectReference: {fileID: 0}
     - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_LocalRotation.z
@@ -1367,42 +1363,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .70710665
+      value: -.707106948
       objectReference: {fileID: 0}
     - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: TextBox
-      value: 
-      objectReference: {fileID: 1791654501}
-    - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: TutorialText
-      value: Avoid trees and rocks! They are dangerous!
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_Name
       value: endLevelTrigger
       objectReference: {fileID: 0}
-    - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 16.5201702
-      objectReference: {fileID: 0}
-    - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 13.1648321
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434946, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &466428749
@@ -1564,15 +1535,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 444022, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22447072, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447072, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
@@ -1830,7 +1801,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 487846, guid: 7931315534a73d74ca79cb7354455b97, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7931315534a73d74ca79cb7354455b97, type: 2}
@@ -1980,7 +1951,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 401344, guid: 6adec80ff06a0a34fbec0b457385dca2, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6adec80ff06a0a34fbec0b457385dca2, type: 2}
@@ -2330,43 +2301,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 92f5a4cc031331e4a8930005e60f1bf9, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &678431441 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 159662, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
-  m_PrefabInternal: {fileID: 537468305}
---- !u!114 &678431446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 678431441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceaf745504a18da429e64dafbeb87ce1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  localizedID: 
-  localizedID2: Phrases/NearMiss
-  localizedID3: 
 --- !u!4 &692779492 stripped
 Transform:
   m_PrefabParentObject: {fileID: 425468, guid: 131c528dc67af8f4b8e909c32fb5b872, type: 2}
   m_PrefabInternal: {fileID: 1902822248}
---- !u!1 &716059984 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-  m_PrefabInternal: {fileID: 455719677}
---- !u!114 &716059985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 716059984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abf33084cdfc5f84596356041ef2520c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &716663536
 Prefab:
   m_ObjectHideFlags: 0
@@ -2466,17 +2404,17 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+    - target: {fileID: 0}
       propertyPath: TextBox
       value: 
       objectReference: {fileID: 1791654501}
     - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+    - target: {fileID: 0}
       propertyPath: TutorialText
       value: (*NOT IMPLEMENTED YET*) Like trees, rocks can also be bursed through
         using adrenaline! (Yellow bar top left, earned when near missing trees, need
@@ -2485,10 +2423,6 @@ Prefab:
     - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_Name
       value: tutorialTriggerAdrenalineRock
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434946, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: localizedID2
-      value: Phrases/AdrenRT
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
@@ -2836,7 +2770,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+    - target: {fileID: 0}
       propertyPath: TextBox
       value: 
       objectReference: {fileID: 1791654501}
@@ -2844,17 +2778,13 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+    - target: {fileID: 0}
       propertyPath: TutorialText
       value: (Click to dismiss) Tutorial level end after this text
       objectReference: {fileID: 0}
     - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_Name
       value: endLevelWarning
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434946, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: localizedID2
-      value: Phrases/EndT
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
@@ -2912,7 +2842,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 420686, guid: 71add0f4f889d4f4a8a01107874c7cb2, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456640, guid: 71add0f4f889d4f4a8a01107874c7cb2, type: 2}
+      propertyPath: distance
+      value: 1.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71add0f4f889d4f4a8a01107874c7cb2, type: 2}
@@ -4489,15 +4423,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: TextBox
+      value: 
+      objectReference: {fileID: 1791654501}
+    - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: TutorialText
+      value: Avoid trees, they are dangerous!
       objectReference: {fileID: 0}
     - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_Name
       value: tutorialTriggerTrees
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434946, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: localizedID2
-      value: Phrases/ObstaclesT
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
@@ -6556,15 +6498,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: TextBox
+      value: 
+      objectReference: {fileID: 1791654501}
+    - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: TutorialText
+      value: Rocks are just as dangerous as trees!
       objectReference: {fileID: 0}
     - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_Name
       value: tutorialTriggerRocks
-      objectReference: {fileID: 0}
-    - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
@@ -8662,9 +8612,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 489870, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+    - target: {fileID: 0}
       propertyPath: TextBox
       value: 
       objectReference: {fileID: 1791654501}
@@ -8672,17 +8622,13 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11467324, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
+    - target: {fileID: 0}
       propertyPath: TutorialText
       value: (Click on text to close) Collect coins to earn points!
       objectReference: {fileID: 0}
     - target: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
       propertyPath: m_Name
       value: tutorialTriggerCoins
-      objectReference: {fileID: 0}
-    - target: {fileID: 11434946, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-      propertyPath: localizedID2
-      value: Phrases/CoinsT
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
@@ -9108,55 +9054,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 489852, guid: 92f5a4cc031331e4a8930005e60f1bf9, type: 2}
   m_PrefabInternal: {fileID: 2117969921}
---- !u!1 &2127471550 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 123980, guid: 6fd20728027c39448949f2fe45c0b018, type: 2}
-  m_PrefabInternal: {fileID: 1991926702}
---- !u!102 &2127471556
-TextMesh:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2127471550}
-  m_Text: 
-  m_OffsetZ: 0
-  m_CharacterSize: 1
-  m_LineSpacing: 1
-  m_Anchor: 0
-  m_Alignment: 0
-  m_TabSize: 4
-  m_FontSize: 0
-  m_FontStyle: 0
-  m_RichText: 1
-  m_Font: {fileID: 0}
-  m_Color:
-    serializedVersion: 2
-    rgba: 4294967295
---- !u!23 &2127471557
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2127471550}
-  m_Enabled: 0
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
 --- !u!4 &2138807406 stripped
 Transform:
   m_PrefabParentObject: {fileID: 405990, guid: 2208ea9c74d1fc5478d063719b0694e4, type: 2}

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EndScene : MonoBehaviour {
+public class endScene : MonoBehaviour {
 
     GameObject CameraHolder = null;
     public float cameraSpeedEnd = 5;
@@ -10,7 +10,7 @@ public class EndScene : MonoBehaviour {
     private bool lookUp = false;
     float t;
     Vector3 startPos;
-    public float rotationAmount = 30.0f;
+    public float rotationAmount = 90.0f;
 
     void Start()
     {
@@ -22,33 +22,25 @@ public class EndScene : MonoBehaviour {
     {
         if (smoothEnd)
         {
-            //We move the camera slowly after we reach the goal
             t += Time.deltaTime / cameraSpeedEnd;
             CameraHolder.transform.position = Vector3.Lerp(startPos, endPos, t);
             if(Vector3.Distance(CameraHolder.transform.position, endPos) < 1)
             {
                 smoothEnd = false;
                 lookUp = true;
-                t = 0;
-                startPos = CameraHolder.transform.position;
             }
         }
 
         if (lookUp)
         {
-            //We rotate the camera
             Vector3 rot = CameraHolder.transform.rotation.eulerAngles;
             rot.x = rot.x - rotationAmount * Time.deltaTime;
             CameraHolder.transform.eulerAngles = rot;
 
-            //We move the camera up a bit
-            Vector3 end = new Vector3(CameraHolder.transform.position.x, CameraHolder.transform.position.y + 5, CameraHolder.transform.position.z);
-            t += Time.deltaTime / cameraSpeedEnd;
-            CameraHolder.transform.position = Vector3.Lerp(startPos, end, t);
-
-            if (CameraHolder.transform.eulerAngles.x == 270)
+            if(CameraHolder.transform.eulerAngles.x == 270)
             {
-               Application.LoadLevel("gameOverSceneAW");
+            
+
             }
 
 
