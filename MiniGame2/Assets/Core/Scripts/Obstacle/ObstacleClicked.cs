@@ -9,7 +9,7 @@ public class ObstacleClicked : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        playerBoost = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBoost>();
+        playerBoost = GameObject.FindGameObjectWithTag("Player").transform.parent.GetComponent<PlayerBoost>();
         if(playerBoost == null)
             Debug.LogError("Cannot find boost controller");
 	}
@@ -23,9 +23,8 @@ public class ObstacleClicked : MonoBehaviour {
     void OnMouseDown()
     {
         Debug.Log("CLicked!");
-        var mousePos = Input.mousePosition;
         var transPos = this.transform.position;
-        playerBoost.MoveTowardsObstacle(transPos, mousePos);
-           
+        playerBoost.MoveTowardsObstacle(transPos);
+
     }
 }
