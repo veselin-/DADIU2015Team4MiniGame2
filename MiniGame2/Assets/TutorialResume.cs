@@ -7,13 +7,19 @@ public class TutorialResume : MonoBehaviour
 
     public Text TextBox;
 
+    private GameObject TUI;
+
     
 
 	// Use this for initialization
 	void Start ()
 	{
 
-	    
+	    TUI = GameObject.FindGameObjectWithTag("TutorialUI");
+
+        TUI.SetActive(false);
+
+
 
 	}
 	
@@ -25,9 +31,11 @@ public class TutorialResume : MonoBehaviour
     public void Resume()
     {
 
-        TextBox.enabled = false;
-
         Time.timeScale = 1f;
+
+        TUI.SetActive(false);
+
+        
         
     }
 
