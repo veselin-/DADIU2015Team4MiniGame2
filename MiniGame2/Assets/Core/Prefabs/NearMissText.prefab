@@ -11,6 +11,7 @@ GameObject:
   - 23: {fileID: 2332744}
   - 102: {fileID: 10224386}
   - 114: {fileID: 11427846}
+  - 114: {fileID: 11483334}
   m_Layer: 0
   m_Name: NearMissText
   m_TagString: NearMissText
@@ -86,6 +87,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6465fe4bf80bd354cbb73339974a681d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11483334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaf745504a18da429e64dafbeb87ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedID: 
+  localizedID2: Phrases/NearMiss
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

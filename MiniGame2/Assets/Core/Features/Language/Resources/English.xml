@@ -10,6 +10,7 @@
     <RestartGame>Restart level</RestartGame>
     <LevelMenu>Level select</LevelMenu>
     <NearMiss>Close one!!!</NearMiss>
+    <CoinsT>(Click on text to close) Collect coins to earn points!</CoinsT>
   </Phrases>
   <LanguageNames>
     <English>English</English>
