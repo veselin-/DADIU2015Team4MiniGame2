@@ -10,8 +10,8 @@ public class endSceneScore : MonoBehaviour {
         {
             PlayerPrefs.SetInt("Highscore", ScoreControl.CurrentScore);
         }
-        highscore.text = "Highscore: " + PlayerPrefs.GetInt("Highscore");
-        showCurrentScore.text = "Current score: " + ScoreControl.CurrentScore;
+        //highscore.text = "Highscore: " + PlayerPrefs.GetInt("Highscore");
+        //showCurrentScore.text = "Current score: " + ScoreControl.CurrentScore;
     }
 	
 	// Update is called once per frame

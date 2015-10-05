@@ -10,7 +10,7 @@ public class NearMissControl : MonoBehaviour {
 
         elephantREF = GameObject.FindGameObjectWithTag("Player").transform;
 
-        GetComponent<TextMesh>().text = "Close One!!!";
+        GetComponent<TextMesh>().text = "";
 
     }
 	
