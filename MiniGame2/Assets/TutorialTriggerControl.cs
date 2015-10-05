@@ -5,16 +5,19 @@ using UnityEngine.UI;
 public class TutorialTriggerControl : MonoBehaviour
 {
 
-    public Text TextBox;
-   
+
+    private GameObject TUI;
+    private Text TextBox;
+    
 
     public string TutorialText;
 
 	// Use this for initialization
-	void Start ()
+	void Awake ()
 	{
 
-	    TextBox.enabled = false;
+	    TUI = GameObject.FindGameObjectWithTag("TutorialUI");
+	    TextBox = TUI.gameObject.GetComponentInChildren<Text>();
 
 	}
 	
@@ -31,10 +34,10 @@ public class TutorialTriggerControl : MonoBehaviour
             Time.timeScale = 0f;
 
             TextBox.text = TutorialText;
-            
+            //make a delay
             
 
-            TextBox.enabled = true;
+            TUI.SetActive(true);
 
 
         }        
