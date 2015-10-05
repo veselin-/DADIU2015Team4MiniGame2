@@ -60,18 +60,18 @@ public class PlayerBoost : MonoBehaviour
     public void MoveTowardsObstacle(Vector3 position)
     {
         // We need some amount of adrenaline to do this
-        if (adrenalineController.AdrenalineBar.value < MinAdrenalin)
-            return;
-
-        //The cosine of the angle between the two vectors, it will be positive if the target position is in front of the player
-        Vector3 heading = position - transform.position;
-        float dot = Vector3.Dot(heading, transform.forward);
-
-        if (dot < MaxDistanceToObstacle && dot > MinDistanceToObstacle)
+        if (adrenalineController.AdrenalineBar.value >= MinAdrenalin)
         {
-            moveTowardsObject = true;
-            targetPosition = new Vector3(position.x, position.y, position.z);
-            adrenalineController.DecreaseAdrenaline(25f);
+            //The cosine of the angle between the two vectors, it will be positive if the target position is in front of the player
+            Vector3 heading = position - transform.position;
+            float dot = Vector3.Dot(heading, transform.forward);
+
+            if (dot < MaxDistanceToObstacle && dot > MinDistanceToObstacle)
+            {
+                moveTowardsObject = true;
+                targetPosition = new Vector3(position.x, position.y, position.z);
+                adrenalineController.DecreaseAdrenaline(25f);
+            }
         }
     }
 }
