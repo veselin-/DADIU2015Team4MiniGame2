@@ -97,6 +97,7 @@ GameObject:
   - 224: {fileID: 116395321}
   - 222: {fileID: 116395320}
   - 114: {fileID: 116395319}
+  - 114: {fileID: 116395322}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -153,6 +154,18 @@ RectTransform:
   m_AnchoredPosition: {x: .399999619, y: -.32859993}
   m_SizeDelta: {x: 0, y: -.774597168}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &116395322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 116395318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaf745504a18da429e64dafbeb87ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedID: Phrases/LevelMenu
 --- !u!1 &262635852
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,6 +679,7 @@ GameObject:
   - 224: {fileID: 1505064081}
   - 222: {fileID: 1505064080}
   - 114: {fileID: 1505064079}
+  - 114: {fileID: 1505064082}
   m_Layer: 5
   m_Name: Highscore
   m_TagString: Untagged
@@ -722,6 +736,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: .588001251}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &1505064082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505064078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaf745504a18da429e64dafbeb87ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedID: Phrases/HighScore
 --- !u!1001 &1592794576
 Prefab:
   m_ObjectHideFlags: 0
@@ -889,6 +915,7 @@ GameObject:
   - 224: {fileID: 1904755440}
   - 222: {fileID: 1904755442}
   - 114: {fileID: 1904755441}
+  - 114: {fileID: 1904755443}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -945,6 +972,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1904755439}
+--- !u!114 &1904755443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1904755439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaf745504a18da429e64dafbeb87ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedID: Phrases/RestartGame
 --- !u!1 &2077208179
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,6 +994,7 @@ GameObject:
   - 224: {fileID: 2077208180}
   - 222: {fileID: 2077208182}
   - 114: {fileID: 2077208181}
+  - 114: {fileID: 2077208183}
   m_Layer: 5
   m_Name: Current
   m_TagString: Untagged
@@ -1011,3 +1051,15 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2077208179}
+--- !u!114 &2077208183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2077208179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaf745504a18da429e64dafbeb87ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedID: Phrases/Score
