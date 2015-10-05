@@ -29,6 +29,7 @@ GameObject:
   - 224: {fileID: 22461130}
   - 222: {fileID: 22290092}
   - 114: {fileID: 11410592}
+  - 114: {fileID: 11407322}
   m_Layer: 0
   m_Name: TutorialText
   m_TagString: Untagged
@@ -82,6 +83,20 @@ Transform:
   - {fileID: 22479846}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11407322
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &11410592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 12800000, guid: 174d98bd766b0ec46a6233a7f786ef69, type: 3}
     m_FontSize: 14
@@ -102,7 +117,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 60
-    m_Alignment: 0
+    m_Alignment: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -258,7 +273,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 50
+  m_SortingOrder: 2
 --- !u!224 &22461130
 RectTransform:
   m_ObjectHideFlags: 1

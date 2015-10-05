@@ -23,9 +23,8 @@ public class ObstacleClicked : MonoBehaviour {
     void OnMouseDown()
     {
         Debug.Log("CLicked!");
-        var mousePos = Input.mousePosition;
         var transPos = this.transform.position;
-        playerBoost.MoveTowardsObstacle(transPos, mousePos);
-           
+        playerBoost.MoveTowardsObstacle(transPos);
+
     }
 }

@@ -2,11 +2,14 @@
 <Root>
   <Phrases>
     <Hello>Hej!</Hello>
-    <StartGame>Start spillet</StartGame>
+    <StartGame>Tryk for at starte</StartGame>
     <Credits>Holdet bag</Credits>
     <Title>Skyphant</Title>
-    <Score>Din score: </Score>s
+    <Score>Din score: </Score>
     <HighScore>Top score: </HighScore>
+    <RestartGame>Genstart bane</RestartGame>
+    <LevelMenu>Bane menu</LevelMenu>
+    <NearMiss>God undvigelse!!!</NearMiss>
   </Phrases>
   <LanguageNames>
     <English>English</English>
