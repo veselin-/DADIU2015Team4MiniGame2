@@ -10,6 +10,12 @@
     <RestartGame>Genstart bane</RestartGame>
     <LevelMenu>Bane menu</LevelMenu>
     <NearMiss>God undvigelse!!!</NearMiss>
+    <CoinsT>(Klik på teksten for at lukke) Saml mønter for at få point!</CoinsT>
+    <RocksT>Sten er ligeså farlige som træer!</RocksT>
+    <TreesT>Undvig træer, de er meget farlige!</TreesT>
+    <EndT>Træningsbane er færdig. Hav det sjovt!</EndT>
+    <AdrenT>lang besked på dansk</AdrenT>
+    <AdrenRT>længere besked på dansk</AdrenRT>
   </Phrases>
   <LanguageNames>
     <English>English</English>

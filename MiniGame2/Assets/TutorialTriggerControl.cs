@@ -33,7 +33,7 @@ public class TutorialTriggerControl : MonoBehaviour
 
             Time.timeScale = 0f;
 
-            TextBox.text = TutorialText;
+            TextBox.text = GetComponent<TextMesh>().text;
             //make a delay
             
 
