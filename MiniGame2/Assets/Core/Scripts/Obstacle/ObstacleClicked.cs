@@ -9,7 +9,7 @@ public class ObstacleClicked : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        playerBoost = GameObject.FindGameObjectWithTag("Player").transform.parent.GetComponent<PlayerBoost>();
+        playerBoost = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerBoost>();
         if(playerBoost == null)
             Debug.LogError("Cannot find boost controller");
 	}

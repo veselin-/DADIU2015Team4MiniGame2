@@ -18,8 +18,8 @@ public class HitDetection : MonoBehaviour {
     {
         if (collider.tag == "Player")
         {
-            if (collider.gameObject.transform.parent.GetComponent<PlayerBoost>().moveTowardsObject) {
-                collider.gameObject.transform.parent.GetComponent<PlayerBoost>().BoostHit();
+            if (collider.gameObject.GetComponent<PlayerBoost>().moveTowardsObject) {
+                collider.gameObject.GetComponent<PlayerBoost>().BoostHit();
                 Destroy(transform.parent.parent.gameObject);
             }
             else {
