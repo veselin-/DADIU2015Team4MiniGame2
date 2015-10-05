@@ -44,7 +44,6 @@ GameObject:
   - 4: {fileID: 415258}
   - 33: {fileID: 3325564}
   - 23: {fileID: 2351650}
-  - 114: {fileID: 11476908}
   - 136: {fileID: 13623926}
   m_Layer: 0
   m_Name: tree_03_exp 1
@@ -159,17 +158,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HitSafePeriod: .300000012
   AdrenalinePenalty: 30
---- !u!114 &11476908
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160200}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1582a271928a52c4ea517c4e58fb0ddf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &13623926
 CapsuleCollider:
   m_ObjectHideFlags: 1
