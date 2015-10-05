@@ -9,8 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400526}
   - 114: {fileID: 11428602}
-  - 114: {fileID: 11414106}
-  - 65: {fileID: 6501630}
+  - 64: {fileID: 6460620}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -28,10 +27,25 @@ GameObject:
   - 4: {fileID: 496528}
   - 33: {fileID: 3319064}
   - 23: {fileID: 2366434}
-  - 114: {fileID: 11464394}
-  - 65: {fileID: 6542046}
   m_Layer: 0
   m_Name: stone_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &196770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 488006}
+  - 136: {fileID: 13656204}
+  - 114: {fileID: 11464830}
+  m_Layer: 0
+  m_Name: NearMiss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,8 +58,20 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.125, y: .527469993, z: 0}
-  m_LocalScale: {x: 1, y: 1.46035314, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 496528}
+  m_RootOrder: 1
+--- !u!4 &488006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196770}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 496528}
   m_RootOrder: 0
@@ -59,6 +85,7 @@ Transform:
   m_LocalPosition: {x: -87.8484421, y: 143.75, z: 120.470001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 488006}
   - {fileID: 400526}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -93,41 +120,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189124}
   m_Mesh: {fileID: 4300000, guid: 8b76c2ec27c10994cb86f8bc3fb40413, type: 3}
---- !u!65 &6501630
-BoxCollider:
+--- !u!64 &6460620
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134160}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.45000005, y: .790000021, z: 1.35000002}
-  m_Center: {x: .150000006, y: -.189999998, z: -.0900000036}
---- !u!65 &6542046
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189124}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.92999268, y: 1.17999268, z: 1.89999485}
-  m_Center: {x: .0436859131, y: .460006714, z: -.0500030518}
---- !u!114 &11414106
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1582a271928a52c4ea517c4e58fb0ddf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Convex: 1
+  m_Mesh: {fileID: 4300000, guid: 8b76c2ec27c10994cb86f8bc3fb40413, type: 3}
 --- !u!114 &11428602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,18 +145,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HitSafePeriod: .300000012
   AdrenalinePenalty: 30
---- !u!114 &11464394
+--- !u!114 &11464830
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189124}
+  m_GameObject: {fileID: 196770}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cda9b9e754f68a6498ec1d0b474ed862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AdrenalineAwarded: 10
+--- !u!136 &13656204
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 196770}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.78999996
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: .370000005, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
