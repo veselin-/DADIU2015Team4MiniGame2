@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/ReleaseScenes/levelTutorialRemake.unity
   - enabled: 0
     path: Assets/Scenes/ReleaseScenes/levelTutorial.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrototypeScenes/gameOverSceneAW.unity
   - enabled: 1
     path: Assets/Scenes/PrototypeScenes/endCreditsBO.unity
