@@ -1273,8 +1273,9 @@ MonoBehaviour:
   soundButton: {fileID: 11433156}
   soundButtonOn: {fileID: 21300000, guid: bd45a33d7d532fa4396c5bdb57db17bf, type: 3}
   soundButtonOff: {fileID: 21300000, guid: 3f08c119298345a40a43c95555b49823, type: 3}
-  levelPopUpMenu: {fileID: 0}
+  levelOnePopUpMenu: {fileID: 0}
   pauseMenu: {fileID: 185070}
+  tutoLevelMenu: {fileID: 0}
   levelHighscore: {fileID: 0}
 --- !u!114 &11491690
 MonoBehaviour:
@@ -1451,8 +1452,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 22450532}
   - {fileID: 22411582}
+  - {fileID: 22450532}
   m_Father: {fileID: 22462488}
   m_RootOrder: 3
   m_AnchorMin: {x: .0220000017, y: .901659608}
@@ -1472,7 +1473,7 @@ RectTransform:
   m_Children:
   - {fileID: 22447072}
   m_Father: {fileID: 22404536}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: .0124355983, y: .294}
   m_AnchorMax: {x: .987564385, y: .70600003}
   m_AnchoredPosition: {x: 0, y: 1.22785568e-05}
@@ -1581,7 +1582,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22404536}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_AnchorMin: {x: 0, y: .25}
   m_AnchorMax: {x: 1, y: .75}
   m_AnchoredPosition: {x: 0, y: 0}
