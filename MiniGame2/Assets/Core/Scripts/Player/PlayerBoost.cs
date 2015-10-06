@@ -19,6 +19,7 @@ public class PlayerBoost : MonoBehaviour
     private Transform coinAttractor;
     public float CoinAttractorExpandPeriod = 2;
     public float CoinAttractorSizeIncrease = 3;
+    public bool playerIsDead = false;
 
     private Vector3 tPos;
 
@@ -105,8 +106,10 @@ public class PlayerBoost : MonoBehaviour
     {
         this.gameObject.GetComponent<Collider>().enabled = false;
         yield return new WaitForSeconds(HitSafePeriod);
-        this.gameObject.GetComponent<Collider>().enabled = true;
-
+        if (!playerIsDead)
+        {
+            this.gameObject.GetComponent<Collider>().enabled = true;
+        }
     }
 }
 
