@@ -18,7 +18,7 @@ public class ElephantParticleController : MonoBehaviour {
 
         if (col.tag == "PickUp")
         {
-            GetComponentInChildren<ParticleSystem>().Play();
+            //GetComponentInChildren<ParticleSystem>().Play();
 
         }
 
