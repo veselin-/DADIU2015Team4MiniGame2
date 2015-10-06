@@ -213,22 +213,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &156988
-GameObject:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 440802}
-  - 114: {fileID: 11414742}
-  m_Layer: 0
-  m_Name: CanvasManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &159662
 GameObject:
   m_ObjectHideFlags: 0
@@ -486,18 +470,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 444022}
   m_RootOrder: 5
---- !u!4 &440802
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156988}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -256.5, y: -192.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 22430082}
-  m_RootOrder: 0
 --- !u!4 &444022
 Transform:
   m_ObjectHideFlags: 1
@@ -719,25 +691,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11414742
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 156988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 803971fe667a03f4ca2e2feba813ece3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundButton: {fileID: 0}
-  soundButtonOn: {fileID: 21300000, guid: 87984ddac78ea5b43a1d72e0f7d62fee, type: 3}
-  soundButtonOff: {fileID: 21300000, guid: 961868176abe4084f814bbce4bb4a434, type: 3}
-  levelOnePopUpMenu: {fileID: 0}
-  pauseMenu: {fileID: 0}
-  tutoLevelMenu: {fileID: 0}
-  endSceneCanvas: {fileID: 0}
-  levelHighscore: {fileID: 0}
 --- !u!114 &11415710
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -887,7 +840,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11414742}
+      - m_Target: {fileID: 11486086}
         m_MethodName: chooseLevelSceneLoad
         m_Mode: 1
         m_Arguments:
@@ -1329,6 +1282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AdrenalineBar: {fileID: 11454510}
+  endSceneCanvas: {fileID: 182564}
 --- !u!114 &11462352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1519,7 +1473,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11414742}
+      - m_Target: {fileID: 11486086}
         m_MethodName: restartLevel
         m_Mode: 1
         m_Arguments:
@@ -1974,7 +1928,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 440802}
   - {fileID: 22442598}
   - {fileID: 22435712}
   - {fileID: 22480698}
@@ -1997,7 +1950,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22430082}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_AnchorMin: {x: .511332929, y: .612000048}
   m_AnchorMax: {x: .8282516, y: .682358503}
   m_AnchoredPosition: {x: -.919738054, y: 1.10000002}
@@ -2014,7 +1967,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22430082}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_AnchorMin: {x: .148000002, y: .119671136}
   m_AnchorMax: {x: .39553982, y: .416818261}
   m_AnchoredPosition: {x: .508016109, y: -.1889503}
@@ -2116,7 +2069,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22430082}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_AnchorMin: {x: .531000018, y: .141576901}
   m_AnchorMax: {x: .732327521, y: .416818261}
   m_AnchoredPosition: {x: -1.15904999, y: -7.62939453e-06}
@@ -2240,7 +2193,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 22430082}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_AnchorMin: {x: .106769912, y: .612000048}
   m_AnchorMax: {x: .39553982, y: .682358503}
   m_AnchoredPosition: {x: .5, y: 1.09999847}
