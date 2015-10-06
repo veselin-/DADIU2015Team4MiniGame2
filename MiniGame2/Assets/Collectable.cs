@@ -24,7 +24,7 @@ public class Collectable : MonoBehaviour {
 		Vector3 offset = coin.position - transform.position;
 		float magsqr = offset.sqrMagnitude;
 
-		while(magsqr > 2f)
+		while(magsqr > 3f)
 		{
 			coin.position = Vector3.Lerp(coin.position, transform.position, strenghtOfAttraction * Time.deltaTime);
 			offset = coin.position - transform.position;
