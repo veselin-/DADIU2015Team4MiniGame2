@@ -79,6 +79,8 @@ public class AdrenalineController : MonoBehaviour {
            // CameraHolder.transform.parent = null;
             CameraHolder.GetComponent<SmoothFollow>().enabled = false;
 
+			audioMngr.ThemeMusicStop();
+			audioMngr.WindStop();
 			audioMngr.FlappingStop();
 			audioMngr.DeadSoundPlay();
 

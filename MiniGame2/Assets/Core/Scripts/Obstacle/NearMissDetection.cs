@@ -23,12 +23,12 @@ public class NearMissDetection : MonoBehaviour {
 
     IEnumerator NearMiss(GameObject go)
     {
+		audioMngr.NearMissPlay();
         yield return new WaitForSeconds(.5f);
         if (go.GetComponent<Collider>().enabled)
       {
             adrenalineController.IncreaseAdrenaline(AdrenalineAwarded);
             nearMissControl.NearMiss();
-			audioMngr.NearMissPlay();
        }
         yield return null;
        

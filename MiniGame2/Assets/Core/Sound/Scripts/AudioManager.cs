@@ -15,7 +15,6 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource coins;
 	public AudioSource buttonClick;
 	public AudioSource hitGround;
-    public AudioSource veselinPleaseDance;
 	public AudioSource fireWorks;
 	public AudioSource SayHello;
 	public AudioSource DeadSound;
@@ -46,7 +45,7 @@ public class AudioManager : MonoBehaviour {
 
 	public void SayHelloPlay()
 	{
-		SayHello.Play ();
+		SayHello.PlayDelayed (1f);
 	}
 
 	public void SayHelloStop()

@@ -84,19 +84,19 @@ public class EndScene : MonoBehaviour
 
     IEnumerator Fireworks()
     {
-
+		audioMngr.FireWorksPlay();
         yield return new WaitForSeconds(2.2f);
 
         Fireworks1.GetComponent<ParticleSystem>().Play();
-		audioMngr.FireWorksPlay();
+
         yield return new WaitForSeconds(.8f);
 
         Fireworks2.GetComponent<ParticleSystem>().Play();
-		audioMngr.FireWorksPlay();
+
         yield return new WaitForSeconds(.8f);
 
         Fireworks3.GetComponent<ParticleSystem>().Play();
-		audioMngr.FireWorksPlay();
+
     }
 
 }
