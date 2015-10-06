@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3368958}
   - 23: {fileID: 2375258}
   m_Layer: 0
-  m_Name: LevelGoal
+  m_Name: LevelGoal 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,6 +160,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraSpeedEnd: 2
   rotationAmount: 35
+  Fireworks1: {fileID: 0}
+  Fireworks2: {fileID: 0}
+  Fireworks3: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

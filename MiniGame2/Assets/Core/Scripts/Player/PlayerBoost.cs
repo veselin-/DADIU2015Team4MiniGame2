@@ -34,6 +34,7 @@ public class PlayerBoost : MonoBehaviour
         if (moveTowardsObject) { 
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed*Time.deltaTime);
             Camera.main.GetComponent<CameraMotionBlur>().velocityScale = MotionBlurAmount;
+            transform.Rotate(new Vector3(1f, 0, 0), 5f);
         }
         if (Vector3.Distance(transform.position, targetPosition) <= 1) { 
             moveBack = true;

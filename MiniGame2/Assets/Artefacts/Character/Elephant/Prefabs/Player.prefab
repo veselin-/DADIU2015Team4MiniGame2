@@ -8,7 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472220}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,7 +23,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415526}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_wing_AB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 437056}
   - 137: {fileID: 13738978}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:elephantBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 483274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 427346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:master_ctrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 498202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -191,7 +191,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 455462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_cheek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 485754}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:joint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +311,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:GEO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   - 65: {fileID: 6579618}
   - 114: {fileID: 11474708}
   - 114: {fileID: 11429930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: animationDefault0017
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,7 +455,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400196}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_ear_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -485,7 +485,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 442600}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +500,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452456}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_ear_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -515,7 +515,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 429952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -530,7 +530,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_femur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -575,7 +575,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 466732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_wrist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -635,7 +635,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456752}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -680,7 +680,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 490240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +710,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 451226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +740,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 416210}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -755,7 +755,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 424298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:joint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -818,7 +818,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462834}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_ear_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,7 +833,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 492946}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_wrist_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -893,7 +893,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 486316}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -908,7 +908,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426102}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_ear_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -938,7 +938,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 466916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:spine_D_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1104,7 +1104,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 403132}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_ear_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1119,7 +1119,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 404952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_ear_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1149,7 +1149,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 461408}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1179,7 +1179,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 411034}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:spine_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1225,7 +1225,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_cheek
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1307,7 +1307,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 452702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_wing_BB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1386,7 +1386,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 422758}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_wing_BB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1401,7 +1401,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1431,7 +1431,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 443016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1446,7 +1446,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 436628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1461,7 +1461,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 422526}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:jaw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1551,7 +1551,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 445482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:noTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1596,7 +1596,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1611,7 +1611,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1728,7 +1728,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 419366}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:trunk_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1743,7 +1743,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496932}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_wing_BC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1758,7 +1758,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_elbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1773,7 +1773,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 412354}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1803,8 +1803,25 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 494634}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:headStabilizer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &148970
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 486762}
+  - 135: {fileID: 13560042}
+  - 114: {fileID: 11442480}
+  m_Layer: 9
+  m_Name: CoinAttractor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1818,7 +1835,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446048}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_ear_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1833,7 +1850,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 456732}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_wing_AA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1848,7 +1865,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 453416}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_ear_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1863,7 +1880,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482352}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_wrist_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1878,7 +1895,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 423242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1908,7 +1925,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 496494}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_ancle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1968,7 +1985,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 402476}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1983,7 +2000,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 451542}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2059,7 +2076,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:joint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2074,7 +2091,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 440608}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_wing_BC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2089,7 +2106,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_wing_AA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2182,7 +2199,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462588}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:trunk_H
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2212,7 +2229,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 451042}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2257,7 +2274,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 490202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:skeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2272,7 +2289,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482050}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2287,7 +2304,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425870}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:spine_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2319,7 +2336,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 434956}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_wing_AC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2349,7 +2366,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 462986}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2412,7 +2429,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 413392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_wing_AB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2442,7 +2459,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 493436}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:main_ctrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2472,7 +2489,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 467330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2502,7 +2519,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 431264}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:joint5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2532,7 +2549,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 421900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_knee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2563,7 +2580,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 402020}
   - 137: {fileID: 13789468}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:helmet1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2578,7 +2595,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 410998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_wing_AC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2593,7 +2610,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 475766}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:trunk_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2608,7 +2625,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 445484}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:trunk_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2623,7 +2640,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 461062}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2668,7 +2685,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476922}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:trunk_G
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2683,7 +2700,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499738}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:joint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2698,7 +2715,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 448142}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_ear_B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2713,7 +2730,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446352}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_shoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2728,7 +2745,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 429858}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2758,7 +2775,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 479616}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:joint7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2788,7 +2805,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 440002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2848,7 +2865,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 437656}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2908,7 +2925,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 424322}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:trunk_F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2941,7 +2958,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 420722}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2956,7 +2973,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 472288}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:neckEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2971,7 +2988,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 493220}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_footEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2986,7 +3003,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 477584}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_ear_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3031,7 +3048,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 460432}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:trunk_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3046,7 +3063,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 447846}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_ancle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3106,7 +3123,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 481298}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:trunk_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3136,7 +3153,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 489948}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_ear_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3166,7 +3183,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446140}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_wing_BA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3196,7 +3213,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 453520}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3248,7 +3265,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 476856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_footEnd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3263,7 +3280,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 424512}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3294,7 +3311,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 415916}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3310,7 +3327,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 411978}
   - 137: {fileID: 13716280}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:goggles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3342,7 +3359,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 463158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3372,7 +3389,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 495242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_femur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3402,7 +3419,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 424538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3417,7 +3434,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 432660}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_ear_D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3432,7 +3449,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 464020}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3477,7 +3494,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 479328}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:jaw_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3492,7 +3509,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 440874}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3522,7 +3539,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 446414}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:joint4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3555,7 +3572,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 458548}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:L_earFlap_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3570,7 +3587,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 425624}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_wing_BA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3600,7 +3617,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 473114}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:trunk_E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3675,7 +3692,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 437716}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:spine_C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3690,7 +3707,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 439938}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:R_earFlap_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3705,7 +3722,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 443286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: elephantRef:pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4047,6 +4064,7 @@ Transform:
   - {fileID: 445482}
   - {fileID: 490202}
   - {fileID: 473440}
+  - {fileID: 486762}
   m_Father: {fileID: 418770}
   m_RootOrder: 1
 --- !u!4 &412466
@@ -5027,7 +5045,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158608}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -3.77999997}
+  m_LocalPosition: {x: 0, y: -.0299999993, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 496286}
@@ -6465,6 +6483,18 @@ Transform:
   - {fileID: 432004}
   m_Father: {fileID: 452694}
   m_RootOrder: 1
+--- !u!4 &486762
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 412428}
+  m_RootOrder: 3
 --- !u!4 &486856
 Transform:
   m_ObjectHideFlags: 1
@@ -7614,6 +7644,18 @@ MonoBehaviour:
   jitter: .0500000007
   showVelocity: 0
   showVelocityScale: 1
+--- !u!114 &11442480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db442044284bd7f4e9c5b9fb1b6b5573, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strenghtOfAttraction: 15
 --- !u!114 &11456640
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7715,6 +7757,18 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186852}
   m_Enabled: 1
+--- !u!135 &13560042
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148970}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 3
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &13716280
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
