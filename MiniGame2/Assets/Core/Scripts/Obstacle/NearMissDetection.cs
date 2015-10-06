@@ -28,6 +28,7 @@ public class NearMissDetection : MonoBehaviour {
       {
             adrenalineController.IncreaseAdrenaline(AdrenalineAwarded);
             nearMissControl.NearMiss();
+			audioMngr.NearMissPlay();
        }
         yield return null;
        
