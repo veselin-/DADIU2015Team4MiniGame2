@@ -1329,7 +1329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AdrenalineBar: {fileID: 11454510}
-  endSceneCanvas: {fileID: 0}
+  endSceneCanvas: {fileID: 182564}
 --- !u!114 &11462352
 MonoBehaviour:
   m_ObjectHideFlags: 1
