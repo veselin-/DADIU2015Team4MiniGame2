@@ -9,7 +9,7 @@ public class CanvasController : MonoBehaviour {
     private bool soundButtonSwitch = false;
     public GameObject levelOnePopUpMenu, pauseMenu, tutoLevelMenu, endSceneCanvas;
     public Text levelHighscore;
-
+	private AudioManager audioMngr;
 	// Use this for initialization
     void Awake()
     {
@@ -26,6 +26,8 @@ public class CanvasController : MonoBehaviour {
     }
     
 	void Start () {
+		audioMngr = GameObject.FindObjectOfType<AudioManager> ();
+
         if (PlayerPrefs.GetString("Sound").Equals("On"))
         {
             //PlayerPrefs.SetString("Sound", "On");
@@ -55,6 +57,7 @@ public class CanvasController : MonoBehaviour {
 
     public void chooseLevelSceneLoad()
     {
+		audioMngr.ButtonClickPlay ();
         Application.LoadLevel("LevelChoosingSceneAW");
         if (endSceneCanvas != null)
             endSceneCanvas.SetActive(false);
@@ -68,6 +71,7 @@ public class CanvasController : MonoBehaviour {
 
     public void SoundOnOrOff()
     {
+		audioMngr.ButtonClickPlay ();
         if (PlayerPrefs.GetString("Sound").Equals("On"))
         {
             PlayerPrefs.SetString("Sound", "Off");
@@ -84,55 +88,65 @@ public class CanvasController : MonoBehaviour {
 
     public void openLevelOneMenu()
     {
+		audioMngr.ButtonClickPlay ();
         levelOnePopUpMenu.SetActive(true);
     }
 
     public void closeLevelOneMenu()
     {
+		audioMngr.ButtonClickPlay ();
         levelOnePopUpMenu.SetActive(false);
         levelHighscore.enabled = false;
     }
 
     public void opentutoLevelMenu()
     {
+		audioMngr.ButtonClickPlay ();
         tutoLevelMenu.SetActive(true);
     }
 
     public void closetutoLevelMenu()
     {
+		audioMngr.ButtonClickPlay ();
         tutoLevelMenu.SetActive(false);
         levelHighscore.enabled = false;
     }
 
     public void openPauseMenu()
     {
+		audioMngr.ButtonClickPlay ();
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
     }
 
     public void closePauseMenu()
     {
+		audioMngr.ButtonClickPlay ();
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
     }
 
     public void startTutoLevel()
     {
+		audioMngr.ButtonClickPlay ();
         Application.LoadLevel("levelTutorialRemake");
     }
 
     public void startLevelOne()
     {
+		audioMngr.ButtonClickPlay ();
         Application.LoadLevel("level01Remake");
     }
 
     public void startSceneLoad()
     {
+		audioMngr.ButtonClickPlay ();
         Application.LoadLevel("startSceneAW");
     }
 
     public void restartLevel()
     {
+		audioMngr.ButtonClickPlay ();
         Application.LoadLevel(Application.loadedLevelName);
         if(endSceneCanvas != null)
             endSceneCanvas.SetActive(false);
@@ -147,6 +161,7 @@ public class CanvasController : MonoBehaviour {
 
     public void languageChange(string language)
     {
+		audioMngr.ButtonClickPlay ();
         LanguageManager.Instance.LoadLanguage(language);
         PlayerPrefs.SetString("Language", language);
         LocalizedText[] texts = FindObjectsOfType<LocalizedText>();
