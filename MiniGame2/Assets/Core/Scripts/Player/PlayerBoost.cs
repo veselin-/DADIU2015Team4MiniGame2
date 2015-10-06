@@ -60,7 +60,7 @@ public class PlayerBoost : MonoBehaviour
         moveBack = true;
         moveTowardsObject = false;
         adrenalineController.DecreaseAdrenaline(BoostCost);
-     
+        GetComponentInChildren<ParticleSystem>().Stop();
         StartCoroutine(updateCoinAttractor(CoinAttractorExpandPeriod));
 
 
@@ -89,6 +89,7 @@ public class PlayerBoost : MonoBehaviour
             {
                 moveTowardsObject = true;
                 targetPosition = new Vector3(position.x, position.y, position.z);
+                GetComponentInChildren<ParticleSystem>().Play();
             }
         }
     }

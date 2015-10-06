@@ -8,7 +8,7 @@ public class CanvasController : MonoBehaviour {
     public Sprite soundButtonOn, soundButtonOff;
     private bool soundButtonSwitch = false;
     public GameObject levelOnePopUpMenu, pauseMenu, tutoLevelMenu;
-    public Text levelHighscore;
+    //public Text levelHighscore;
 
 	// Use this for initialization
     void Awake()
@@ -44,7 +44,7 @@ public class CanvasController : MonoBehaviour {
             }
             AudioListener.pause = true;
         }
-        levelHighscore.enabled = false;
+      //  levelHighscore.enabled = false;
     }
 	
 	// Update is called once per frame
@@ -87,7 +87,7 @@ public class CanvasController : MonoBehaviour {
     public void closeLevelOneMenu()
     {
         levelOnePopUpMenu.SetActive(false);
-        levelHighscore.enabled = false;
+    //    levelHighscore.enabled = false;
     }
 
     public void opentutoLevelMenu()
@@ -98,7 +98,7 @@ public class CanvasController : MonoBehaviour {
     public void closetutoLevelMenu()
     {
         tutoLevelMenu.SetActive(false);
-        levelHighscore.enabled = false;
+     //   levelHighscore.enabled = false;
     }
 
     public void openPauseMenu()
@@ -136,8 +136,8 @@ public class CanvasController : MonoBehaviour {
 
     public void showLevelHighscore(string levelName)
     {
-        levelHighscore.enabled = true;
-        levelHighscore.text = LanguageManager.Instance.Get("Phrases/HighScore") + PlayerPrefs.GetInt("Highscore" + levelName);
+    //    levelHighscore.enabled = true;
+    //    levelHighscore.text = LanguageManager.Instance.Get("Phrases/HighScore") + PlayerPrefs.GetInt("Highscore" + levelName);
     }
 
     public void languageChange(string language)

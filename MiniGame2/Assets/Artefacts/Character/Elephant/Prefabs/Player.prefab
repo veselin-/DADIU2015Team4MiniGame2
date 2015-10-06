@@ -7705,8 +7705,8 @@ MonoBehaviour:
   moveTowardsObject: 0
   MaxDistanceToObstacle: 500
   MinDistanceToObstacle: 10
-  BoostCost: 0
-  MinAdrenalin: 0
+  BoostCost: 25
+  MinAdrenalin: 75
   MotionBlurAmount: 10
   CoinAttractorExpandPeriod: 2
   CoinAttractorSizeIncrease: 3
