@@ -4892,6 +4892,25 @@ AnimationClip:
     path: CameraHolder/CameraHolder2/Main Camera
     classID: 114
     script: {fileID: 11500000, guid: 3e1f86b1f3a704ae98ebf2e53038a480, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 7.7166667
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: StartThemeMusic
+    path: PlayerHolder/PlayerHolderCam
+    classID: 114
+    script: {fileID: 11500000, guid: 891a29c3eec564768a28e16e2a493bee, type: 3}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -23959,6 +23978,25 @@ AnimationClip:
     path: CameraHolder
     classID: 4
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      - time: 7.7166667
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 31
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: StartThemeMusic
+    path: PlayerHolder/PlayerHolderCam
+    classID: 114
+    script: {fileID: 11500000, guid: 891a29c3eec564768a28e16e2a493bee, type: 3}
   m_EulerEditorCurves:
   - curve:
       serializedVersion: 2
