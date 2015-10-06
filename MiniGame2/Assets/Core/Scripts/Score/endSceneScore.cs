@@ -7,11 +7,11 @@ public class endSceneScore : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        if (ScoreControl.CurrentScore > PlayerPrefs.GetInt("Highscore"))
+        if (ScoreControl.CurrentScore > PlayerPrefs.GetInt("Highscore"+ Application.loadedLevelName))
         {
-            PlayerPrefs.SetInt("Highscore", ScoreControl.CurrentScore);
+            PlayerPrefs.SetInt("Highscore" + Application.loadedLevelName, ScoreControl.CurrentScore);
         }
-        highscore.text = LanguageManager.Instance.Get("Phrases/HighScore") + PlayerPrefs.GetInt("Highscore");
+        highscore.text = LanguageManager.Instance.Get("Phrases/HighScore") + PlayerPrefs.GetInt("Highscore"+ Application.loadedLevelName);
         showCurrentScore.text = LanguageManager.Instance.Get("Phrases/Score") + ScoreControl.CurrentScore;
     }
 	
