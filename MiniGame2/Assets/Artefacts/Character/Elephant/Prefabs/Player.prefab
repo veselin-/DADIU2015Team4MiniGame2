@@ -7575,7 +7575,7 @@ MonoBehaviour:
   MaxDistanceToObstacle: 150
   MinDistanceToObstacle: 10
   BoostCost: 25
-  MinAdrenalin: 50
+  MinAdrenalin: 75
   MotionBlurAmount: 10
   CoinAttractorExpandPeriod: 2
   CoinAttractorSizeIncrease: 3

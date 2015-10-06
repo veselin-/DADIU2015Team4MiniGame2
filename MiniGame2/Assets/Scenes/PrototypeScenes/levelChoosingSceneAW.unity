@@ -1189,6 +1189,7 @@ GameObject:
   - 224: {fileID: 1332517604}
   - 222: {fileID: 1332517606}
   - 114: {fileID: 1332517605}
+  - 114: {fileID: 1332517607}
   m_Layer: 5
   m_Name: TextOne
   m_TagString: Untagged
@@ -1245,6 +1246,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1332517603}
+--- !u!114 &1332517607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1332517603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaf745504a18da429e64dafbeb87ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedID: Phrases/LevelOne
+  localizedID2: 
+  localizedID3: 
 --- !u!1 &1479745032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1629,6 +1644,7 @@ GameObject:
   - 224: {fileID: 1950914420}
   - 222: {fileID: 1950914422}
   - 114: {fileID: 1950914421}
+  - 114: {fileID: 1950914423}
   m_Layer: 5
   m_Name: TextTuto
   m_TagString: Untagged
@@ -1685,6 +1701,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1950914419}
+--- !u!114 &1950914423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1950914419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaf745504a18da429e64dafbeb87ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedID: Phrases/TutoLevel
+  localizedID2: 
+  localizedID3: 
 --- !u!1 &2008028647
 GameObject:
   m_ObjectHideFlags: 0

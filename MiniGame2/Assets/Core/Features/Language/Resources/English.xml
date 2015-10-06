@@ -10,10 +10,12 @@
     <RestartGame>Restart level</RestartGame>
     <LevelMenu>Level select</LevelMenu>
     <NearMiss>Close one!!!</NearMiss>
+    <LevelOne>Level 1</LevelOne>
+    <TutoLevel>Tutorial Level</TutoLevel>
     <ABar>In the top left corner is your adrenaline bar! If you lose all your adrenaline the game ends!</ABar>
-    <CoinsT>To move, press the lower left or right part of the screen. Collect coins to earn points!</CoinsT>
-    <ObstaclesT>Avoid trees and rocks, if you crash into them you lose adrenaline! If you "near miss" a tree or a rock you gain adrenaline!</ObstaclesT>
-    <BoostT>Fallen trees can be boosted through using adrenaline, coins are hidden behind them! You can only boost if your adrenaline is at the marker on the bar!</BoostT>
+    <CoinsT>To move press the lower left or right part of the screen. Collect coins to earn points!</CoinsT>
+    <ObstaclesT>Avoid trees and rocks! If you crash into them you lose adrenaline! If you "near miss" a tree or a rock you gain adrenaline!</ObstaclesT>
+    <BoostT>Fallen trees can be boosted through using adrenaline! Coins are hidden behind them! You can only boost if your adrenaline has reached the marker on the bar!</BoostT>
   </Phrases>
   <LanguageNames>
     <English>English</English>

@@ -2,18 +2,20 @@
 <Root>
   <Phrases>
     <Hello>Hej!</Hello>
-    <StartGame>Tryk for at starte</StartGame>
-    <Credits>Holdet bag</Credits>
+    <StartGame>TRYK FOR AT STARTE</StartGame>
+    <Credits>HOLDET BAG</Credits>
     <Title>Skyphant</Title>
-    <Score>Din score: </Score>
-    <HighScore>Top score: </HighScore>
-    <RestartGame>Genstart bane</RestartGame>
-    <LevelMenu>Bane menu</LevelMenu>
-    <NearMiss>Tæt på!!!</NearMiss>
-    <ABar>I øverste venstre hjørne har du din adrenalin måler! Hvis du mister alt din adrenalin slutter spillet!</ABar>
-    <CoinsT>For at bevæge dig, skal du trykke på den nederste ventre eller højre del af skærmen. Saml mønter for at få point!</CoinsT>
-    <ObstaclesT>Undgå træer og sten, hvis du styrter ind i dem mister du adrenalin! Hvis du glider tæt forbi træer og sten uden at ramme dem får du genopfyldt noget adrenalin!</ObstaclesT>
-    <BoostT>Væltede træer kan du booste igennem ved at bruge adrenalin, dette er mønter gemt bagved! Du kan kun booste hvis din adrenalin er ved stregen på baren!</BoostT>
+    <Score>DIN SCORE: </Score>
+    <HighScore>TOP SCORE: </HighScore>
+    <RestartGame>GENSTART BANE</RestartGame>
+    <LevelMenu>BANE MENU</LevelMenu>
+    <NearMiss>TÆT PÅ!!!</NearMiss>
+    <LevelOne>BANE 1</LevelOne>
+    <TutoLevel>BEGYNDER BANE</TutoLevel>
+    <ABar>I ØVERSTE VENSTRE HJØRNE HAR DU DIN ADRENALIN MÅLER! HVIS DU MISTER AL DIN ADRENALIN, SLUTTER SPILLET!</ABar>
+    <CoinsT>FOR AT BEVÆGE DIG SKAL DU TRYKKE PÅ NEDERSTE VENTRE ELLER HØJRE DEL AF SKÆRMEN. SAML MØNTER FOR AT FÅ POINT!</CoinsT>
+    <ObstaclesT>UNDGÅ TRÆER OG STEN! HVIS DU STYRTER IND I DEM, MISTER DU ADRENALIN! HVIS DU FLYVER TÆT PÅ DEM UDEN AT RAMME, FÅR DU GENOPFYLDT NOGET ADRENALIN!</ObstaclesT>
+    <BoostT>VÆLTEDE TRÆER KAN DU BOOSTE IGENNEM VED AT BRUGE ADRENALIN! DER ER MØNTER GEMT BAGVED! DU KAN KUN BOOSTE, HVIS DIN ADRENALIN HAR NÅET STREGEN!</BoostT>
   </Phrases>
   <LanguageNames>
     <English>English</English>
@@ -21,43 +23,43 @@
   </LanguageNames>
   <TorurialName>Danish</TorurialName>
     <Credits>
-Game Director	
-Klaus Tue Madsen 
+GAME DIRECTOR	
+KLAUS TUE MADSEN 
 
-Art Director
-Julie Tidsvilde Zintel
+ART DIRECTOR
+JULIE TIDSVILDE ZINTEL
 
-Game Designer
-Simon Bentzen
+GAME DESIGNER
+SIMON BENTZEN
 
-Project Manager
-Amanda Natalie Rasmussen 
+PROJECT MANAGER
+AMANDA NATALIE RASMUSSEN 
 
-CG Artists
-Rosen Milev
-Nadia Hamza 
+CG ARTISTS
+ROSEN MILEV
+NADIA HAMZA 
 
-Lead Programmør
-Ivan Dimov 
+LEAD PROGRAMMØR
+IVAN DIMOV 
 
-Programmør
-Anders Wessberg 
-Peter Troelsen
-Bo Olsen
+PROGRAMMØR
+ANDERS WESSBERG 
+PETER TROELSEN
+BO OLSEN
 
-Pipeline Programmør
-Veselin Yanakiev
+PIPELINE PROGRAMMØR
+VESELIN YANAKIEV
 
-QA Programmør
-Tomas Moesgaard
+QA PROGRAMMØR
+TOMAS MOESGAARD
 
-QA og UX
-Dennis Godtfredsen
-Steffen Nygaard
+QA OG UX
+DENNIS GODTFREDSEN
+STEFFEN NYGAARD
 
-Audio Designer
-Majbritt Løfgreen
+AUDIO DESIGNER
+MAJBRITT LØFGREEN
 
-Level Designer
-Nicholas Bukdahl</Credits>
+LEVEL DESIGNER
+NICHOLAS BUKDAHL</Credits>
 </Root>
