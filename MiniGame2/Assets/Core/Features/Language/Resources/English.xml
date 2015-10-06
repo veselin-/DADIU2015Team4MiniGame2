@@ -19,9 +19,10 @@
       You can use adrenaline to boost through fallen trees and cracked rocks!
       Only the yellow part of the bar can be used to boost! The bar is highlighted when you have enough adrenaline to boost!
     </MainT>
-    <CoinsT>Collect coins to earn points!</CoinsT>
+    <ABar>In the top left corner is your adrenaline bar! If you lose all your adrenaline the game ends!</ABar>
+    <CoinsT>To move, press the lower left or right part of the screen. Collect coins to earn points!</CoinsT>
     <ObstaclesT>Avoid trees and rocks, if you crash into them you lose adrenaline! If you "near miss" a tree or a rock you gain adrenaline!</ObstaclesT>
-    <BoostT>Fallen trees and cracked rocks can be boosted through using adrenaline!</BoostT>
+    <BoostT>Fallen trees can be boosted through using adrenaline! If you have enough adrenaline to perform a boost, the bar is highlighted!</BoostT>
   </Phrases>
   <LanguageNames>
     <English>English</English>
