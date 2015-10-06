@@ -902,6 +902,7 @@ GameObject:
   - 114: {fileID: 893274086}
   - 114: {fileID: 893274087}
   - 114: {fileID: 893274088}
+  - 114: {fileID: 893274089}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -1037,6 +1038,20 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &893274089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 893274082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 3, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &982555136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1602,7 @@ GameObject:
   - 222: {fileID: 1725097050}
   - 114: {fileID: 1725097049}
   - 114: {fileID: 1725097048}
+  - 114: {fileID: 1725097051}
   m_Layer: 5
   m_Name: StartGameText
   m_TagString: Untagged
@@ -1657,6 +1673,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1725097046}
+--- !u!114 &1725097051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1725097046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: .5}
+  m_EffectDistance: {x: 3, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &1813294060
 GameObject:
   m_ObjectHideFlags: 0
