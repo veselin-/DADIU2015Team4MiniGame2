@@ -1006,6 +1006,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &127470
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 404870}
+  - 23: {fileID: 2395484}
+  - 102: {fileID: 10254448}
+  - 114: {fileID: 11479638}
+  m_Layer: 0
+  m_Name: PointText
+  m_TagString: PointText
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &127594
 GameObject:
   m_ObjectHideFlags: 1
@@ -2125,6 +2143,25 @@ GameObject:
   m_Layer: 8
   m_Name: CameraHolder
   m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &159156
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 489782}
+  - 23: {fileID: 2336388}
+  - 102: {fileID: 10242278}
+  - 114: {fileID: 11436790}
+  - 114: {fileID: 11472226}
+  m_Layer: 0
+  m_Name: NearMissText
+  m_TagString: NearMissText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3861,6 +3898,18 @@ Transform:
   - {fileID: 427314}
   m_Father: {fileID: 431418}
   m_RootOrder: 0
+--- !u!4 &404870
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127470}
+  m_LocalRotation: {x: .151900023, y: 0, z: 0, w: .988395929}
+  m_LocalPosition: {x: 0, y: -18.0920467, z: -5.33946705}
+  m_LocalScale: {x: .135062873, y: .135062858, z: .135062858}
+  m_Children: []
+  m_Father: {fileID: 483218}
+  m_RootOrder: 1
 --- !u!4 &404952
 Transform:
   m_ObjectHideFlags: 1
@@ -4380,7 +4429,7 @@ Transform:
   - {fileID: 410498}
   - {fileID: 407092}
   m_Father: {fileID: 483218}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!4 &420168
 Transform:
   m_ObjectHideFlags: 1
@@ -5461,7 +5510,7 @@ Transform:
   m_Children:
   - {fileID: 447534}
   m_Father: {fileID: 483218}
-  m_RootOrder: 1
+  m_RootOrder: 3
 --- !u!4 &449492
 Transform:
   m_ObjectHideFlags: 1
@@ -6401,6 +6450,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 489782}
+  - {fileID: 404870}
   - {fileID: 419616}
   - {fileID: 448702}
   m_Father: {fileID: 420686}
@@ -6561,6 +6612,18 @@ Transform:
   - {fileID: 481596}
   m_Father: {fileID: 486856}
   m_RootOrder: 1
+--- !u!4 &489782
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159156}
+  m_LocalRotation: {x: .151900023, y: 0, z: 0, w: .988395929}
+  m_LocalPosition: {x: 0, y: -1101.24048, z: 185.71991}
+  m_LocalScale: {x: .102344945, y: .102344953, z: .102344953}
+  m_Children: []
+  m_Father: {fileID: 483218}
+  m_RootOrder: 0
 --- !u!4 &489948
 Transform:
   m_ObjectHideFlags: 1
@@ -7064,6 +7127,30 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
+--- !u!23 &2336388
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159156}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 174d98bd766b0ec46a6233a7f786ef69, type: 3}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
 --- !u!23 &2352918
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -7178,6 +7265,30 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
+  m_ImportantGI: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &2395484
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127470}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 174d98bd766b0ec46a6233a7f786ef69, type: 3}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
   m_ImportantGI: 0
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
@@ -7496,6 +7607,48 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!102 &10242278
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159156}
+  m_Text: 
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 4
+  m_Alignment: 1
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 12800000, guid: 174d98bd766b0ec46a6233a7f786ef69, type: 3}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+--- !u!102 &10254448
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127470}
+  m_Text: 
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 4
+  m_Alignment: 1
+  m_TabSize: 4
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 12800000, guid: 174d98bd766b0ec46a6233a7f786ef69, type: 3}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
 --- !u!111 &11183212
 Animation:
   m_ObjectHideFlags: 1
@@ -7578,7 +7731,9 @@ MonoBehaviour:
   MinAdrenalin: 75
   MotionBlurAmount: 10
   CoinAttractorExpandPeriod: 2
+  CoinAttractorReducePeriod: 2
   CoinAttractorSizeIncrease: 3
+  CoinAttractorSizeDecrease: .100000001
   playerIsDead: 0
 --- !u!114 &11431964
 MonoBehaviour:
@@ -7599,7 +7754,9 @@ MonoBehaviour:
   MinAdrenalin: 0
   MotionBlurAmount: 10
   CoinAttractorExpandPeriod: 2
+  CoinAttractorReducePeriod: 2
   CoinAttractorSizeIncrease: 3
+  CoinAttractorSizeDecrease: .100000001
   playerIsDead: 0
 --- !u!114 &11432842
 MonoBehaviour:
@@ -7620,8 +7777,22 @@ MonoBehaviour:
   MinAdrenalin: 75
   MotionBlurAmount: 10
   CoinAttractorExpandPeriod: 2
+  CoinAttractorReducePeriod: 2
   CoinAttractorSizeIncrease: 3
+  CoinAttractorSizeDecrease: .100000001
   playerIsDead: 0
+--- !u!114 &11436790
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6465fe4bf80bd354cbb73339974a681d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextSpeed: 7
 --- !u!114 &11436878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7682,6 +7853,20 @@ MonoBehaviour:
   height: 0
   rotationDamping: 10
   heightDamping: 5
+--- !u!114 &11472226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 159156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceaf745504a18da429e64dafbeb87ce1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  localizedID: 
+  localizedID2: Phrases/NearMiss
+  localizedID3: 
 --- !u!114 &11474708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7693,6 +7878,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b8f2c93df541d04695997fa49a4448f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11479638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 127470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf624a0ed69f1c54186284b93928fbce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TextSpeed: 7
 --- !u!114 &11482660
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7712,7 +7909,9 @@ MonoBehaviour:
   MinAdrenalin: 75
   MotionBlurAmount: 10
   CoinAttractorExpandPeriod: 2
+  CoinAttractorReducePeriod: 2
   CoinAttractorSizeIncrease: 3
+  CoinAttractorSizeDecrease: .100000001
   playerIsDead: 0
 --- !u!114 &11483778
 MonoBehaviour:

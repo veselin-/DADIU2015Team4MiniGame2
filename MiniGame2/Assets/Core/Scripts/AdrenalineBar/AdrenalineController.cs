@@ -17,6 +17,7 @@ public class AdrenalineController : MonoBehaviour {
     private GameObject CameraHolder;
 
     private bool isDead = false;
+	private AudioManager audioMngr;
 
 	// Use this for initialization
 	void Start () {
@@ -29,6 +30,8 @@ public class AdrenalineController : MonoBehaviour {
 
 	    //CameraHolder = Camera.main.GetComponentInParent<Transform>();
         CameraHolder = GameObject.Find("CameraHolder");
+
+		audioMngr = GameObject.FindObjectOfType<AudioManager> ();
     }
 
 
@@ -75,6 +78,9 @@ public class AdrenalineController : MonoBehaviour {
             isDead = true;
            // CameraHolder.transform.parent = null;
             CameraHolder.GetComponent<SmoothFollow>().enabled = false;
+
+			audioMngr.FlappingStop();
+			audioMngr.DeadSoundPlay();
 
 
             // Application.LoadLevel("gameOverSceneAW");

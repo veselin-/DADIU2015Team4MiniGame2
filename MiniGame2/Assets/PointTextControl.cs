@@ -4,6 +4,8 @@ using System.Collections;
 public class PointTextControl : MonoBehaviour
 {
 
+    public float TextSpeed;
+
     private Transform elephantREF;
 	// Use this for initialization
 	void Start ()
@@ -15,10 +17,8 @@ public class PointTextControl : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-	
-        
-
-	}
+        transform.position += Vector3.back * Time.deltaTime * TextSpeed;
+    }
 
     public void GotPoints(int points)
     {

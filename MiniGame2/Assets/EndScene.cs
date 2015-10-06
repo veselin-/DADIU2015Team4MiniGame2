@@ -16,11 +16,13 @@ public class EndScene : MonoBehaviour
     public GameObject Fireworks1;
     public GameObject Fireworks2;
     public GameObject Fireworks3;
+	private AudioManager audioMngr;
 
     void Start()
     {
         CameraHolder = GameObject.Find("CameraHolder");
         endPos = transform.GetChild(0).position;
+		audioMngr = GameObject.FindObjectOfType<AudioManager> ();
     }
 
     void FixedUpdate()
@@ -86,15 +88,15 @@ public class EndScene : MonoBehaviour
         yield return new WaitForSeconds(2.2f);
 
         Fireworks1.GetComponent<ParticleSystem>().Play();
-
+		audioMngr.FireWorksPlay();
         yield return new WaitForSeconds(.8f);
 
         Fireworks2.GetComponent<ParticleSystem>().Play();
-
+		audioMngr.FireWorksPlay();
         yield return new WaitForSeconds(.8f);
 
         Fireworks3.GetComponent<ParticleSystem>().Play();
-
+		audioMngr.FireWorksPlay();
     }
 
 }

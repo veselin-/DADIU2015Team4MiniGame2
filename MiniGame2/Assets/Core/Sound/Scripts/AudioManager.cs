@@ -16,7 +16,9 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource buttonClick;
 	public AudioSource hitGround;
     public AudioSource veselinPleaseDance;
-
+	public AudioSource fireWorks;
+	public AudioSource SayHello;
+	public AudioSource DeadSound;
 
 	public AudioMixer MasterMixer;
 	public AudioMixer MusicMixer;
@@ -30,6 +32,36 @@ public class AudioManager : MonoBehaviour {
 	void Start()
 	{
 
+	}
+
+	public void DeadSoundPlay()
+	{
+		DeadSound.Play ();
+	}
+
+	public void DeadSoundStop()
+	{
+		DeadSound.Stop ();
+	}
+
+	public void SayHelloPlay()
+	{
+		SayHello.Play ();
+	}
+
+	public void SayHelloStop()
+	{
+		SayHello.Stop ();
+	}
+
+	public void FireWorksPlay()
+	{
+		fireWorks.Play ();
+	}
+
+	public void FireWorksStop()
+	{
+		fireWorks.Stop ();
 	}
 
 	public void ThemeMusicPlay()
