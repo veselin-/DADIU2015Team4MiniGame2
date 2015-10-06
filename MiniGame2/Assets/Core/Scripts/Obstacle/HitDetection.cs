@@ -16,7 +16,7 @@ public class HitDetection : MonoBehaviour {
 		player = GameObject.FindGameObjectWithTag ("Player");
     }
 
-    IEnumerator OnTriggerEnter(Collider collider)
+    void OnTriggerEnter(Collider collider)
     {
         if (collider.tag == "Player")
         {
@@ -28,9 +28,8 @@ public class HitDetection : MonoBehaviour {
             else {
                 audioMngr.FailPlay();
                 adrenalineController.DecreaseAdrenaline(AdrenalinePenalty);
-                collider.enabled = false;
-                yield return new WaitForSeconds(HitSafePeriod);
-                collider.enabled = true;
+                collider.gameObject.GetComponent<PlayerBoost>().FixCollider1(HitSafePeriod);
+
             }
         }
     }

@@ -74,6 +74,21 @@ public class PlayerBoost : MonoBehaviour
             }
         }
     }
+
+
+    public void FixCollider1(float i)
+    {
+        StartCoroutine(FixCollider2(i));
+
+    }
+
+    public IEnumerator FixCollider2(float HitSafePeriod)
+    {
+        this.gameObject.GetComponent<Collider>().enabled = false;
+        yield return new WaitForSeconds(HitSafePeriod);
+        this.gameObject.GetComponent<Collider>().enabled = true;
+
+    }
 }
 
 
