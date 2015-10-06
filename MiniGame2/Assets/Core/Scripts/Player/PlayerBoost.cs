@@ -25,6 +25,7 @@ public class PlayerBoost : MonoBehaviour
     private float maxBootTime = 3f;
 
     private Vector3 tPos;
+    private AudioManager audioMngr;
 
     // Use this for initialization
     void Start()
@@ -33,6 +34,8 @@ public class PlayerBoost : MonoBehaviour
         adrenalineController = GameObject.FindGameObjectWithTag("UI").GetComponent<AdrenalineController>();
         if(adrenalineController == null)
             Debug.LogError("Cannot find adrenalineController");
+
+        audioMngr = GameObject.FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -67,6 +70,7 @@ public class PlayerBoost : MonoBehaviour
         adrenalineController.DecreaseAdrenaline(BoostCost);
         GetComponentInChildren<ParticleSystem>().Stop();
         StartCoroutine(updateCoinAttractor(CoinAttractorExpandPeriod));
+        GetComponent<Animator>().SetBool("IsBoosting", false);
     }
 
 
@@ -108,7 +112,12 @@ public class PlayerBoost : MonoBehaviour
                 moveTowardsObject = true;
                 targetPosition = new Vector3(position.x, position.y, position.z);
                 GetComponentInChildren<ParticleSystem>().Play();
+                GetComponent<Animator>().SetBool("IsBoosting", true);
             }
+        }
+        else
+        {
+            audioMngr.FailPlay();
         }
     }
 
