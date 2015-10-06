@@ -7532,6 +7532,7 @@ MonoBehaviour:
   MoveSpeed: .5
   StartSpeed: 0
   additionSpeed: .100000001
+  StartThemeMusic: 0
 --- !u!114 &11413622
 MonoBehaviour:
   m_ObjectHideFlags: 1
