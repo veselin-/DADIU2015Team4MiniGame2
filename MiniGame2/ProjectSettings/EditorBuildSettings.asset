@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrototypeScenes/startSceneAW.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrototypeScenes/levelChoosingSceneAW.unity
   - enabled: 0
     path: Assets/Scenes/PrototypeScenes/inGameSceneAW.unity
@@ -21,5 +21,5 @@ EditorBuildSettings:
     path: Assets/Scenes/ReleaseScenes/levelTutorialRemake.unity
   - enabled: 0
     path: Assets/Scenes/ReleaseScenes/levelTutorial.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PrototypeScenes/gameOverSceneAW.unity
