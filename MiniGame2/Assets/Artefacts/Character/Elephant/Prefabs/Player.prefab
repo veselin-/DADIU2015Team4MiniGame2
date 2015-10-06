@@ -7570,7 +7570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 297e6f9f7f3237e42a7d797a013cdb10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
   moveTowardsObject: 0
   MaxDistanceToObstacle: 150
   MinDistanceToObstacle: 10
@@ -7579,6 +7579,7 @@ MonoBehaviour:
   MotionBlurAmount: 10
   CoinAttractorExpandPeriod: 2
   CoinAttractorSizeIncrease: 3
+  playerIsDead: 0
 --- !u!114 &11431964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7599,6 +7600,7 @@ MonoBehaviour:
   MotionBlurAmount: 10
   CoinAttractorExpandPeriod: 2
   CoinAttractorSizeIncrease: 3
+  playerIsDead: 0
 --- !u!114 &11432842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7619,6 +7621,7 @@ MonoBehaviour:
   MotionBlurAmount: 10
   CoinAttractorExpandPeriod: 2
   CoinAttractorSizeIncrease: 3
+  playerIsDead: 0
 --- !u!114 &11436878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7710,6 +7713,7 @@ MonoBehaviour:
   MotionBlurAmount: 10
   CoinAttractorExpandPeriod: 2
   CoinAttractorSizeIncrease: 3
+  playerIsDead: 0
 --- !u!114 &11483778
 MonoBehaviour:
   m_ObjectHideFlags: 1
