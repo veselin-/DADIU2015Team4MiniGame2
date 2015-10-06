@@ -134,9 +134,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109596}
-  m_LocalRotation: {x: -.0616284311, y: -.704415977, z: .0616284162, w: .704416156}
-  m_LocalPosition: {x: -.230000004, y: 3.71000004, z: 74.6100006}
-  m_LocalScale: {x: .24999997, y: .25000003, z: .24999997}
+  m_LocalRotation: {x: .00616479758, y: -.706760883, z: -.0061703613, w: .707398772}
+  m_LocalPosition: {x: -279.932983, y: -443.595703, z: 2176.50073}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 496606}
   m_Father: {fileID: 0}
@@ -173,7 +173,7 @@ Transform:
   m_GameObject: {fileID: 118020}
   m_LocalRotation: {x: 0, y: .707106471, z: 0, w: .707107186}
   m_LocalPosition: {x: -92.3000031, y: 0, z: -0}
-  m_LocalScale: {x: 49.1787872, y: 35.2485466, z: 2.29999995}
+  m_LocalScale: {x: 83.6039429, y: 59.9225273, z: 3.90999985}
   m_Children:
   - {fileID: 420040}
   m_Father: {fileID: 423866}
@@ -250,6 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraSpeedEnd: 2
   rotationAmount: 35
+  endSceneCanvas: {fileID: 0}
   Fireworks1: {fileID: 147898}
   Fireworks2: {fileID: 135364}
   Fireworks3: {fileID: 134012}

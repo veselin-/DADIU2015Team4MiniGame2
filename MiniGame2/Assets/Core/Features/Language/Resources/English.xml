@@ -10,19 +10,10 @@
     <RestartGame>Restart level</RestartGame>
     <LevelMenu>Level select</LevelMenu>
     <NearMiss>Close one!!!</NearMiss>
-    <MainT>
-      Welcome to Skyphant! Move the elephant by tapping to the right or left of the screen!
-
-      In the top left corner of the screen is your adrenaline bar. Trunkers is an adrenaline junkie, if his adrenaline reaches zero the game is over!
-      Crashing into obstacles depletes your adrenaline.
-
-      You can use adrenaline to boost through fallen trees and cracked rocks!
-      Only the yellow part of the bar can be used to boost! The bar is highlighted when you have enough adrenaline to boost!
-    </MainT>
     <ABar>In the top left corner is your adrenaline bar! If you lose all your adrenaline the game ends!</ABar>
     <CoinsT>To move, press the lower left or right part of the screen. Collect coins to earn points!</CoinsT>
     <ObstaclesT>Avoid trees and rocks, if you crash into them you lose adrenaline! If you "near miss" a tree or a rock you gain adrenaline!</ObstaclesT>
-    <BoostT>Fallen trees can be boosted through using adrenaline! If you have enough adrenaline to perform a boost, the bar is highlighted!</BoostT>
+    <BoostT>Fallen trees can be boosted through using adrenaline, coins are hidden behind them! You can only boost if your adrenaline is at the marker on the bar!</BoostT>
   </Phrases>
   <LanguageNames>
     <English>English</English>
