@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Root>
   <Phrases>
     <Hello>Hello World!</Hello>
@@ -15,7 +15,7 @@
     <ABar>In the top left corner is your adrenaline bar! If you lose all your adrenaline the game ends!</ABar>
     <CoinsT>To move press the lower left or right part of the screen. Collect coins to earn points!</CoinsT>
     <ObstaclesT>Avoid trees and rocks! If you crash into them you lose adrenaline! If you "near miss" a tree or a rock you gain adrenaline!</ObstaclesT>
-    <BoostT>Fallen trees can be boosted through using adrenaline! Coins are hidden behind them! You can only boost if your adrenaline has reached the marker on the bar!</BoostT>
+    <BoostT>YOU CAN TAP FALLEN TREES TO BOOST THROUGH THEM USING ADRENALINE! COINS ARE HIDDEN BEHIND THEM! YOU CAN ONLY BOOST IF YOUR ADRENALINE HAS REACHED THE MARKER ON THE BAR!</BoostT>
   </Phrases>
   <LanguageNames>
     <English>English</English>
