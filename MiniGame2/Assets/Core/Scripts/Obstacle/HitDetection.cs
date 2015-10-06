@@ -23,6 +23,7 @@ public class HitDetection : MonoBehaviour {
         if (collider.gameObject.GetComponent<PlayerBoost>().moveTowardsObject) {
             collider.gameObject.GetComponent<PlayerBoost>().BoostHit();
             StartCoroutine(SplitMesh());
+			audioMngr.HitTreePlay();
         }
         else {
             audioMngr.FailPlay();

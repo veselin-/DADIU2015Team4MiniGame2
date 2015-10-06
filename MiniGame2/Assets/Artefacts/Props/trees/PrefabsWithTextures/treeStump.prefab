@@ -11,6 +11,7 @@ GameObject:
   - 33: {fileID: 3374862}
   - 23: {fileID: 2308372}
   - 136: {fileID: 13621952}
+  - 114: {fileID: 11454202}
   m_Layer: 0
   m_Name: treeStump
   m_TagString: Untagged
@@ -159,6 +160,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HitSafePeriod: .300000012
   AdrenalinePenalty: 25
+--- !u!114 &11454202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 709c4b31f9b43e74d99d9898f9d11d6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FromColor: {r: 1, g: 1, b: 1, a: 1}
+  ToColor: {r: 1, g: 0, b: 0, a: 1}
+  ColorSpeed: .5
 --- !u!114 &11459428
 MonoBehaviour:
   m_ObjectHideFlags: 1

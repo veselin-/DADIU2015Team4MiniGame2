@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource success;
 	public AudioSource wind;
 	public AudioSource fail;
+	public AudioSource hitTree; 
 	public AudioSource nearmiss;
 	public AudioSource electrified;
 	public AudioSource coins;
@@ -50,6 +51,7 @@ public class AudioManager : MonoBehaviour {
 		wind.Stop ();
         //veselinPleaseDance.Stop();
     }
+
 	public void FlappingPlay()
 	{
 		flapping.Play ();
@@ -74,6 +76,15 @@ public class AudioManager : MonoBehaviour {
 		SoundFXMixer.SetFloat ("SuccessPitch", pitch);
 	}
 
+	public void HitTreePlay()
+	{
+		hitTree.Play ();
+	}
+	
+	public void HitTreeStop()
+	{
+		hitTree.Stop ();
+	}
 
 	public void FailPlay()
 	{

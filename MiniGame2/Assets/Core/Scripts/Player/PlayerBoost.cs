@@ -16,13 +16,16 @@ public class PlayerBoost : MonoBehaviour
     public float MotionBlurAmount = 10f;
     private AdrenalineController adrenalineController;
     private float _oldSpeed = 0;
+    private Transform coinAttractor;
+    public float CoinAttractorExpandPeriod = 2;
+    public float CoinAttractorSizeIncrease = 3;
 
     private Vector3 tPos;
 
     // Use this for initialization
     void Start()
     {
-
+        coinAttractor = transform.FindChild("CoinAttractor");
         adrenalineController = GameObject.FindGameObjectWithTag("UI").GetComponent<AdrenalineController>();
         if(adrenalineController == null)
             Debug.LogError("Cannot find adrenalineController");
@@ -56,8 +59,22 @@ public class PlayerBoost : MonoBehaviour
     {
         moveBack = true;
         moveTowardsObject = false;
+        adrenalineController.DecreaseAdrenaline(BoostCost);
+     
+        StartCoroutine(updateCoinAttractor(CoinAttractorExpandPeriod));
+
+
+
     }
 
+
+    private IEnumerator updateCoinAttractor(float expandPeriod)
+    {
+        coinAttractor.GetComponent<SphereCollider>().radius = coinAttractor.GetComponent<SphereCollider>().radius * CoinAttractorSizeIncrease;
+        yield return new WaitForSeconds(expandPeriod);
+        coinAttractor.GetComponent<SphereCollider>().radius = coinAttractor.GetComponent<SphereCollider>().radius / CoinAttractorSizeIncrease;
+
+    }
 
     public void MoveTowardsObstacle(Vector3 position)
     {
@@ -72,7 +89,6 @@ public class PlayerBoost : MonoBehaviour
             {
                 moveTowardsObject = true;
                 targetPosition = new Vector3(position.x, position.y, position.z);
-                adrenalineController.DecreaseAdrenaline(BoostCost);
             }
         }
     }

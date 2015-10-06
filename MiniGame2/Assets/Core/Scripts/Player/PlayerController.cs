@@ -12,13 +12,13 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 
 	public float additionSpeed = 0.1f;
-
+	public bool StartThemeMusic = false;
 	private AudioManager audioMngr;
 
 	void Start () {
 		StartSpeed = MoveSpeed;
 		audioMngr = GameObject.FindObjectOfType<AudioManager> ();
-		audioMngr.ThemeMusicPlay ();
+
 	}
 	
 	// Update is called once per frame
@@ -62,6 +62,12 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Escape))
 		{
 			Application.LoadLevel(Application.loadedLevel);
+		}
+
+		if(StartThemeMusic)
+		{
+			audioMngr.ThemeMusicPlay ();
+			StartThemeMusic = false;
 		}
 	}
 
