@@ -24,8 +24,8 @@ public class ObstacleClicked : MonoBehaviour {
     void OnMouseDown()
     {
         // Makes sure you cannot boost through the canvas
-        if (EventSystem.current.IsPointerOverGameObject())
-            return; 
+        //if (EventSystem.current.IsPointerOverGameObject())
+         //   return; 
 
         Debug.Log("CLicked!");
         var transPos = this.transform.position;

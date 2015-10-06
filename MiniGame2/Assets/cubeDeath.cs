@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EndScene : MonoBehaviour {
+public class cubeDeath : MonoBehaviour {
 
     GameObject CameraHolder = null;
     public float cameraSpeedEnd = 5;
