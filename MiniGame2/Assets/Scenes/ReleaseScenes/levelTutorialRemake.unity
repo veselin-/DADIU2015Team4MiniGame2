@@ -687,72 +687,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1a31b1656e3f6543a949eb25f3494db, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &64460813
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2052190767}
-    m_Modifications:
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -70.1100006
-      objectReference: {fileID: 0}
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -18.0699997
-      objectReference: {fileID: 0}
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 530.789978
-      objectReference: {fileID: 0}
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -2.11914486e-09
-      objectReference: {fileID: 0}
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -1.49011594e-08
-      objectReference: {fileID: 0}
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -1.48506663e-09
-      objectReference: {fileID: 0}
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 168700, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 9.49909973
-      objectReference: {fileID: 0}
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 7.56977844
-      objectReference: {fileID: 0}
-    - target: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: m_LocalScale.z
-      value: .574999988
-      objectReference: {fileID: 0}
-    - target: {fileID: 11446876, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: cameraSpeedEnd
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11446876, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-      propertyPath: rotationAmount
-      value: 35
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &66252622 stripped
 Transform:
   m_PrefabParentObject: {fileID: 405990, guid: 2208ea9c74d1fc5478d063719b0694e4, type: 2}
@@ -4691,11 +4625,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22447072, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22447072, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 185070, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_IsActive
@@ -7809,10 +7743,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 425468, guid: 131c528dc67af8f4b8e909c32fb5b872, type: 2}
   m_PrefabInternal: {fileID: 879269535}
---- !u!4 &1468449476 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 464498, guid: e52a12fd018d13a4699a43f81ff2eb73, type: 2}
-  m_PrefabInternal: {fileID: 64460813}
 --- !u!4 &1472884268 stripped
 Transform:
   m_PrefabParentObject: {fileID: 425468, guid: 131c528dc67af8f4b8e909c32fb5b872, type: 2}
@@ -10136,7 +10066,6 @@ Transform:
   - {fileID: 1237500449}
   - {fileID: 184346274}
   - {fileID: 1182944209}
-  - {fileID: 1468449476}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!4 &2055863055 stripped

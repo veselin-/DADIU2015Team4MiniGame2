@@ -7,8 +7,9 @@ public class CanvasController : MonoBehaviour {
     public Image soundButton;
     public Sprite soundButtonOn, soundButtonOff;
     private bool soundButtonSwitch = false;
-    public GameObject levelPopUpMenu, pauseMenu;
+    public GameObject levelOnePopUpMenu, pauseMenu, tutoLevelMenu;
     public Text levelHighscore;
+
 	// Use this for initialization
     void Awake()
     {
@@ -43,6 +44,7 @@ public class CanvasController : MonoBehaviour {
             }
             AudioListener.pause = true;
         }
+        levelHighscore.enabled = false;
     }
 	
 	// Update is called once per frame
@@ -77,14 +79,26 @@ public class CanvasController : MonoBehaviour {
         }
     }
 
-    public void openLevelMenu()
+    public void openLevelOneMenu()
     {
-        levelPopUpMenu.SetActive(true);
+        levelOnePopUpMenu.SetActive(true);
     }
 
-    public void closeLevelMenu()
+    public void closeLevelOneMenu()
     {
-        levelPopUpMenu.SetActive(false);
+        levelOnePopUpMenu.SetActive(false);
+        levelHighscore.enabled = false;
+    }
+
+    public void opentutoLevelMenu()
+    {
+        tutoLevelMenu.SetActive(true);
+    }
+
+    public void closetutoLevelMenu()
+    {
+        tutoLevelMenu.SetActive(false);
+        levelHighscore.enabled = false;
     }
 
     public void openPauseMenu()
@@ -99,14 +113,14 @@ public class CanvasController : MonoBehaviour {
         Time.timeScale = 1;
     }
 
-    public void startLevelTuto()
+    public void startTutoLevel()
     {
         Application.LoadLevel("levelTutorialRemake");
     }
 
     public void startLevelOne()
     {
-        Application.LoadLevel("levelOne");
+        Application.LoadLevel("level01Remake");
     }
 
     public void startSceneLoad()
@@ -120,9 +134,10 @@ public class CanvasController : MonoBehaviour {
         Time.timeScale = 1;
     }
 
-    public void showLevelHighscore()
+    public void showLevelHighscore(string levelName)
     {
-        levelHighscore.text = LanguageManager.Instance.Get("Phrases/HighScore") + PlayerPrefs.GetInt("Highscore");
+        levelHighscore.enabled = true;
+        levelHighscore.text = LanguageManager.Instance.Get("Phrases/HighScore") + PlayerPrefs.GetInt("Highscore" + levelName);
     }
 
     public void languageChange(string language)
