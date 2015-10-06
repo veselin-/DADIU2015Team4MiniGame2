@@ -11,6 +11,7 @@ public class PlayerBoost : MonoBehaviour
     private Vector3 targetPosition;
     public float MaxDistanceToObstacle = 100;
     public float MinDistanceToObstacle = 50;
+    public float BoostCost;
     public float MinAdrenalin;
     public float MotionBlurAmount = 10f;
     private AdrenalineController adrenalineController;
@@ -71,7 +72,7 @@ public class PlayerBoost : MonoBehaviour
             {
                 moveTowardsObject = true;
                 targetPosition = new Vector3(position.x, position.y, position.z);
-                adrenalineController.DecreaseAdrenaline(25f);
+                adrenalineController.DecreaseAdrenaline(BoostCost);
             }
         }
     }
