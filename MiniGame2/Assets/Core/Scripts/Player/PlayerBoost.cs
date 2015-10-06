@@ -18,7 +18,9 @@ public class PlayerBoost : MonoBehaviour
     private float _oldSpeed = 0;
     private Transform coinAttractor;
     public float CoinAttractorExpandPeriod = 2;
+    public float CoinAttractorReducePeriod = 2;
     public float CoinAttractorSizeIncrease = 3;
+    public float CoinAttractorSizeDecrease = .1f;
     public bool playerIsDead = false;
     private float maxBootTime = 3f;
 
@@ -70,9 +72,18 @@ public class PlayerBoost : MonoBehaviour
 
     private IEnumerator updateCoinAttractor(float expandPeriod)
     {
+        coinAttractor.GetComponent<Collider>().enabled = true;
         coinAttractor.GetComponent<SphereCollider>().radius = coinAttractor.GetComponent<SphereCollider>().radius * CoinAttractorSizeIncrease;
         yield return new WaitForSeconds(expandPeriod);
         coinAttractor.GetComponent<SphereCollider>().radius = coinAttractor.GetComponent<SphereCollider>().radius / CoinAttractorSizeIncrease;
+
+    }
+
+    private IEnumerator reduceCoinAttractor(float reducePeriod)
+    {
+        coinAttractor.GetComponent<Collider>().enabled = false;
+        yield return new WaitForSeconds(reducePeriod);
+        coinAttractor.GetComponent<Collider>().enabled = true;
 
     }
 
@@ -111,6 +122,7 @@ public class PlayerBoost : MonoBehaviour
     public IEnumerator FixCollider2(float HitSafePeriod)
     {
         this.gameObject.GetComponent<Collider>().enabled = false;
+        StartCoroutine(reduceCoinAttractor(CoinAttractorReducePeriod));
         yield return new WaitForSeconds(HitSafePeriod);
         if (!playerIsDead)
         {
