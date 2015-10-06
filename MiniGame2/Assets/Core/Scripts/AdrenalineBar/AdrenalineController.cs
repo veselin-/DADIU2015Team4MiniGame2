@@ -14,6 +14,10 @@ public class AdrenalineController : MonoBehaviour {
 
     public GameObject endSceneCanvas;
 
+    private GameObject CameraHolder;
+
+    private bool isDead = false;
+
 	// Use this for initialization
 	void Start () {
         AdrenalineBar.value = 75f;
@@ -22,8 +26,25 @@ public class AdrenalineController : MonoBehaviour {
 
         rend = GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<Renderer>();
         coll = GameObject.FindGameObjectWithTag("Player").GetComponentsInChildren<Collider>();
+
+	    //CameraHolder = Camera.main.GetComponentInParent<Transform>();
+        CameraHolder = GameObject.Find("CameraHolder");
     }
-	
+
+
+    void FixedUpdate()
+    {
+
+        if (isDead && CameraHolder.transform.eulerAngles.x < 400)
+        {
+            //We rotate the camera
+
+            Vector3 rot = CameraHolder.transform.rotation.eulerAngles;
+            rot.x = rot.x - 50f*Time.deltaTime;
+            CameraHolder.transform.eulerAngles = rot;
+        }
+    }
+
     public void DecreaseAdrenaline(float amount)
     {
         AdrenalineBar.value -= amount;
@@ -47,6 +68,10 @@ public class AdrenalineController : MonoBehaviour {
             }
 
             endSceneCanvas.SetActive(true);
+            isDead = true;
+           // CameraHolder.transform.parent = null;
+            CameraHolder.GetComponent<SmoothFollow>().enabled = false;
+
 
             // Application.LoadLevel("gameOverSceneAW");
         }

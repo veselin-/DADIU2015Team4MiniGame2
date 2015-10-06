@@ -20,6 +20,7 @@ public class PlayerBoost : MonoBehaviour
     public float CoinAttractorExpandPeriod = 2;
     public float CoinAttractorSizeIncrease = 3;
     public bool playerIsDead = false;
+    private float maxBootTime = 3f;
 
     private Vector3 tPos;
 
@@ -38,7 +39,8 @@ public class PlayerBoost : MonoBehaviour
         if (moveTowardsObject) { 
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed*Time.deltaTime);
             Camera.main.GetComponent<CameraMotionBlur>().velocityScale = MotionBlurAmount;
-           // transform.Rotate(new Vector3(1f, 0, 0), 5f*Time.deltaTime);
+            StartCoroutine(StopBoost());
+            // transform.Rotate(new Vector3(1f, 0, 0), 5f*Time.deltaTime);
         }
         if (Vector3.Distance(transform.position, targetPosition) <= 1) { 
             moveBack = true;
@@ -63,9 +65,6 @@ public class PlayerBoost : MonoBehaviour
         adrenalineController.DecreaseAdrenaline(BoostCost);
         GetComponentInChildren<ParticleSystem>().Stop();
         StartCoroutine(updateCoinAttractor(CoinAttractorExpandPeriod));
-
-
-
     }
 
 
@@ -75,6 +74,13 @@ public class PlayerBoost : MonoBehaviour
         yield return new WaitForSeconds(expandPeriod);
         coinAttractor.GetComponent<SphereCollider>().radius = coinAttractor.GetComponent<SphereCollider>().radius / CoinAttractorSizeIncrease;
 
+    }
+
+    private IEnumerator StopBoost()
+    {
+        yield return new WaitForSeconds(maxBootTime);
+        if(moveTowardsObject)
+            BoostHit();
     }
 
     public void MoveTowardsObstacle(Vector3 position)
