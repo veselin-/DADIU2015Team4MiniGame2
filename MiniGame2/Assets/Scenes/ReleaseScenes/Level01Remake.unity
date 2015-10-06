@@ -3060,7 +3060,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6bd443060932141448786289db7e9a30, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd443060932141448786289db7e9a30, type: 3}
       propertyPath: m_LocalScale.x
@@ -4060,7 +4060,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 9ca169a968be2c24789334aa15ce792d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9ca169a968be2c24789334aa15ce792d, type: 3}
       propertyPath: m_LocalScale.x
@@ -7918,6 +7918,10 @@ Prefab:
     - target: {fileID: 400000, guid: c74247c2c6c925e46855f5d66d8e58f6, type: 3}
       propertyPath: m_LocalScale.z
       value: .168000013
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c74247c2c6c925e46855f5d66d8e58f6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c74247c2c6c925e46855f5d66d8e58f6, type: 3}
@@ -12938,11 +12942,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22447072, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22447072, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0230654f39fe68444b38a7b85f4108b3, type: 2}
@@ -13287,7 +13291,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d2531fcf7d10c584fb82579b5d9d6477, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d2531fcf7d10c584fb82579b5d9d6477, type: 3}
       propertyPath: m_LocalScale.x
@@ -20502,7 +20506,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 6bd443060932141448786289db7e9a30, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6bd443060932141448786289db7e9a30, type: 3}
       propertyPath: m_LocalScale.x
