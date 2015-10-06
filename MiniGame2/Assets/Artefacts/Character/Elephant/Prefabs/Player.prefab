@@ -7573,6 +7573,7 @@ MonoBehaviour:
   moveTowardsObject: 0
   MaxDistanceToObstacle: 150
   MinDistanceToObstacle: 10
+  BoostCost: 25
   MinAdrenalin: 50
   MotionBlurAmount: 10
 --- !u!114 &11431964
@@ -7590,6 +7591,7 @@ MonoBehaviour:
   moveTowardsObject: 0
   MaxDistanceToObstacle: 100
   MinDistanceToObstacle: 50
+  BoostCost: 0
   MinAdrenalin: 0
   MotionBlurAmount: 10
 --- !u!114 &11432842
@@ -7607,7 +7609,8 @@ MonoBehaviour:
   moveTowardsObject: 0
   MaxDistanceToObstacle: 150
   MinDistanceToObstacle: 10
-  MinAdrenalin: 50
+  BoostCost: 25
+  MinAdrenalin: 75
   MotionBlurAmount: 10
 --- !u!114 &11436878
 MonoBehaviour:
@@ -7695,6 +7698,7 @@ MonoBehaviour:
   moveTowardsObject: 0
   MaxDistanceToObstacle: 500
   MinDistanceToObstacle: 10
+  BoostCost: 0
   MinAdrenalin: 0
   MotionBlurAmount: 10
 --- !u!114 &11483778
