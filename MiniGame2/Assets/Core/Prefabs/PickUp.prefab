@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 490764}
   - 33: {fileID: 3327976}
   - 23: {fileID: 2359702}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: coin_exp 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ GameObject:
   - 135: {fileID: 13546532}
   - 54: {fileID: 5483702}
   - 114: {fileID: 11413484}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PickUp
   m_TagString: PickUp
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - 4: {fileID: 469350}
   - 33: {fileID: 3394058}
   - 23: {fileID: 2384804}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: coin_exp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - 4: {fileID: 460664}
   - 33: {fileID: 3365598}
   - 23: {fileID: 2375242}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PickUpModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.30788517, z: 82.6228333}
+  m_LocalPosition: {x: -3.91205668, y: 2.20493197, z: 21.2999992}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 460664}
