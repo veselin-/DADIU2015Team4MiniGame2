@@ -121,6 +121,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 401344}
   - 114: {fileID: 11487184}
+  - 111: {fileID: 11135728}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -721,6 +722,21 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!111 &11135728
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194970}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 0ec7975137aed9e4198f735f2248c096, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 0ec7975137aed9e4198f735f2248c096, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &11487184
 MonoBehaviour:
   m_ObjectHideFlags: 1
