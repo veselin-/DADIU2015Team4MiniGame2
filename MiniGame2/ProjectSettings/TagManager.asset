@@ -12,6 +12,7 @@ TagManager:
   - NearMissText
   - PointText
   - TutorialUI
+  - PauseButton
   layers:
   - Default
   - TransparentFX

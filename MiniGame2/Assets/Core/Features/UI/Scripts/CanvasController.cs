@@ -134,7 +134,8 @@ public class CanvasController : MonoBehaviour {
     public void restartLevel()
     {
         Application.LoadLevel(Application.loadedLevelName);
-        endSceneCanvas.SetActive(false);
+        if(endSceneCanvas != null)
+            endSceneCanvas.SetActive(false);
         Time.timeScale = 1;
     }
 
