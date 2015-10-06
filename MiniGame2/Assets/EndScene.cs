@@ -53,6 +53,10 @@ public class EndScene : MonoBehaviour
 
             if (CameraHolder.transform.eulerAngles.x == 270)
             {
+                var pauseButton = GameObject.FindGameObjectWithTag("PauseButton");
+                if(pauseButton != null)
+                    pauseButton.SetActive(false);
+
                 endSceneCanvas.SetActive(true);
             }
 

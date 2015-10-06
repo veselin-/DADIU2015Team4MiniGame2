@@ -103,7 +103,7 @@ GameObject:
   - 114: {fileID: 11405738}
   m_Layer: 0
   m_Name: PauseButton
-  m_TagString: Untagged
+  m_TagString: PauseButton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

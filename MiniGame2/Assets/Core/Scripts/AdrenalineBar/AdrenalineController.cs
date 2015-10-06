@@ -67,6 +67,10 @@ public class AdrenalineController : MonoBehaviour {
 
             }
 
+            var pauseButton = GameObject.FindGameObjectWithTag("PauseButton");
+            if(pauseButton != null)
+                pauseButton.SetActive(false);
+
             endSceneCanvas.SetActive(true);
             isDead = true;
            // CameraHolder.transform.parent = null;
