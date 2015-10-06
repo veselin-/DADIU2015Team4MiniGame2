@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class endScene : MonoBehaviour {
+public class EndScene : MonoBehaviour
+{
 
     GameObject CameraHolder = null;
     public float cameraSpeedEnd = 5;
@@ -10,7 +11,11 @@ public class endScene : MonoBehaviour {
     private bool lookUp = false;
     float t;
     Vector3 startPos;
-    public float rotationAmount = 90.0f;
+    public float rotationAmount = 30.0f;
+
+    public GameObject Fireworks1;
+    public GameObject Fireworks2;
+    public GameObject Fireworks3;
 
     void Start()
     {
@@ -22,25 +27,33 @@ public class endScene : MonoBehaviour {
     {
         if (smoothEnd)
         {
+            //We move the camera slowly after we reach the goal
             t += Time.deltaTime / cameraSpeedEnd;
             CameraHolder.transform.position = Vector3.Lerp(startPos, endPos, t);
-            if(Vector3.Distance(CameraHolder.transform.position, endPos) < 1)
+            if (Vector3.Distance(CameraHolder.transform.position, endPos) < 1)
             {
                 smoothEnd = false;
                 lookUp = true;
+                t = 0;
+                startPos = CameraHolder.transform.position;
             }
         }
 
         if (lookUp)
         {
+            //We rotate the camera
             Vector3 rot = CameraHolder.transform.rotation.eulerAngles;
             rot.x = rot.x - rotationAmount * Time.deltaTime;
             CameraHolder.transform.eulerAngles = rot;
 
-            if(CameraHolder.transform.eulerAngles.x == 270)
-            {
-            
+            //We move the camera up a bit
+            Vector3 end = new Vector3(CameraHolder.transform.position.x, CameraHolder.transform.position.y + .5f, CameraHolder.transform.position.z);
+            t += Time.deltaTime / cameraSpeedEnd;
+            CameraHolder.transform.position = Vector3.Lerp(startPos, end, t);
 
+            if (CameraHolder.transform.eulerAngles.x == 270)
+            {
+                Application.LoadLevel("gameOverSceneAW");
             }
 
 
@@ -51,7 +64,7 @@ public class endScene : MonoBehaviour {
 
 
     void OnTriggerEnter(Collider col)
-	{
+    {
         if (col.tag == "Player")
         {
             CameraHolder.transform.parent = null;
@@ -59,7 +72,25 @@ public class endScene : MonoBehaviour {
             startPos = CameraHolder.transform.position;
             t = 0;
             smoothEnd = true;
+            StartCoroutine(Fireworks());
         }
-	}
+    }
+
+    IEnumerator Fireworks()
+    {
+
+        yield return new WaitForSeconds(2.2f);
+
+        Fireworks1.GetComponent<ParticleSystem>().Play();
+
+        yield return new WaitForSeconds(.8f);
+
+        Fireworks2.GetComponent<ParticleSystem>().Play();
+
+        yield return new WaitForSeconds(.8f);
+
+        Fireworks3.GetComponent<ParticleSystem>().Play();
+
+    }
 
 }
