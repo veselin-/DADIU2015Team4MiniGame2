@@ -6918,7 +6918,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 68
+  field of view: 80
   orthographic: 0
   orthographic size: 6
   m_Depth: -1
@@ -7577,6 +7577,8 @@ MonoBehaviour:
   BoostCost: 25
   MinAdrenalin: 50
   MotionBlurAmount: 10
+  CoinAttractorExpandPeriod: 2
+  CoinAttractorSizeIncrease: 3
 --- !u!114 &11431964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7595,6 +7597,8 @@ MonoBehaviour:
   BoostCost: 0
   MinAdrenalin: 0
   MotionBlurAmount: 10
+  CoinAttractorExpandPeriod: 2
+  CoinAttractorSizeIncrease: 3
 --- !u!114 &11432842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7613,6 +7617,8 @@ MonoBehaviour:
   BoostCost: 25
   MinAdrenalin: 75
   MotionBlurAmount: 10
+  CoinAttractorExpandPeriod: 2
+  CoinAttractorSizeIncrease: 3
 --- !u!114 &11436878
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7702,6 +7708,8 @@ MonoBehaviour:
   BoostCost: 0
   MinAdrenalin: 0
   MotionBlurAmount: 10
+  CoinAttractorExpandPeriod: 2
+  CoinAttractorSizeIncrease: 3
 --- !u!114 &11483778
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7741,7 +7749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   path: []
-  speed: 30
+  speed: 40
   GizmoPath: []
   FindPathByObjects: []
 --- !u!124 &12425230
