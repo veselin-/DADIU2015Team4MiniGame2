@@ -56,6 +56,7 @@ public class PlayerBoost : MonoBehaviour
     {
         moveBack = true;
         moveTowardsObject = false;
+        adrenalineController.DecreaseAdrenaline(BoostCost);
     }
 
 
@@ -72,7 +73,6 @@ public class PlayerBoost : MonoBehaviour
             {
                 moveTowardsObject = true;
                 targetPosition = new Vector3(position.x, position.y, position.z);
-                adrenalineController.DecreaseAdrenaline(BoostCost);
             }
         }
     }

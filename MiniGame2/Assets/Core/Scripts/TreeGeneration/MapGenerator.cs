@@ -162,7 +162,7 @@ namespace Assets.Core.Scripts.TreeGeneration
             }
         }
         
-        void OnDrawGizmos()
+/*        void OnDrawGizmos()
         {
             if (_map == null) return;
 
@@ -173,7 +173,7 @@ namespace Assets.Core.Scripts.TreeGeneration
                     var pos = new Vector3(-Width / 2 + x + .5f, 0, -Height / 2 + y + .5f);
                     Gizmos.DrawCube(pos, Vector3.one);
                 }
-        }
+        }*/
 
         private void DrawTrees()
         {
