@@ -1,23 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NearMissControl : MonoBehaviour {
+public class NearMissControl : MonoBehaviour
+{
 
+    public float TextSpeed;
 
     private Transform elephantREF;
     // Use this for initialization
     void Start () {
 
         elephantREF = GameObject.FindGameObjectWithTag("Player").transform;
-
-        //GetComponent<TextMesh>().text = "";
-
     }
 	
 	// Update is called once per frame
-	void Update () {
-	
-	}
+	void Update ()
+	{
+        transform.position += Vector3.back * Time.deltaTime * TextSpeed;
+    }
 
     public void NearMiss()
     {
