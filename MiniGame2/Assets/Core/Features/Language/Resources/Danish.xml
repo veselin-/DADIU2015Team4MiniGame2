@@ -10,12 +10,18 @@
     <RestartGame>Genstart bane</RestartGame>
     <LevelMenu>Bane menu</LevelMenu>
     <NearMiss>God undvigelse!!!</NearMiss>
-    <CoinsT>(Klik på teksten for at lukke) Saml mønter for at få point!</CoinsT>
-    <RocksT>Sten er ligeså farlige som træer!</RocksT>
-    <TreesT>Undvig træer, de er meget farlige!</TreesT>
-    <EndT>Træningsbane er færdig. Hav det sjovt!</EndT>
-    <AdrenT>lang besked på dansk</AdrenT>
-    <AdrenRT>længere besked på dansk</AdrenRT>
+    <MainT>
+      Welcome to Skyphant! Move the elephant by tapping to the right or left of the screen!
+
+      In the top left corner of the screen is your adrenaline bar. Trunkers is an adrenaline junkie, if his adrenaline reaches zero the game is over!
+      Crashing into obstacles depletes your adrenaline.
+
+      You can use adrenaline to boost through fallen trees and cracked rocks!
+      Only the yellow part of the bar can be used to boost! The bar is highlighted when you have enough adrenaline to boost!
+    </MainT>
+    <CoinsT>Collect coins to earn points!</CoinsT>
+    <ObstaclesT>Avoid trees and rocks, if you crash into them you lose adrenaline! If you "near miss" a tree or a rock you gain adrenaline!</ObstaclesT>
+    <BoostT>Fallen trees and cracked rocks can be boosted through using adrenaline!</BoostT>
   </Phrases>
   <LanguageNames>
     <English>English</English>
