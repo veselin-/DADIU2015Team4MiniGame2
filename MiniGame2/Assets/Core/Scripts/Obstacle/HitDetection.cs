@@ -18,23 +18,21 @@ public class HitDetection : MonoBehaviour {
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.tag == "Player")
-        {
-			StartCoroutine(SplitMesh());
-            if (collider.gameObject.GetComponent<PlayerBoost>().moveTowardsObject) {
-                collider.gameObject.GetComponent<PlayerBoost>().BoostHit();
-                //Destroy(transform.parent.parent.gameObject);
-            }
-            else {
-                audioMngr.FailPlay();
-                adrenalineController.DecreaseAdrenaline(AdrenalinePenalty);
-                collider.gameObject.GetComponent<PlayerBoost>().FixCollider1(HitSafePeriod);
+        if (collider.tag != "Player") return;
+        
+        if (collider.gameObject.GetComponent<PlayerBoost>().moveTowardsObject) {
+            collider.gameObject.GetComponent<PlayerBoost>().BoostHit();
+            StartCoroutine(SplitMesh());
+        }
+        else {
+            audioMngr.FailPlay();
+            adrenalineController.DecreaseAdrenaline(AdrenalinePenalty);
+            collider.gameObject.GetComponent<PlayerBoost>().FixCollider1(HitSafePeriod);
 
-            }
         }
     }
 
-	IEnumerator SplitMesh ()
+    IEnumerator SplitMesh ()
 	{
 		MeshFilter MF = transform.parent.GetComponent<MeshFilter>();
 		MeshRenderer MR = transform.parent.GetComponent<MeshRenderer>();

@@ -17,14 +17,8 @@ public class NearMissDetection : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
-        {
-
-			//audioMngr.NearMissPlay();
-
-            Debug.Log("NearMiss");
-            StartCoroutine(NearMiss(other.gameObject));
-        }
+        if (other.tag != "Player" || other.gameObject.GetComponent<PlayerBoost>().moveTowardsObject) return;
+        StartCoroutine(NearMiss(other.gameObject));
     }
 
     IEnumerator NearMiss(GameObject go)

@@ -11,7 +11,6 @@ GameObject:
   - 33: {fileID: 3374862}
   - 23: {fileID: 2308372}
   - 136: {fileID: 13621952}
-  - 114: {fileID: 11499486}
   m_Layer: 0
   m_Name: treeStump
   m_TagString: Untagged
@@ -46,6 +45,7 @@ GameObject:
   - 4: {fileID: 401504}
   - 136: {fileID: 13673192}
   - 114: {fileID: 11403920}
+  - 114: {fileID: 11459428}
   m_Layer: 0
   m_Name: NearMiss
   m_TagString: Untagged
@@ -60,8 +60,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.44650005e-06, y: -.150000006, z: .0960000008}
+  m_LocalScale: {x: 1.10000002, y: 1.10000002, z: 1.32000005}
   m_Children: []
   m_Father: {fileID: 411110}
   m_RootOrder: 0
@@ -71,9 +71,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121942}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: -4.53469896, y: 193.931061, z: 44.9278259}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -.545931995, y: .449397773, z: -.292787135, w: .643642485}
+  m_LocalPosition: {x: -8.83532906, y: .689941406, z: 1006.72266}
+  m_LocalScale: {x: 2.4000001, y: 1.91999996, z: 1.08000028}
   m_Children:
   - {fileID: 401504}
   - {fileID: 447116}
@@ -159,12 +159,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HitSafePeriod: .300000012
   AdrenalinePenalty: 30
---- !u!114 &11499486
+--- !u!114 &11459428
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 121942}
+  m_GameObject: {fileID: 175902}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1582a271928a52c4ea517c4e58fb0ddf, type: 3}
@@ -178,7 +178,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 121942}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 2.5999999
   m_Height: 22
   m_Direction: 2
