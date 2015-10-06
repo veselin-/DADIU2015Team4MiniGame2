@@ -71,8 +71,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 121942}
-  m_LocalRotation: {x: -.545931995, y: .449397773, z: -.292787135, w: .643642485}
-  m_LocalPosition: {x: -8.83532906, y: .689941406, z: 1006.72266}
+  m_LocalRotation: {x: -.707106829, y: -1.15202326e-07, z: -.707106709, w: -1.15202312e-07}
+  m_LocalPosition: {x: -9.93200016, y: 3.31999993, z: 701.900024}
   m_LocalScale: {x: 2.4000001, y: 1.91999996, z: 1.08000028}
   m_Children:
   - {fileID: 401504}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   HitSafePeriod: .300000012
-  AdrenalinePenalty: 30
+  AdrenalinePenalty: 25
 --- !u!114 &11459428
 MonoBehaviour:
   m_ObjectHideFlags: 1

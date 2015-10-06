@@ -122,7 +122,7 @@ public class CanvasController : MonoBehaviour {
 
     public void showLevelHighscore()
     {
-        levelHighscore.text = "Highscore: " + PlayerPrefs.GetInt("Highscore");
+        levelHighscore.text = LanguageManager.Instance.Get("Phrases/HighScore") + PlayerPrefs.GetInt("Highscore");
     }
 
     public void languageChange(string language)

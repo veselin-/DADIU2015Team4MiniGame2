@@ -11,6 +11,7 @@ public class PlayerBoost : MonoBehaviour
     private Vector3 targetPosition;
     public float MaxDistanceToObstacle = 100;
     public float MinDistanceToObstacle = 50;
+    public float BoostCost;
     public float MinAdrenalin;
     public float MotionBlurAmount = 10f;
     private AdrenalineController adrenalineController;
@@ -33,6 +34,7 @@ public class PlayerBoost : MonoBehaviour
         if (moveTowardsObject) { 
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed*Time.deltaTime);
             Camera.main.GetComponent<CameraMotionBlur>().velocityScale = MotionBlurAmount;
+            transform.Rotate(new Vector3(1f, 0, 0), 5f);
         }
         if (Vector3.Distance(transform.position, targetPosition) <= 1) { 
             moveBack = true;
@@ -70,7 +72,7 @@ public class PlayerBoost : MonoBehaviour
             {
                 moveTowardsObject = true;
                 targetPosition = new Vector3(position.x, position.y, position.z);
-                adrenalineController.DecreaseAdrenaline(25f);
+                adrenalineController.DecreaseAdrenaline(BoostCost);
             }
         }
     }

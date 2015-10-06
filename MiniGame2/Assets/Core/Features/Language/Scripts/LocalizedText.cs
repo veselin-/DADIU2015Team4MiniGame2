@@ -5,6 +5,7 @@ public class LocalizedText : MonoBehaviour
 {
     public string localizedID = string.Empty, localizedID2 = string.Empty, localizedID3 = string.Empty;
     private Text tutoText;
+
     void Awake()
     {
         GameObject TUI = GameObject.FindGameObjectWithTag("TutorialUI");
