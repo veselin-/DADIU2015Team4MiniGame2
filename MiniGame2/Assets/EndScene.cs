@@ -12,7 +12,7 @@ public class EndScene : MonoBehaviour
     float t;
     Vector3 startPos;
     public float rotationAmount = 30.0f;
-
+    public GameObject endSceneCanvas;
     public GameObject Fireworks1;
     public GameObject Fireworks2;
     public GameObject Fireworks3;
@@ -53,7 +53,7 @@ public class EndScene : MonoBehaviour
 
             if (CameraHolder.transform.eulerAngles.x == 270)
             {
-                Application.LoadLevel("gameOverSceneAW");
+                endSceneCanvas.SetActive(true);
             }
 
 

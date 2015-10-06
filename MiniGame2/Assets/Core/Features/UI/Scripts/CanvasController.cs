@@ -7,7 +7,7 @@ public class CanvasController : MonoBehaviour {
     public Image soundButton;
     public Sprite soundButtonOn, soundButtonOff;
     private bool soundButtonSwitch = false;
-    public GameObject levelOnePopUpMenu, pauseMenu, tutoLevelMenu;
+    public GameObject levelOnePopUpMenu, pauseMenu, tutoLevelMenu, endSceneCanvas;
     public Text levelHighscore;
 
 	// Use this for initialization
@@ -44,7 +44,8 @@ public class CanvasController : MonoBehaviour {
             }
             AudioListener.pause = true;
         }
-        levelHighscore.enabled = false;
+        if(levelHighscore != null)
+            levelHighscore.enabled = false;
     }
 	
 	// Update is called once per frame
@@ -55,6 +56,8 @@ public class CanvasController : MonoBehaviour {
     public void chooseLevelSceneLoad()
     {
         Application.LoadLevel("LevelChoosingSceneAW");
+        if (endSceneCanvas != null)
+            endSceneCanvas.SetActive(false);
         Time.timeScale = 1;
     }
 
@@ -131,6 +134,7 @@ public class CanvasController : MonoBehaviour {
     public void restartLevel()
     {
         Application.LoadLevel(Application.loadedLevelName);
+        endSceneCanvas.SetActive(false);
         Time.timeScale = 1;
     }
 
