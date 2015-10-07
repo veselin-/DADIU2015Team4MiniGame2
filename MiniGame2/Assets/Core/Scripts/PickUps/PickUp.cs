@@ -73,6 +73,7 @@ public class PickUp : MonoBehaviour {
 
 
             renderers[1].enabled = false;
+            gameObject.SetActive(false);
         }
 
     }
