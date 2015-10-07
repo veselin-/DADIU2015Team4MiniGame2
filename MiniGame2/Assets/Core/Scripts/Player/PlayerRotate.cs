@@ -10,12 +10,13 @@ public class PlayerRotate : MonoBehaviour , IPointerDownHandler, IPointerUpHandl
 	// Use this for initialization
 	void Start () {
 		PC = GameObject.FindObjectOfType<PlayerController>();
+	    Input.multiTouchEnabled = false;
 	}
 	
 	
 	public void OnPointerDown(PointerEventData eventData)
 	{
-		if(eventData.pointerCurrentRaycast.gameObject.name.Equals("Left"))
+        if(eventData.pointerCurrentRaycast.gameObject.name.Equals("Left"))
 		{
 			PC.RotateLeft = true;
 		}
