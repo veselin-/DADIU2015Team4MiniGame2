@@ -108,6 +108,7 @@ public class EndScene : MonoBehaviour
         Fireworks10.GetComponent<ParticleSystem>().Play();
         Fireworks11.GetComponent<ParticleSystem>().Play();
         Fireworks12.GetComponent<ParticleSystem>().Play();
+        audioMngr.FireWorksStop();
     }
 
 }

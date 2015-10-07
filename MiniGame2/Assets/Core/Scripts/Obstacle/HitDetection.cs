@@ -25,8 +25,10 @@ public class HitDetection : MonoBehaviour {
             collider.gameObject.GetComponent<PlayerBoost>().BoostHit();
             StartCoroutine(SplitMesh());
 			audioMngr.HitTreePlay();
+            Handheld.Vibrate();
         }
         else {
+            Handheld.Vibrate();
             audioMngr.FailPlay();
             adrenalineController.DecreaseAdrenaline(AdrenalinePenalty);
             collider.gameObject.GetComponent<PlayerBoost>().FixCollider1(HitSafePeriod);
