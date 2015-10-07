@@ -18,6 +18,7 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource fireWorks;
 	public AudioSource SayHello;
 	public AudioSource DeadSound;
+	public AudioSource BoostSound;
 
 	public AudioMixer MasterMixer;
 	public AudioMixer MusicMixer;
@@ -32,6 +33,18 @@ public class AudioManager : MonoBehaviour {
 	{
 
 	}
+
+	
+	public void BoostSoundPlay()
+	{
+		BoostSound.Play ();
+	}
+	
+	public void BoostSoundStop()
+	{
+		BoostSound.Stop ();
+	}
+
 
 	public void DeadSoundPlay()
 	{

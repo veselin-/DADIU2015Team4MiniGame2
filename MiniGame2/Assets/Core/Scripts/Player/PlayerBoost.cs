@@ -65,6 +65,7 @@ public class PlayerBoost : MonoBehaviour
 
     public void BoostHit()
     {
+		//audioMngr.BoostSoundStop ();
         moveBack = true;
         moveTowardsObject = false;
         adrenalineController.DecreaseAdrenaline(BoostCost);
@@ -109,6 +110,7 @@ public class PlayerBoost : MonoBehaviour
 
             if (dot < MaxDistanceToObstacle && dot > MinDistanceToObstacle)
             {
+				audioMngr.BoostSoundPlay ();
                 moveTowardsObject = true;
                 targetPosition = new Vector3(position.x, position.y, position.z);
                 GetComponentInChildren<ParticleSystem>().Play();
