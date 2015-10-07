@@ -160,6 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HitSafePeriod: .300000012
   AdrenalinePenalty: 25
+  ObjectIsBoostable: 1
 --- !u!114 &11454202
 MonoBehaviour:
   m_ObjectHideFlags: 1

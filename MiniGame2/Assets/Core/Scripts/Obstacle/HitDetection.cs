@@ -8,6 +8,7 @@ public class HitDetection : MonoBehaviour {
     public int AdrenalinePenalty = 30;
 	private AudioManager audioMngr;
 	private GameObject player;
+    public bool ObjectIsBoostable;
     // Use this for initialization
     void Start () {
 
@@ -20,7 +21,7 @@ public class HitDetection : MonoBehaviour {
     {
         if (collider.tag != "Player") return;
         
-        if (collider.gameObject.GetComponent<PlayerBoost>().moveTowardsObject) {
+        if (collider.gameObject.GetComponent<PlayerBoost>().moveTowardsObject && ObjectIsBoostable) {
             collider.gameObject.GetComponent<PlayerBoost>().BoostHit();
             StartCoroutine(SplitMesh());
 			audioMngr.HitTreePlay();
