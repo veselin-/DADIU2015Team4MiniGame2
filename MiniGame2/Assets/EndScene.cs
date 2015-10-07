@@ -15,7 +15,7 @@ public class EndScene : MonoBehaviour
     public GameObject endSceneCanvas;
     public GameObject Fireworks1;
     public GameObject Fireworks2;
-    public GameObject Fireworks3;
+    public GameObject Fireworks3, Fireworks4, Fireworks5, Fireworks6, Fireworks7, Fireworks8, Fireworks9, Fireworks10, Fireworks11, Fireworks12;
 	private AudioManager audioMngr;
 
     void Start()
@@ -88,15 +88,26 @@ public class EndScene : MonoBehaviour
         yield return new WaitForSeconds(2.2f);
 
         Fireworks1.GetComponent<ParticleSystem>().Play();
-
-        yield return new WaitForSeconds(.8f);
-
         Fireworks2.GetComponent<ParticleSystem>().Play();
-
-        yield return new WaitForSeconds(.8f);
-
         Fireworks3.GetComponent<ParticleSystem>().Play();
 
+        yield return new WaitForSeconds(.8f);
+
+        Fireworks4.GetComponent<ParticleSystem>().Play();
+        Fireworks5.GetComponent<ParticleSystem>().Play();
+        Fireworks6.GetComponent<ParticleSystem>().Play();
+
+        yield return new WaitForSeconds(.8f);
+
+        Fireworks7.GetComponent<ParticleSystem>().Play();
+        Fireworks8.GetComponent<ParticleSystem>().Play();
+        Fireworks9.GetComponent<ParticleSystem>().Play();
+
+        yield return new WaitForSeconds(.4f);
+
+        Fireworks10.GetComponent<ParticleSystem>().Play();
+        Fireworks11.GetComponent<ParticleSystem>().Play();
+        Fireworks12.GetComponent<ParticleSystem>().Play();
     }
 
 }
